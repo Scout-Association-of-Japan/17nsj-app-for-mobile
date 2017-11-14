@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using _17NSJ.Views;
 
 namespace _17NSJ
 {
@@ -8,7 +9,7 @@ namespace _17NSJ
         {
             InitializeComponent();
 
-            MainPage = new _17NSJPage();
+            MainPage = new TabBaseView();
         }
 
         protected override void OnStart()

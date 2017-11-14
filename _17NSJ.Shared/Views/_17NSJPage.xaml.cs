@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace _17NSJ
+namespace _17NSJ.Views
 {
     public partial class _17NSJPage : ContentPage
     {
