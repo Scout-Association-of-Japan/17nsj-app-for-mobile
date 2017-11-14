@@ -52,3 +52,12 @@ Mkfile.old
 dkms.conf
 
 .DS_Store
+packages
+17NSJ.Shared/bin
+17NSJ.Shared/obj
+17NSJ.Droid/bin
+17NSJ.Droid/obj
+17NSJ.iOS/bin
+17NSJ.iOS/obj
+17NSJ.UITests/bin
+17NSJ.UITests/obj
