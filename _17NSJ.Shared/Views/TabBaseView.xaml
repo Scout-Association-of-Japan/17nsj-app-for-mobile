@@ -4,9 +4,20 @@
     xmlns:local="clr-namespace:_17NSJ.Views"
     x:Class="_17NSJ.Views.TabBaseView">
     <TabbedPage.Children>
-        <local:_17NSJPage Title="hogehoge" />
-        <ContentPage Title="hogehoge2">
-            <BoxView Color="Red"/>
+        
+        <local:HomeView Title="H O M E" Icon="tab/home.png" />
+
+        <ContentPage Title="NEWS＆INFO" Icon="tab/news_info.png">
+            <BoxView Color="Blue"/>
+        </ContentPage>
+        <ContentPage Title="M A P" Icon="tab/map.png">
+            <BoxView Color="Blue"/>
+        </ContentPage>
+        <ContentPage Title="SCHEDULE" Icon="tab/schedule.png">
+            <BoxView Color="Green"/>
+        </ContentPage>
+        <ContentPage Title="ACTIVITES" Icon="tab/activites.png">
+            <BoxView Color="Yellow"/>
         </ContentPage>
 	</TabbedPage.Children>
 </TabbedPage>
