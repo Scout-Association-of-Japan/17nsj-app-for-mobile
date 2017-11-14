@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{E38D0FC9-0B24-46A5-B80F-B7D4387CE128}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/TabBaseView.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.iOS/TabbedPageCustom.cs">
     <Files>
       <File FileName="_17NSJ.Shared/Views/_17NSJPage.xaml.cs" Line="7" Column="28" />
       <File FileName="_17NSJ.Shared/Views/_17NSJPage.xaml" Line="2" Column="172" />
-      <File FileName="_17NSJ.Shared/Views/TabBaseView.xaml" Line="9" Column="35" />
+      <File FileName="_17NSJ.Shared/Views/TabBaseView.xaml" Line="6" Column="26" />
       <File FileName="_17NSJ.Shared/Views/TabBaseView.xaml.cs" Line="8" Column="26" />
+      <File FileName="_17NSJ.iOS/TabbedPageCustom.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
