@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
-    <ProjectGuid>{06D79DFA-2F8D-4F4E-9660-21CBE6A5192A}</ProjectGuid>
+    <ProjectGuid>{E38D0FC9-0B24-46A5-B80F-B7D4387CE128}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>NSJ.iOS</RootNamespace>
-    <AssemblyName>17NSJ.iOS</AssemblyName>
+    <RootNamespace>_17NSJ.iOS</RootNamespace>
+    <AssemblyName>_17NSJ.iOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
@@ -23,7 +23,7 @@
     <MtouchDebug>true</MtouchDebug>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
     <MtouchFastDev>true</MtouchFastDev>
-    <IOSDebuggerPort>48369</IOSDebuggerPort>
+    <IOSDebuggerPort>13858</IOSDebuggerPort>
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
@@ -71,7 +71,7 @@
     <MtouchFastDev>true</MtouchFastDev>
     <MtouchFloat32>true</MtouchFloat32>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <IOSDebuggerPort>47725</IOSDebuggerPort>
+    <IOSDebuggerPort>58599</IOSDebuggerPort>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
@@ -99,9 +99,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\17NSJ.Shared\17NSJ.csproj">
-      <Project>{744CD0BE-3A02-4F71-B3D8-0389DEDC5650}</Project>
-      <Name>17NSJ</Name>
+    <ProjectReference Include="..\_17NSJ.Shared\_17NSJ.csproj">
+      <Project>{66CB8ECE-6AEB-4D88-92F9-01631DD31D03}</Project>
+      <Name>_17NSJ</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

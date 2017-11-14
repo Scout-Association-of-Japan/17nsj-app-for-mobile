@@ -53,11 +53,11 @@ dkms.conf
 
 .DS_Store
 packages
-17NSJ.Shared/bin
-17NSJ.Shared/obj
-17NSJ.Droid/bin
-17NSJ.Droid/obj
-17NSJ.iOS/bin
-17NSJ.iOS/obj
-17NSJ.UITests/bin
-17NSJ.UITests/obj
+_17NSJ.Shared/bin
+_17NSJ.Shared/obj
+_17NSJ.Droid/bin
+_17NSJ.Droid/obj
+_17NSJ.iOS/bin
+_17NSJ.iOS/obj
+_17NSJ.UITests/bin
+_17NSJ.UITests/obj

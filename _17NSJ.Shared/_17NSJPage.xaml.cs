@@ -1,10 +1,10 @@
 ﻿using Xamarin.Forms;
 
-namespace NSJ
+namespace _17NSJ
 {
-    public partial class _7NSJPage : ContentPage
+    public partial class _17NSJPage : ContentPage
     {
-        public _7NSJPage()
+        public _17NSJPage()
         {
             InitializeComponent();
         }

@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace NSJ.iOS
+namespace _17NSJ.iOS
 {
     public class Application
     {

@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace NSJ
+namespace _17NSJ
 {
     public partial class App : Application
     {
@@ -8,7 +8,7 @@ namespace NSJ
         {
             InitializeComponent();
 
-            MainPage = new _7NSJPage();
+            MainPage = new _17NSJPage();
         }
 
         protected override void OnStart()

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{497C2914-2BAB-473F-906C-66A2040E77C7}</ProjectGuid>
+    <ProjectGuid>{D62F9632-C595-4839-AD1B-A4C8F8087993}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>NSJ.Droid</RootNamespace>
-    <AssemblyName>17NSJ.Droid</AssemblyName>
+    <RootNamespace>_17NSJ.Droid</RootNamespace>
+    <AssemblyName>_17NSJ.Droid</AssemblyName>
     <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
@@ -108,9 +108,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\17NSJ.Shared\17NSJ.csproj">
-      <Project>{744CD0BE-3A02-4F71-B3D8-0389DEDC5650}</Project>
-      <Name>17NSJ</Name>
+    <ProjectReference Include="..\_17NSJ.Shared\_17NSJ.csproj">
+      <Project>{66CB8ECE-6AEB-4D88-92F9-01631DD31D03}</Project>
+      <Name>_17NSJ</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -2,6 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="org.ScoutAssociationofJapan.x17NSJ">
 	<uses-sdk android:minSdkVersion="15" />
 	<uses-permission android:name="android.permission.INTERNET" />
-	<application android:label="17NSJ">
+	<application android:label="_17NSJ">
 	</application>
 </manifest>
