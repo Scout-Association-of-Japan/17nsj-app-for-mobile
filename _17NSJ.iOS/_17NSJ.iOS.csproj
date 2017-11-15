@@ -129,20 +129,20 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\tab\activites.png" />
-    <BundleResource Include="Resources\tab\activites%402.png" />
-    <BundleResource Include="Resources\tab\activites%403.png" />
+    <BundleResource Include="Resources\tab\activites%402x.png" />
+    <BundleResource Include="Resources\tab\activites%403x.png" />
     <BundleResource Include="Resources\tab\home.png" />
-    <BundleResource Include="Resources\tab\home%402.png" />
-    <BundleResource Include="Resources\tab\home%403.png" />
+    <BundleResource Include="Resources\tab\home%402x.png" />
+    <BundleResource Include="Resources\tab\home%403x.png" />
     <BundleResource Include="Resources\tab\map.png" />
-    <BundleResource Include="Resources\tab\map%402.png" />
-    <BundleResource Include="Resources\tab\map%403.png" />
+    <BundleResource Include="Resources\tab\map%402x.png" />
+    <BundleResource Include="Resources\tab\map%403x.png" />
     <BundleResource Include="Resources\tab\news_info.png" />
-    <BundleResource Include="Resources\tab\news_info%402.png" />
-    <BundleResource Include="Resources\tab\news_info%403.png" />
+    <BundleResource Include="Resources\tab\news_info%402x.png" />
+    <BundleResource Include="Resources\tab\news_info%403x.png" />
     <BundleResource Include="Resources\tab\schedule.png" />
-    <BundleResource Include="Resources\tab\schedule%402.png" />
-    <BundleResource Include="Resources\tab\schedule%403.png" />
+    <BundleResource Include="Resources\tab\schedule%402x.png" />
+    <BundleResource Include="Resources\tab\schedule%403x.png" />
     <BundleResource Include="Resources\home\dayvisitor.png" />
     <BundleResource Include="Resources\home\document.png" />
     <BundleResource Include="Resources\home\friendship.png" />
