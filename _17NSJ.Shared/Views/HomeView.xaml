@@ -2,34 +2,51 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="_17NSJ.Views.HomeView">
-        <Grid>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <!--拝見＆タイトル-->
+        <Image Source="back/ci_menu_with_logo.png"  Grid.Row="0" Grid.Column="0" Aspect="AspectFill" />
+        
+        <!--ボタン郡-->
+        <Grid Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="6*" />
-                <RowDefinition Height="10*" />
-                <RowDefinition Height="2*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <Image Source="back/ci_menu_with_logo.png" Margin="-10,0" Grid.Row="0" Grid.Column="0" />
-            <Grid Grid.Row="1">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <BoxView Color="Green" Grid.Row="0" Grid.Column="0"/>
-                <BoxView Color="Green" Grid.Row="1" Grid.Column="0"/>
-                <BoxView Color="Green" Grid.Row="2" Grid.Column="0"/>
-                <BoxView Color="Green" Grid.Row="0" Grid.Column="1"/>
-                <BoxView Color="Green" Grid.Row="1" Grid.Column="1"/>
-                <BoxView Color="Green" Grid.Row="2" Grid.Column="1"/>
-                <BoxView Color="Green" Grid.Row="0" Grid.Column="2"/>
-                <BoxView Color="Green" Grid.Row="1" Grid.Column="2"/>
-                <BoxView Color="Green" Grid.Row="2" Grid.Column="2"/>
-            </Grid>
-            <BoxView Color="Green" Grid.Row="2" Grid.Column="0"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+                <Button Text="DOCUMENT" BackgroundColor="Green" Clicked="DocumentClicked" Grid.Row="0" Grid.Column="0"/>
+                <Button Text="MOVIE" BackgroundColor="Green" Grid.Row="1" Grid.Column="0"/>
+                <Button Text="NEWSPAPER" BackgroundColor="Green" Grid.Row="2" Grid.Column="0"/>
+                <Button Text="SOCIAL" BackgroundColor="Green" Grid.Row="0" Grid.Column="1"/>
+                <Button Text="SHOP INFO" BackgroundColor="Green" Grid.Row="1" Grid.Column="1"/>
+                <Button Text="FRIEND SHIP" BackgroundColor="Green" Grid.Row="2" Grid.Column="1"/>
+                <Button Text="DAY VISITOR" BackgroundColor="Green" Grid.Row="0" Grid.Column="2"/>
+                <Button Text="SPONSOR" BackgroundColor="Green" Grid.Row="1" Grid.Column="2"/>
+                <Button Text="SETTING" BackgroundColor="Green" Grid.Row="2" Grid.Column="2"/>
         </Grid>
+
+        <!--天気-->
+        <Grid Grid.Row="2" VerticalOptions="Center" Margin="10,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2.5*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Text="石川県珠洲市" FontSize="20"/>
+            <Label Text="8月2日(日)" Grid.Column="1" FontSize="20"/>
+            <Label Text="晴れ" Grid.Column="2" FontSize="20" />
+            <Label Text="32℃" Grid.Column="3" FontSize="20" />
+        </Grid>
+    </Grid>
 </ContentPage>

@@ -5,8 +5,12 @@
     x:Class="_17NSJ.Views.TabBaseView">
     <TabbedPage.Children>
         
-        <local:HomeView Title="H O M E" Icon="tab/home.png" />
-
+        <NavigationPage Title="H O M E" Icon="tab/home.png">
+          <x:Arguments>
+            <local:HomeView />
+          </x:Arguments>
+        </NavigationPage>
+        
         <ContentPage Title="NEWS＆INFO" Icon="tab/news_info.png">
             <BoxView Color="Blue"/>
         </ContentPage>

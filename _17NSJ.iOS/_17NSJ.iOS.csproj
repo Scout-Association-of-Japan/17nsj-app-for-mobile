@@ -143,15 +143,9 @@
     <BundleResource Include="Resources\tab\schedule.png" />
     <BundleResource Include="Resources\tab\schedule%402x.png" />
     <BundleResource Include="Resources\tab\schedule%403x.png" />
-    <BundleResource Include="Resources\home\dayvisitor.png" />
-    <BundleResource Include="Resources\home\document.png" />
-    <BundleResource Include="Resources\home\friendship.png" />
-    <BundleResource Include="Resources\home\movie.png" />
-    <BundleResource Include="Resources\home\setting.png" />
-    <BundleResource Include="Resources\home\shop.png" />
-    <BundleResource Include="Resources\home\socal.png" />
-    <BundleResource Include="Resources\home\sponsors.png" />
     <BundleResource Include="Resources\back\ci_menu_with_logo.png" />
+    <BundleResource Include="Resources\back\ci_menu_with_logo%402x.png" />
+    <BundleResource Include="Resources\back\ci_menu_with_logo%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets')" />
