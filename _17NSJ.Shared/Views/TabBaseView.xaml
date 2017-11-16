@@ -5,7 +5,7 @@
     x:Class="_17NSJ.Views.TabBaseView">
     <TabbedPage.Children>
         
-        <NavigationPage Title="H O M E" Icon="tab/home.png">
+        <NavigationPage Title="H O M E" Icon="tab/home.png" BarBackgroundColor="#0071bc" BarTextColor="White">
           <x:Arguments>
             <local:HomeView />
           </x:Arguments>
@@ -14,9 +14,7 @@
         <ContentPage Title="NEWS＆INFO" Icon="tab/news_info.png">
             <BoxView Color="Blue"/>
         </ContentPage>
-        <ContentPage Title="M A P" Icon="tab/map.png">
-            <BoxView Color="Blue"/>
-        </ContentPage>
+        <local:MapView Title="M A P" Icon="tab/map.png"/>
         <ContentPage Title="SCHEDULE" Icon="tab/schedule.png">
             <BoxView Color="Green"/>
         </ContentPage>

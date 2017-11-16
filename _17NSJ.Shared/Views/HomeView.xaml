@@ -24,15 +24,15 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-                <Button Text="DOCUMENT" BackgroundColor="Green" Clicked="DocumentClicked" Grid.Row="0" Grid.Column="0"/>
-                <Button Text="MOVIE" BackgroundColor="Green" Grid.Row="1" Grid.Column="0"/>
-                <Button Text="NEWSPAPER" BackgroundColor="Green" Grid.Row="2" Grid.Column="0"/>
-                <Button Text="SOCIAL" BackgroundColor="Green" Grid.Row="0" Grid.Column="1"/>
-                <Button Text="SHOP INFO" BackgroundColor="Green" Grid.Row="1" Grid.Column="1"/>
-                <Button Text="FRIEND SHIP" BackgroundColor="Green" Grid.Row="2" Grid.Column="1"/>
-                <Button Text="DAY VISITOR" BackgroundColor="Green" Grid.Row="0" Grid.Column="2"/>
-                <Button Text="SPONSOR" BackgroundColor="Green" Grid.Row="1" Grid.Column="2"/>
-                <Button Text="SETTING" BackgroundColor="Green" Grid.Row="2" Grid.Column="2"/>
+                <Button Text="DOCUMENT" BackgroundColor="Yellow" Clicked="DocumentClicked" Grid.Row="0" Grid.Column="0"/>
+                <Button Text="SOCIAL" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="0"/>
+                <Button Text="DAY VISITOR" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="0"/>
+                <Button Text="MOVIE" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="1"/>
+                <Button Text="SHOP INFO" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="1"/>
+                <Button Text="SPONSOR" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="1"/>
+                <Button Text="NEWSPAPEr" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="2"/>
+                <Button Text="FRIEND SHIP" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="2"/>
+                <Button Text="SETTING" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="2"/>
         </Grid>
 
         <!--天気-->
