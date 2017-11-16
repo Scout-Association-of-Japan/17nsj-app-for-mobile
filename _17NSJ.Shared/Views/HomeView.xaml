@@ -25,7 +25,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
                 <Button Text="DOCUMENT" BackgroundColor="Yellow" Clicked="DocumentClicked" Grid.Row="0" Grid.Column="0"/>
-                <Button Text="SOCIAL" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="0"/>
+                <Button Text="SOCIAL" BackgroundColor="Yellow" Clicked="SocialClicked" Grid.Row="1" Grid.Column="0"/>
                 <Button Text="DAY VISITOR" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="0"/>
                 <Button Text="MOVIE" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="1"/>
                 <Button Text="SHOP INFO" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="1"/>

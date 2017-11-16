@@ -17,5 +17,10 @@ namespace _17NSJ.Views
         {
             Navigation.PushAsync(new _17NSJPage(), true);
         }
+
+        void SocialClicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new SocialView(), true);
+        }
     }
 }
