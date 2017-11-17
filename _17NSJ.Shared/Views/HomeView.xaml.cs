@@ -45,6 +45,7 @@ namespace _17NSJ.Views
 
         void NewspaperClicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new NewspaperView(), true);
         }
 
         void FriendShipClicked(object sender, EventArgs e)
