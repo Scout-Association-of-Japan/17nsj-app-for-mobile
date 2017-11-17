@@ -14,5 +14,11 @@ namespace _17NSJ.Views
             InitializeComponent();
             this.BindingContext = new SocialViewModel();
         }
+
+        void ItemSelected(object sender, ItemTappedEventArgs e)
+        {
+            var item = e.Item as Social;
+            Device.OpenUri(new Uri(item.Url));
+        }
     }
 }

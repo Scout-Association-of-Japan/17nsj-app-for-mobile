@@ -9,12 +9,12 @@ namespace _17NSJ.ViewModels
         public SocialViewModel()
         {
             ObservableCollection<Social> list = new ObservableCollection<Social>();
-            list.Add(new Social() { Title = "Official Site", ImagePath = "https://abs.twimg.com/icons/apple-touch-icon-192x192.png", Url = "hhtp" });
-            list.Add(new Social() { Title = "Facebook", ImagePath = "https://www.facebook.com/images/fb_icon_325x325.png", Url = "hhtp" });
-            list.Add(new Social() { Title = "Twitter", ImagePath = "https://abs.twimg.com/icons/apple-touch-icon-192x192.png", Url = "hhtp" });
-            list.Add(new Social() { Title = "Youtube", ImagePath = "https://lh3.googleusercontent.com/Ned_Tu_ge6GgJZ_lIO_5mieIEmjDpq9kfgD05wapmvzcInvT4qQMxhxq_hEazf8ZsqA=w300", Url = "hhtp" });
-            list.Add(new Social() { Title = "Instagram", ImagePath = "https://lh3.googleusercontent.com/aYbdIM1abwyVSUZLDKoE0CDZGRhlkpsaPOg9tNnBktUQYsXflwknnOn2Ge1Yr7rImGk=w300", Url = "hhtp" });
-            list.Add(new Social() { Title = "flickr", ImagePath = "https://pbs.twimg.com/profile_images/666413114489831424/aJZNErvd.png", Url = "hhtp" });
+            list.Add(new Social() { Title = "Official Site", ImagePath = "social_17nsj.png", Url = "https://www.scout.or.jp/17nsj/" });
+            list.Add(new Social() { Title = "Facebook", ImagePath = "social_facebook.png", Url = "https://www.facebook.com/scout.or.jp/" });
+            list.Add(new Social() { Title = "Twitter", ImagePath = "social_twitter.png", Url = "https://twitter.com/ScoutingJapan" });
+            list.Add(new Social() { Title = "Youtube", ImagePath = "social_youtube.png", Url = "https://www.youtube.com/user/ScoutingJapan" });
+            list.Add(new Social() { Title = "Instagram", ImagePath = "social_instagram.png", Url = "https://www.instagram.com/scout_association_of_japan/" });
+            list.Add(new Social() { Title = "flickr", ImagePath = "social_flickr.png", Url = "https://www.flickr.com/photos/scout_associaton_of_japan/" });
             this.socialList = list;
         }
 
