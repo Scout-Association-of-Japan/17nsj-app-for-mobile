@@ -25,6 +25,7 @@ namespace _17NSJ.Views
 
         void DayVisitorClicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new DayVisitorView(), true);
         }
 
         void MovieClicked(object sender, EventArgs e)
