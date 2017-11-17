@@ -35,6 +35,7 @@ namespace _17NSJ.Views
 
         void ShopClicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new ShopInfoView(), true);
         }
 
         void SponsorClicked(object sender, EventArgs e)
