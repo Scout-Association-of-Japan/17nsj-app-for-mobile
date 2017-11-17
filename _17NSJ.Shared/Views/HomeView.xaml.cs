@@ -15,6 +15,7 @@ namespace _17NSJ.Views
 
         void DocumentClicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new DocumentView(), true);
         }
 
         void SocialClicked(object sender, EventArgs e)
