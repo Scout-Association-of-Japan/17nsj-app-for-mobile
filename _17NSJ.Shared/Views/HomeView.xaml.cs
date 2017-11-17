@@ -55,6 +55,7 @@ namespace _17NSJ.Views
 
         void SettingClicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new SettingView(), true);
         }
     }
 }
