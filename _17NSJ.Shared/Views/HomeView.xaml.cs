@@ -30,6 +30,7 @@ namespace _17NSJ.Views
 
         void MovieClicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new MovieView(), true);
         }
 
         void ShopClicked(object sender, EventArgs e)
