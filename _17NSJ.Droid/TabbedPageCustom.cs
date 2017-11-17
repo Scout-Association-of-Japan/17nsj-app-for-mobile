@@ -40,13 +40,13 @@ namespace _17NSJ.Droid
             viewPager.SetPadding(0, -tabLayout.MeasuredHeight, 0, 0);
 
             // タブの背景色
-            tabLayout.SetBackgroundColor(Android.Graphics.Color.Red);
+            tabLayout.SetBackgroundColor(Android.Graphics.Color.Rgb(0, 113, 188));
 
             // 選択されたタブのインジケーター色
-            tabLayout.SetSelectedTabIndicatorColor(Android.Graphics.Color.Orange);
+            tabLayout.SetSelectedTabIndicatorColor(Android.Graphics.Color.Rgb(247, 147, 30));
 
             // タブテキスト色
-            tabLayout.SetTabTextColors(Android.Graphics.Color.White, Android.Graphics.Color.Orange);
+            tabLayout.SetTabTextColors(Android.Graphics.Color.White, Android.Graphics.Color.Rgb(247, 147, 30));
         }
     }
 }

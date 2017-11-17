@@ -5,20 +5,20 @@
     x:Class="_17NSJ.Views.TabBaseView">
     <TabbedPage.Children>
         
-        <NavigationPage Title="H O M E" Icon="tab/home.png" BarBackgroundColor="#0071bc" BarTextColor="White">
+        <NavigationPage Title="H O M E" Icon="tab_home.png" BarBackgroundColor="#0071bc" BarTextColor="White">
           <x:Arguments>
             <local:HomeView />
           </x:Arguments>
         </NavigationPage>
         
-        <ContentPage Title="NEWS＆INFO" Icon="tab/news_info.png">
+        <ContentPage Title="NEWS＆INFO" Icon="tab_news_info.png">
             <BoxView Color="Blue"/>
         </ContentPage>
-        <local:MapView Title="M A P" Icon="tab/map.png"/>
-        <ContentPage Title="SCHEDULE" Icon="tab/schedule.png">
+        <local:MapView Title="M A P" Icon="tab_map.png"/>
+        <ContentPage Title="SCHEDULE" Icon="tab_schedule.png">
             <BoxView Color="Green"/>
         </ContentPage>
-        <ContentPage Title="ACTIVITES" Icon="tab/activites.png">
+        <ContentPage Title="ACTIVITES" Icon="tab_activites.png">
             <BoxView Color="Yellow"/>
         </ContentPage>
 	</TabbedPage.Children>

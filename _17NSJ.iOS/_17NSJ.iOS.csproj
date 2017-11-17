@@ -110,9 +110,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="Resources\tab\" />
-    <Folder Include="Resources\back\" />
-    <Folder Include="Resources\home\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -128,24 +125,24 @@
     <Compile Include="TabbedPageCustom.cs" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\tab\activites.png" />
-    <BundleResource Include="Resources\tab\activites%402x.png" />
-    <BundleResource Include="Resources\tab\activites%403x.png" />
-    <BundleResource Include="Resources\tab\home.png" />
-    <BundleResource Include="Resources\tab\home%402x.png" />
-    <BundleResource Include="Resources\tab\home%403x.png" />
-    <BundleResource Include="Resources\tab\map.png" />
-    <BundleResource Include="Resources\tab\map%402x.png" />
-    <BundleResource Include="Resources\tab\map%403x.png" />
-    <BundleResource Include="Resources\tab\news_info.png" />
-    <BundleResource Include="Resources\tab\news_info%402x.png" />
-    <BundleResource Include="Resources\tab\news_info%403x.png" />
-    <BundleResource Include="Resources\tab\schedule.png" />
-    <BundleResource Include="Resources\tab\schedule%402x.png" />
-    <BundleResource Include="Resources\tab\schedule%403x.png" />
-    <BundleResource Include="Resources\back\ci_menu_with_logo.png" />
-    <BundleResource Include="Resources\back\ci_menu_with_logo%402x.png" />
-    <BundleResource Include="Resources\back\ci_menu_with_logo%403x.png" />
+    <BundleResource Include="Resources\ci_menu_with_logo.png" />
+    <BundleResource Include="Resources\ci_menu_with_logo%402x.png" />
+    <BundleResource Include="Resources\ci_menu_with_logo%403x.png" />
+    <BundleResource Include="Resources\tab_activites.png" />
+    <BundleResource Include="Resources\tab_activites%402x.png" />
+    <BundleResource Include="Resources\tab_activites%403x.png" />
+    <BundleResource Include="Resources\tab_home.png" />
+    <BundleResource Include="Resources\tab_home%402x.png" />
+    <BundleResource Include="Resources\tab_home%403x.png" />
+    <BundleResource Include="Resources\tab_map.png" />
+    <BundleResource Include="Resources\tab_map%402x.png" />
+    <BundleResource Include="Resources\tab_map%403x.png" />
+    <BundleResource Include="Resources\tab_news_info.png" />
+    <BundleResource Include="Resources\tab_news_info%402x.png" />
+    <BundleResource Include="Resources\tab_news_info%403x.png" />
+    <BundleResource Include="Resources\tab_schedule.png" />
+    <BundleResource Include="Resources\tab_schedule%402x.png" />
+    <BundleResource Include="Resources\tab_schedule%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets')" />
