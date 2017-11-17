@@ -40,6 +40,7 @@ namespace _17NSJ.Views
 
         void SponsorClicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new SponsorView(), true);
         }
 
         void NewspaperClicked(object sender, EventArgs e)

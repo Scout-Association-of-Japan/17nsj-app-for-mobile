@@ -61,6 +61,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\SponsorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -94,6 +98,9 @@
     </Compile>
     <Compile Include="Views\ShopInfoView.xaml.cs">
       <DependentUpon>ShopInfoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SponsorView.xaml.cs">
+      <DependentUpon>SponsorView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
