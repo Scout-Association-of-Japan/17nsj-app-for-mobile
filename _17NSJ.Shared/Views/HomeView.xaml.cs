@@ -50,6 +50,7 @@ namespace _17NSJ.Views
 
         void FriendShipClicked(object sender, EventArgs e)
         {
+            Navigation.PushAsync(new FriendShipView(), true);
         }
 
         void SettingClicked(object sender, EventArgs e)
