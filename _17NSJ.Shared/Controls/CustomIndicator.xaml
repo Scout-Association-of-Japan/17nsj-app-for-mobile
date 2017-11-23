@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:cont="clr-namespace:_17NSJ.Controls"
+    x:Class="_17NSJ.Controls.CustomIndicator">
+	<Grid BackgroundColor="#99FFFFFF">
+        <cont:CustomIndicatorWebView x:Name="webView" VerticalOptions="FillAndExpand"/>
+    </Grid>
+</ContentView>

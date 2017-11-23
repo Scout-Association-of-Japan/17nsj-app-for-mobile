@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebView xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="_17NSJ.Controls.CustomIndicatorWebView"
+    VerticalOptions="FillAndExpand">
+    <WebView.Margin>
+        <!-- iOSだけ、上に20pxのMarginを設定する -->
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0,20,0,0"
+                    Android="0,0,0,0" 
+                    WinPhone="0,0,0,0" />
+    </WebView.Margin>
+</WebView>
