@@ -4,7 +4,7 @@
     xmlns:cont="clr-namespace:_17NSJ.Controls"
     x:Class="_17NSJ.Views.MapView">
     <Grid>
-    	<WebView Source="https://www.google.co.jp/maps/" Navigated="Handle_Navigated"/>
+    	<WebView Source="https://www.google.co.jp/maps/" Navigated="mapLoaded"/>
         <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator"/>
     </Grid>
 </ContentPage>

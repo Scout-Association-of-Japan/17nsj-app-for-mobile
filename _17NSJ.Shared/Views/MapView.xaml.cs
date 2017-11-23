@@ -12,7 +12,7 @@ namespace _17NSJ.Views
             InitializeComponent();
         }
 
-        void Handle_Navigated(object sender, Xamarin.Forms.WebNavigatedEventArgs e)
+        void mapLoaded(object sender, Xamarin.Forms.WebNavigatedEventArgs e)
         {
             indicator.IsVisible = false;
         }
