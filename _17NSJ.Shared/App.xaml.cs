@@ -9,7 +9,11 @@ namespace _17NSJ
         {
             InitializeComponent();
 
-            MainPage = new TabBaseView();
+            MainPage = new NavigationPage(new TopView())
+            {
+                BarBackgroundColor = new Color(0.00, 0.44, 0.74),
+                BarTextColor = Color.White
+            };
         }
 
         protected override void OnStart()

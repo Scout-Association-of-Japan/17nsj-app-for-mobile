@@ -122,7 +122,6 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="TabbedPageCustom.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ci_menu_with_logo.png" />

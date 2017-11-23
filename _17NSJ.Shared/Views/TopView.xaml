@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="_17NSJ.Views.TopView">
+	<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="0.5*" />
+        </Grid.RowDefinitions>
+
+        <!--拝見＆タイトル-->
+        <Image Source="ci_menu_with_logo.png"  Grid.Row="0" Grid.Column="0" Aspect="AspectFill" />
+        
+        <!--ボタン郡-->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+                <Button Text="NEWS＆INFO" BackgroundColor="Yellow" Clicked="NewsInfoClicked" Grid.Row="0" Grid.Column="0"/>
+                <Button Text="SCHEDULE" BackgroundColor="Yellow" Clicked="ScheduleClicked" Grid.Row="0" Grid.Column="1"/>
+                <Button Text="MAP" BackgroundColor="Yellow" Clicked="MapClicked" Grid.Row="0" Grid.Column="2"/>
+            
+                <Button Text="ACTIVITY" BackgroundColor="Yellow" Clicked="ActivityClicked" Grid.Row="1" Grid.Column="0"/>
+                <Button Text="WEATHER" BackgroundColor="Yellow" Clicked="WeatherClicked" Grid.Row="1" Grid.Column="1"/>
+                <Button Text="SOCIAL" BackgroundColor="Yellow" Clicked="SocialClicked" Grid.Row="1" Grid.Column="2"/>
+            
+                <Button Text="MOVIE" BackgroundColor="Yellow" Clicked="MovieClicked" Grid.Row="2" Grid.Column="0"/>
+                <Button Text="NEWSPAPER" BackgroundColor="Yellow" Clicked="NewspaperClicked" Grid.Row="2" Grid.Column="1"/>
+                <Button Text="FRIEND SHIP" BackgroundColor="Yellow" Clicked="FriendShipClicked" Grid.Row="2" Grid.Column="2"/>
+
+                <Button Text="SHOP INFO" BackgroundColor="Yellow" Clicked="ShopClicked" Grid.Row="3" Grid.Column="0"/>
+                <Button Text="DOCUMENT" BackgroundColor="Yellow" Clicked="DocumentClicked" Grid.Row="3" Grid.Column="1"/>
+                <Button Text="DAY VISITOR" BackgroundColor="Yellow" Clicked="DayVisitorClicked" Grid.Row="3" Grid.Column="2"/>
+            
+                <Button Text="SPONSOR" BackgroundColor="Yellow" Clicked="SponsorClicked" Grid.Row="4" Grid.Column="0"/>
+                <Button Text="OUTLINE" BackgroundColor="Yellow" Clicked="OutlineClicked" Grid.Row="4" Grid.Column="1"/>
+                <Button Text="SETTING" BackgroundColor="Yellow" Clicked="SettingClicked" Grid.Row="4" Grid.Column="2"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <BoxView Color="#0071bc" />
+        </Grid>
+    </Grid>
+</ContentPage>

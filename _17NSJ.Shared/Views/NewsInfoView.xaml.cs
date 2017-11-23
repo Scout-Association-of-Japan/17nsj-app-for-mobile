@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace _17NSJ.Views
 {
-    public partial class TabBaseView : TabbedPage
+    public partial class NewsInfoView : ContentPage
     {
-        public TabBaseView()
+        public NewsInfoView()
         {
             InitializeComponent();
         }
