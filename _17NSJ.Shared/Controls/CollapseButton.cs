@@ -15,7 +15,7 @@ namespace _17NSJ.Controls
 
                 if (btn != null)
                 {
-                    await btn.ScaleTo(0.5, _animationTime);
+                    await btn.ScaleTo(0.7, _animationTime);
                     await btn.ScaleTo(1, _animationTime);
                 }
             };

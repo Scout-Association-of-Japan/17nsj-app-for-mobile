@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="_17NSJ.Views.TopView">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:cont="clr-namespace:_17NSJ.Controls"
+    x:Class="_17NSJ.Views.TopView">
 	<Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="5*" />
@@ -24,25 +27,70 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-                <Button Text="NEWS＆INFO" BackgroundColor="Yellow" Clicked="NewsInfoClicked" Grid.Row="0" Grid.Column="0"/>
-                <Button Text="SCHEDULE" BackgroundColor="Yellow" Clicked="ScheduleClicked" Grid.Row="0" Grid.Column="1"/>
-                <Button Text="MAP" BackgroundColor="Yellow" Clicked="MapClicked" Grid.Row="0" Grid.Column="2"/>
-            
-                <Button Text="ACTIVITY" BackgroundColor="Yellow" Clicked="ActivityClicked" Grid.Row="1" Grid.Column="0"/>
-                <Button Text="WEATHER" BackgroundColor="Yellow" Clicked="WeatherClicked" Grid.Row="1" Grid.Column="1"/>
-                <Button Text="SOCIAL" BackgroundColor="Yellow" Clicked="SocialClicked" Grid.Row="1" Grid.Column="2"/>
-            
-                <Button Text="MOVIE" BackgroundColor="Yellow" Clicked="MovieClicked" Grid.Row="2" Grid.Column="0"/>
-                <Button Text="NEWSPAPER" BackgroundColor="Yellow" Clicked="NewspaperClicked" Grid.Row="2" Grid.Column="1"/>
-                <Button Text="FRIEND SHIP" BackgroundColor="Yellow" Clicked="FriendShipClicked" Grid.Row="2" Grid.Column="2"/>
+                <StackLayout Grid.Row="0" Grid.Column="0">
+                    <cont:CollapseButton Image="top_newsinfo.png" Clicked="NewsInfoClicked" />
+                    <Label Text="NEWS＆INFO" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
+                </StackLayout>
+                <StackLayout Grid.Row="0" Grid.Column="1">
+                    <cont:CollapseButton Image="top_schedule.png" Clicked="ScheduleClicked" />
+                    <Label Text="CHEDULE" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
+                </StackLayout>
+                <StackLayout Grid.Row="0" Grid.Column="2">
+                    <cont:CollapseButton Image="top_map.png" Clicked="MapClicked" />
+                    <Label Text="MAP" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
+                </StackLayout>
 
-                <Button Text="SHOP INFO" BackgroundColor="Yellow" Clicked="ShopClicked" Grid.Row="3" Grid.Column="0"/>
-                <Button Text="DOCUMENT" BackgroundColor="Yellow" Clicked="DocumentClicked" Grid.Row="3" Grid.Column="1"/>
-                <Button Text="DAY VISITOR" BackgroundColor="Yellow" Clicked="DayVisitorClicked" Grid.Row="3" Grid.Column="2"/>
-            
-                <Button Text="SPONSOR" BackgroundColor="Yellow" Clicked="SponsorClicked" Grid.Row="4" Grid.Column="0"/>
-                <Button Text="OUTLINE" BackgroundColor="Yellow" Clicked="OutlineClicked" Grid.Row="4" Grid.Column="1"/>
-                <Button Text="SETTING" BackgroundColor="Yellow" Clicked="SettingClicked" Grid.Row="4" Grid.Column="2"/>
+                <StackLayout Grid.Row="1" Grid.Column="0">
+                    <cont:CollapseButton Image="top_activity.png" Clicked="ActivityClicked" />
+                    <Label Text="ACTIVITY" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="1">
+                    <cont:CollapseButton Image="top_weather.png" Clicked="WeatherClicked" />
+                    <Label Text="WEATHER" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="2">
+                    <cont:CollapseButton Image="top_social.png" Clicked="SocialClicked" />
+                    <Label Text="SOCIAL" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" Grid.Column="0">
+                    <cont:CollapseButton Image="top_movie.png" Clicked="MovieClicked" />
+                    <Label Text="MOVIE" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="1">
+                    <cont:CollapseButton Image="top_newspaper.png" Clicked="NewspaperClicked" />
+                    <Label Text="NEWSPAPER" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="2">
+                    <cont:CollapseButton Image="top_friendship.png" Clicked="FriendShipClicked" />
+                    <Label Text="FRIEND SHIP" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" Grid.Column="0">
+                    <cont:CollapseButton Image="top_shop.png" Clicked="ShopClicked" />
+                    <Label Text="SHOP INFO" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
+                </StackLayout>
+                <StackLayout Grid.Row="3" Grid.Column="1">
+                    <cont:CollapseButton Image="top_document.png" Clicked="DocumentClicked" />
+                    <Label Text="DOCUMENT" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
+                </StackLayout>
+                <StackLayout Grid.Row="3" Grid.Column="2">
+                    <cont:CollapseButton Image="top_visitor.png" Clicked="DayVisitorClicked" />
+                    <Label Text="DAY VISITOR" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
+                </StackLayout>
+
+                <StackLayout Grid.Row="4" Grid.Column="0">
+                    <cont:CollapseButton Image="top_sponsor.png" Clicked="SponsorClicked" />
+                    <Label Text="SPONSOR" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
+                </StackLayout>
+                <StackLayout Grid.Row="4" Grid.Column="1">
+                    <cont:CollapseButton Image="top_outline.png" Clicked="OutlineClicked" />
+                    <Label Text="OUTLINE" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
+                </StackLayout>
+                <StackLayout Grid.Row="4" Grid.Column="2">
+                    <cont:CollapseButton Image="top_setting.png" Clicked="SettingClicked" />
+                    <Label Text="SETTING" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
+                </StackLayout>
         </Grid>
         <Grid Grid.Row="2">
             <BoxView Color="#0071bc" />
