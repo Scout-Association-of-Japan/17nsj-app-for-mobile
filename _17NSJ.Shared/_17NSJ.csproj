@@ -175,6 +175,7 @@
       <DependentUpon>CustomIndicatorWebView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\NonSeparatorTableView.cs" />
+    <Compile Include="Controls\CollapseButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
