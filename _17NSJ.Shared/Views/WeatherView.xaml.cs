@@ -11,5 +11,10 @@ namespace _17NSJ.Views
         {
             InitializeComponent();
         }
+
+        void siteLoaded(object sender, WebNavigatedEventArgs e)
+        {
+            indicator.IsVisible = false;
+        }
     }
 }

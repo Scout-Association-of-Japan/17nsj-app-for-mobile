@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="_17NSJ.Views.WeatherView">
-	<Label Text="weather" />
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:cont="clr-namespace:_17NSJ.Controls"
+    x:Class="_17NSJ.Views.WeatherView">
+	<Grid>
+        <WebView Source="https://weather.yahoo.co.jp/weather/jp/17/5620/17205.html" Navigated="siteLoaded" />
+        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator"/>
+    </Grid>
 </ContentPage>
