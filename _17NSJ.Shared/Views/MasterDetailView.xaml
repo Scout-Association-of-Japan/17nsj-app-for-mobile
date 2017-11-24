@@ -1,20 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="_17NSJ.Views.MasterDetailView">
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:cont="clr-namespace:_17NSJ.Controls"
+    x:Class="_17NSJ.Views.MasterDetailView">
 
     <!--MasterPageの設定-->
     <MasterDetailPage.Master>
-        <ContentPage Title="Menu">
+        <ContentPage Title="Menu" Icon="hamburger.png" BackgroundColor="#65BBF3">
             <ContentPage.Padding>
                 <OnPlatform x:TypeArguments = "Thickness" iOS = "0, 20, 0, 0" />
             </ContentPage.Padding>
             <StackLayout HorizontalOptions="Center">
-                <ListView x:Name="listView" ItemSelected="Handle_ItemSelected" SeparatorVisibility="None">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" />
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                <cont:NonSeparatorTableView Intent="Menu" HasUnevenRows="True" BackgroundColor="#65BBF3" >
+                    <cont:NonSeparatorTableView.Root>
+                        <TableRoot>
+                            <TableSection>
+                                <ImageCell Text="HOME" TextColor="White" ImageSource="master_home.png"  Tapped="HomeTapped"/>
+                                <ViewCell><BoxView Color="White" HeightRequest="0.5"/></ViewCell>
+                                <ImageCell Text="NEWS＆INFO" TextColor="White" ImageSource="master_newsinfo.png" Tapped="NewsInfoTapped"/>
+                                <ImageCell Text="SCHEDULE" TextColor="White" ImageSource="master_schedule.png" Tapped="ScheduleTapped"/>
+                                <ImageCell Text="MAP" TextColor="White" ImageSource="master_map.png" Tapped="MapTapped"/>
+                                <ImageCell Text="ACTIVITY" TextColor="White" ImageSource="master_activity.png" Tapped="ActivityTapped"/>
+                                <ViewCell><BoxView Color="White" HeightRequest="0.5"/></ViewCell>
+                                <ImageCell Text="WEATHER" TextColor="White" ImageSource="master_weather.png" Tapped="WeatherTapped"/>
+                                <ImageCell Text="SOCIAL" TextColor="White" ImageSource="master_social.png" Tapped="SocialTapped"/>
+                                <ImageCell Text="MOVIE" TextColor="White" ImageSource="master_movie.png" Tapped="MovieTapped"/>
+                                <ImageCell Text="NEWSPAPER" TextColor="White" ImageSource="master_newspaper.png" Tapped="NewspaperTapped"/>
+                                <ImageCell Text="FRIENDSHIP" TextColor="White" ImageSource="master_friendship.png" Tapped="FriendshipTapped"/>
+                                <ImageCell Text="SHOP INFO" TextColor="White" ImageSource="master_shop.png" Tapped="ShopTapped"/>
+                                <ImageCell Text="DOCUMENT" TextColor="White" ImageSource="master_document.png" Tapped="DocumentTapped"/>
+                                <ImageCell Text="DAY VISITOR" TextColor="White" ImageSource="master_visitor.png" Tapped="VisitorTapped"/>
+                                <ViewCell><BoxView Color="White" HeightRequest="0.5"/></ViewCell>
+                                <ImageCell Text="OUTLINE" TextColor="White" ImageSource="master_outline.png" Tapped="OutlineTapped"/>
+                                <ViewCell><BoxView Color="White" HeightRequest="0.5"/></ViewCell>
+                                <ImageCell Text="SETTING" TextColor="White" ImageSource="master_setting.png" Tapped="SettingTapped"/>
+                            </TableSection>
+                        </TableRoot>
+                    </cont:NonSeparatorTableView.Root>
+                </cont:NonSeparatorTableView>
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>

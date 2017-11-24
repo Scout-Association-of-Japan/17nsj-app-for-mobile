@@ -12,37 +12,120 @@ namespace _17NSJ.Views
         {
             InitializeComponent();
 
-            //Masterに項目を追加
-            listView.ItemsSource = MasterMenu.MasterMenuList;
-
             //初期画面を表示
-            Page displayPage = (Page)Activator.CreateInstance(initPage);
-            var detail = new NavigationPage(displayPage)
+            Page displayPage = Activator.CreateInstance(initPage) as Page;
+
+            if (displayPage != null)
             {
-                BarBackgroundColor = new Color(0.00, 0.44, 0.74),
-                BarTextColor = Color.White
-            };
-            this.Detail = detail;
+                var detail = new NavigationPage(displayPage)
+                {
+                    BarBackgroundColor = new Color(0.00, 0.44, 0.74),
+                    BarTextColor = Color.White
+                };
+
+                this.Detail = detail;
+            }
         }
 
-        private void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
+        void HomeTapped(object sender, EventArgs e)
         {
-            // 選択された画面を抽出
-            var nextView = MasterMenu.MasterMenuList.Where(a => a == e.SelectedItem).FirstOrDefault();
+            Handle_ItemSelected(typeof(TopView));
+        }
 
-            //Topなら別遷移
-            if (nextView.TargetType == typeof(TopView))
+        void NewsInfoTapped(object sender, EventArgs e)
+        {
+            Handle_ItemSelected(typeof(NewsInfoView));
+        }
+
+        void ScheduleTapped(object sender, EventArgs e)
+        {
+            Handle_ItemSelected(typeof(ScheduleView));
+        }
+
+        void MapTapped(object sender, EventArgs e)
+        {
+            Handle_ItemSelected(typeof(MapView));
+        }
+
+        void ActivityTapped(object sender, EventArgs e)
+        {
+            Handle_ItemSelected(typeof(ActivityView));
+        }
+
+        void WeatherTapped(object sender, EventArgs e)
+        {
+            Handle_ItemSelected(typeof(WeatherView));
+        }
+
+        void SocialTapped(object sender, EventArgs e)
+        {
+            Handle_ItemSelected(typeof(SocialView));
+        }
+
+        void MovieTapped(object sender, EventArgs e)
+        {
+            Handle_ItemSelected(typeof(MovieView));
+        }
+
+        void NewspaperTapped(object sender, EventArgs e)
+        {
+            Handle_ItemSelected(typeof(NewspaperView));
+        }
+
+        void FriendshipTapped(object sender, EventArgs e)
+        {
+            Handle_ItemSelected(typeof(FriendShipView));
+        }
+
+        void ShopTapped(object sender, EventArgs e)
+        {
+            Handle_ItemSelected(typeof(ShopInfoView));
+        }
+
+        void DocumentTapped(object sender, EventArgs e)
+        {
+            Handle_ItemSelected(typeof(DocumentView));
+        }
+
+        void VisitorTapped(object sender, EventArgs e)
+        {
+            Handle_ItemSelected(typeof(DayVisitorView));
+        }
+
+        void OutlineTapped(object sender, EventArgs e)
+        {
+            Handle_ItemSelected(typeof(OutlineView));
+        }
+
+        void SettingTapped(object sender, EventArgs e)
+        {
+            Handle_ItemSelected(typeof(SettingView));
+        }
+
+        private void Handle_ItemSelected(Type targetType)
+        {
+            // HOMEなら別遷移
+            if (targetType == typeof(TopView))
             {
                 Application.Current.MainPage.Navigation.PopModalAsync();
             }
 
             //選択されたページをインスタンス化してNavigationPageを作成し、画面を遷移する
-            Page displayPage = (Page)Activator.CreateInstance(nextView.TargetType);
-            var detail = new NavigationPage(displayPage);
-            this.Detail = detail;
+            Page displayPage = Activator.CreateInstance(targetType) as Page;
 
-            // Detail Pageに戻る
-            this.IsPresented = false;
+            if (displayPage != null)
+            {
+                var detail = new NavigationPage(displayPage)
+                {
+                    BarBackgroundColor = new Color(0.00, 0.44, 0.74),
+                    BarTextColor = Color.White
+                };
+
+                this.Detail = detail;
+
+                // Detail Pageに戻る
+                this.IsPresented = false;
+            }
         }
     }
 }

@@ -1,10 +1,10 @@
-﻿using _17NSJ.Droid;
+﻿using _17NSJ.Droid.Renderer;
 using _17NSJ.Controls;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 [assembly: ExportRenderer(typeof(CustomIndicatorWebView), typeof(CustomIndicatorWebViewRenderer))]
-namespace _17NSJ.Droid
+namespace _17NSJ.Droid.Renderer
 {
     public class CustomIndicatorWebViewRenderer : WebViewRenderer
     {

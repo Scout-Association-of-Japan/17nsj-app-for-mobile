@@ -110,6 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Renderer\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -122,27 +123,13 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="CustomIndicatorWebViewRenderer.cs" />
+    <Compile Include="Renderer\CustomIndicatorWebViewRenderer.cs" />
+    <Compile Include="Renderer\NonSeparatorTableViewRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ci_menu_with_logo.png" />
     <BundleResource Include="Resources\ci_menu_with_logo%402x.png" />
     <BundleResource Include="Resources\ci_menu_with_logo%403x.png" />
-    <BundleResource Include="Resources\tab_activites.png" />
-    <BundleResource Include="Resources\tab_activites%402x.png" />
-    <BundleResource Include="Resources\tab_activites%403x.png" />
-    <BundleResource Include="Resources\tab_home.png" />
-    <BundleResource Include="Resources\tab_home%402x.png" />
-    <BundleResource Include="Resources\tab_home%403x.png" />
-    <BundleResource Include="Resources\tab_map.png" />
-    <BundleResource Include="Resources\tab_map%402x.png" />
-    <BundleResource Include="Resources\tab_map%403x.png" />
-    <BundleResource Include="Resources\tab_news_info.png" />
-    <BundleResource Include="Resources\tab_news_info%402x.png" />
-    <BundleResource Include="Resources\tab_news_info%403x.png" />
-    <BundleResource Include="Resources\tab_schedule.png" />
-    <BundleResource Include="Resources\tab_schedule%402x.png" />
-    <BundleResource Include="Resources\tab_schedule%403x.png" />
     <BundleResource Include="Resources\social_17nsj.png" />
     <BundleResource Include="Resources\social_facebook.png" />
     <BundleResource Include="Resources\social_flickr.png" />
@@ -150,6 +137,57 @@
     <BundleResource Include="Resources\social_twitter.png" />
     <BundleResource Include="Resources\social_youtube.png" />
     <BundleResource Include="Resources\loading.gif" />
+    <BundleResource Include="Resources\hamburger.png" />
+    <BundleResource Include="Resources\hamburger%402x.png" />
+    <BundleResource Include="Resources\hamburger%403x.png" />
+    <BundleResource Include="Resources\master_activity.png" />
+    <BundleResource Include="Resources\master_activity%402x.png" />
+    <BundleResource Include="Resources\master_activity%403x.png" />
+    <BundleResource Include="Resources\master_document.png" />
+    <BundleResource Include="Resources\master_document%402x.png" />
+    <BundleResource Include="Resources\master_document%403x.png" />
+    <BundleResource Include="Resources\master_friendship.png" />
+    <BundleResource Include="Resources\master_friendship%402x.png" />
+    <BundleResource Include="Resources\master_friendship%403x.png" />
+    <BundleResource Include="Resources\master_map.png" />
+    <BundleResource Include="Resources\master_map%402x.png" />
+    <BundleResource Include="Resources\master_map%403x.png" />
+    <BundleResource Include="Resources\master_movie.png" />
+    <BundleResource Include="Resources\master_movie%402x.png" />
+    <BundleResource Include="Resources\master_movie%403x.png" />
+    <BundleResource Include="Resources\master_newspaper.png" />
+    <BundleResource Include="Resources\master_newspaper%402x.png" />
+    <BundleResource Include="Resources\master_newspaper%403x.png" />
+    <BundleResource Include="Resources\master_outline.png" />
+    <BundleResource Include="Resources\master_outline%402x.png" />
+    <BundleResource Include="Resources\master_outline%403x.png" />
+    <BundleResource Include="Resources\master_schedule.png" />
+    <BundleResource Include="Resources\master_schedule%402x.png" />
+    <BundleResource Include="Resources\master_schedule%403x.png" />
+    <BundleResource Include="Resources\master_setting.png" />
+    <BundleResource Include="Resources\master_setting%402x.png" />
+    <BundleResource Include="Resources\master_setting%403x.png" />
+    <BundleResource Include="Resources\master_shop.png" />
+    <BundleResource Include="Resources\master_shop%402x.png" />
+    <BundleResource Include="Resources\master_shop%403x.png" />
+    <BundleResource Include="Resources\master_social.png" />
+    <BundleResource Include="Resources\master_social%402x.png" />
+    <BundleResource Include="Resources\master_social%403x.png" />
+    <BundleResource Include="Resources\master_sponsor.png" />
+    <BundleResource Include="Resources\master_sponsor%402x.png" />
+    <BundleResource Include="Resources\master_sponsor%403x.png" />
+    <BundleResource Include="Resources\master_visitor.png" />
+    <BundleResource Include="Resources\master_visitor%402x.png" />
+    <BundleResource Include="Resources\master_visitor%403x.png" />
+    <BundleResource Include="Resources\master_weather.png" />
+    <BundleResource Include="Resources\master_weather%402x.png" />
+    <BundleResource Include="Resources\master_weather%403x.png" />
+    <BundleResource Include="Resources\master_newsinfo.png" />
+    <BundleResource Include="Resources\master_newsinfo%402x.png" />
+    <BundleResource Include="Resources\master_newsinfo%403x.png" />
+    <BundleResource Include="Resources\master_home.png" />
+    <BundleResource Include="Resources\master_home%402x.png" />
+    <BundleResource Include="Resources\master_home%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets')" />

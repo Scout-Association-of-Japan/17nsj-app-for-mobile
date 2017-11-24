@@ -1,11 +1,11 @@
-﻿using _17NSJ.iOS;
+﻿using _17NSJ.iOS.Renderer;
 using _17NSJ.Controls;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
 [assembly: ExportRenderer(typeof(CustomIndicatorWebView), typeof(CustomIndicatorWebViewRenderer))]
-namespace _17NSJ.iOS
+namespace _17NSJ.iOS.Renderer
 {
     public class CustomIndicatorWebViewRenderer : WebViewRenderer
     {
