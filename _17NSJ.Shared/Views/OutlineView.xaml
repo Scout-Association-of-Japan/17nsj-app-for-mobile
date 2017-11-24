@@ -11,6 +11,7 @@
             <Label Text="17th NIPPON SCOUT JAMBOREE" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />
 
             <Label Text="シンボルマーク" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
+            <Image Source="outline_logo.png" Margin="80,10" />
             <Label Text="開催地珠洲市の海と光の色合いをベースに、能登半島を配置し。中央には北を指すコンパスを配置しボーイスカウト日本連盟創立１００周年に向け、一丸となって進んでいくことをイメージしている。" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />
 
             <Label Text="テーマ" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
@@ -28,9 +29,11 @@
             <Label Text="北緯３７度４４分６３秒" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />
             <Label Text="東経１３７度３２分６５秒" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />
             <Label Text="海抜 平均５ｍ" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />
+            <Image Source="outline_suzumap.png" />
             
             <Label Text="主催" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
-
+            <Image Source="outline_saj.png" />
+            
             <Label Text="後援" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
             <Label Text="文部科学省" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />
             <Label Text="防衛省" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />

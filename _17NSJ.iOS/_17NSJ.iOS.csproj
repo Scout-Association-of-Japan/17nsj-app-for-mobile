@@ -233,6 +233,15 @@
     <BundleResource Include="Resources\top_weather.png" />
     <BundleResource Include="Resources\top_weather%402x.png" />
     <BundleResource Include="Resources\top_weather%403x.png" />
+    <BundleResource Include="Resources\outline_saj.png" />
+    <BundleResource Include="Resources\outline_saj%402x.png" />
+    <BundleResource Include="Resources\outline_saj%403x.png" />
+    <BundleResource Include="Resources\outline_suzumap.png" />
+    <BundleResource Include="Resources\outline_suzumap%402x.png" />
+    <BundleResource Include="Resources\outline_suzumap%403x.png" />
+    <BundleResource Include="Resources\outline_logo.png" />
+    <BundleResource Include="Resources\outline_logo%402x.png" />
+    <BundleResource Include="Resources\outline_logo%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets')" />
