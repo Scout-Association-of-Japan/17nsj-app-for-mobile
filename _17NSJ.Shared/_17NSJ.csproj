@@ -150,7 +150,6 @@
     <Compile Include="Views\MasterDetailView.xaml.cs">
       <DependentUpon>MasterDetailView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\MasterItem.cs" />
     <Compile Include="Views\NewsInfoView.xaml.cs">
       <DependentUpon>NewsInfoView.xaml</DependentUpon>
     </Compile>
@@ -175,6 +174,8 @@
     <Compile Include="Controls\NonSeparatorTableView.cs" />
     <Compile Include="Controls\CollapseButton.cs" />
     <Compile Include="Constants\SocialList.cs" />
+    <Compile Include="Models\Friendship.cs" />
+    <Compile Include="Constants\FriendshipList.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

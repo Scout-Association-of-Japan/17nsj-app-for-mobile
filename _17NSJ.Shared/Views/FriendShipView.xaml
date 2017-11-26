@@ -2,5 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="_17NSJ.Views.FriendShipView">
-	<Label Text="friend ship" />
+	<StackLayout>
+        <ListView x:Name="friendshiplList" ItemTapped="ItemSelected" RowHeight="70">
+            <ListView.ItemTemplate>
+              <DataTemplate>
+                <ViewCell Height="200">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="{Binding ImagePath}" Margin="20,10"/>
+                        <StackLayout>
+                        <Label Text="{Binding Title}" VerticalTextAlignment="Center" FontSize="30" TextColor="Gray" Margin="0,7,0,-5" />
+                        <Label Text="{Binding HashTag}" VerticalTextAlignment="Center" FontSize="15" TextColor="Gray" />
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+              </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>
