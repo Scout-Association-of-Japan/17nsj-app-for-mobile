@@ -4,7 +4,7 @@
     x:Class="_17NSJ.Views.SocialView">
     <StackLayout>
         <Label Text="OFFICIAL SOCIAL MEDIA" FontSize="28" HorizontalOptions="Center" HeightRequest="60" TextColor="Gray" VerticalTextAlignment="Center" />
-        <ListView ItemsSource="{Binding SocialList}" ItemTapped="ItemSelected" RowHeight="70">
+        <ListView x:Name="socialList" ItemTapped="ItemSelected" RowHeight="70">
             <ListView.ItemTemplate>
               <DataTemplate>
                 <ViewCell Height="200">

@@ -2,11 +2,11 @@
 using System.Collections.ObjectModel;
 using _17NSJ.Models;
 
-namespace _17NSJ.ViewModels
+namespace _17NSJ.Constants
 {
-    public class SocialViewModel : ViewModelBase
+    public static class SocialList
     {
-        public SocialViewModel()
+        static SocialList()
         {
             ObservableCollection<Social> list = new ObservableCollection<Social>();
             list.Add(new Social() { Title = "Official Site", ImagePath = "social_17nsj.png", Url = "https://www.scout.or.jp/17nsj/" });
@@ -15,17 +15,10 @@ namespace _17NSJ.ViewModels
             list.Add(new Social() { Title = "Youtube", ImagePath = "social_youtube.png", Url = "https://www.youtube.com/user/ScoutingJapan" });
             list.Add(new Social() { Title = "Instagram", ImagePath = "social_instagram.png", Url = "https://www.instagram.com/scout_association_of_japan/" });
             list.Add(new Social() { Title = "flickr", ImagePath = "social_flickr.png", Url = "https://www.flickr.com/photos/scout_associaton_of_japan/" });
-            this.socialList = list;
+            List = list;
         }
 
-        private ObservableCollection<Social> socialList;
+        public static readonly ObservableCollection<Social> List;
 
-        public ObservableCollection<Social> SocialList
-        {
-            get
-            {
-                return this.socialList;
-            }
-        }
     }
 }

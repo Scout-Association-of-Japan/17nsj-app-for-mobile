@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using _17NSJ.Constants;
 using _17NSJ.Models;
 using _17NSJ.ViewModels;
 using Xamarin.Forms;
@@ -12,7 +13,7 @@ namespace _17NSJ.Views
         public SocialView()
         {
             InitializeComponent();
-            this.BindingContext = new SocialViewModel();
+            this.socialList.ItemsSource = SocialList.List;
         }
 
         void ItemSelected(object sender, ItemTappedEventArgs e)

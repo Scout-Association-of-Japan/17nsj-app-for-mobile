@@ -1,19 +1,20 @@
 ﻿<Properties StartupConfiguration="{E38D0FC9-0B24-46A5-B80F-B7D4387CE128}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/HomeView.xaml">
+  <MonoDevelop.Ide.ItemProperties.__17NSJ.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/SocialView.xaml">
     <Files>
-      <File FileName="_17NSJ.Shared/Views/TabBaseView.xaml" Line="19" Column="57" />
-      <File FileName="_17NSJ.Shared/Views/HomeView.xaml" Line="11" Column="37" />
-      <File FileName="_17NSJ.Shared/App.xaml.cs" Line="12" Column="39" />
-      <File FileName="_17NSJ.iOS/TabbedPageCustom.cs" Line="24" Column="18" />
+      <File FileName="_17NSJ.Shared/Views/FriendShipView.xaml" Line="4" Column="5" />
+      <File FileName="_17NSJ.Shared/Constants/SocialList.cs" Line="21" Column="59" />
+      <File FileName="_17NSJ.Shared/Views/SocialView.xaml" Line="21" Column="1" />
+      <File FileName="_17NSJ.Shared/Views/SocialView.xaml.cs" Line="14" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/junpei/Documents/GitHub/17nsj/17nsj-mobile-app/_17NSJ.Shared/Views/SocialView.xaml" relfile="_17NSJ.Shared/Views/SocialView.xaml" line="16" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.__17NSJ.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.B1FDC7F0-4A89-4314-BBC0-EF17C9BBA449">
-    <MonoDevelop.MacDev.AppleDevelopmentTeam />
-  </MonoDevelop.Ide.ItemProperties.__17NSJ.iOS>
+  <MonoDevelop.Ide.ItemProperties.__17NSJ.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3E7E9631-456A-455B-A438-BDFA7C260741" />
 </Properties>
