@@ -11,5 +11,25 @@ namespace _17NSJ.Views
         {
             InitializeComponent();
         }
+
+        void AgreementTapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Agreement());
+        }
+
+        void PolicyTapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Policy());
+        }
+
+        void LicenseTapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new License());
+        }
+
+        void AppInfoTapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AppInfo());
+        }
     }
 }

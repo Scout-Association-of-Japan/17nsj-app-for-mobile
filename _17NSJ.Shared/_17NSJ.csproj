@@ -105,6 +105,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Agreement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Policy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\License.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AppInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -176,6 +192,18 @@
     <Compile Include="Constants\SocialList.cs" />
     <Compile Include="Models\Friendship.cs" />
     <Compile Include="Constants\FriendshipList.cs" />
+    <Compile Include="Views\Agreement.xaml.cs">
+      <DependentUpon>Agreement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Policy.xaml.cs">
+      <DependentUpon>Policy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\License.xaml.cs">
+      <DependentUpon>License.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AppInfo.xaml.cs">
+      <DependentUpon>AppInfo.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

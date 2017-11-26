@@ -1,11 +1,15 @@
 ﻿<Properties StartupConfiguration="{E38D0FC9-0B24-46A5-B80F-B7D4387CE128}|Default">
   <MonoDevelop.Ide.ItemProperties.__17NSJ.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Constants/FriendshipList.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/License.xaml">
     <Files>
-      <File FileName="_17NSJ.Shared/Views/FriendShipView.xaml" Line="8" Column="29" />
-      <File FileName="_17NSJ.Shared/Models/Friendship.cs" Line="4" Column="31" />
-      <File FileName="_17NSJ.Shared/Views/FriendShipView.xaml.cs" Line="19" Column="37" />
-      <File FileName="_17NSJ.Shared/Constants/FriendshipList.cs" Line="10" Column="10" />
+      <File FileName="_17NSJ.Shared/Views/SettingView.xaml" Line="8" Column="52" />
+      <File FileName="_17NSJ.Shared/Views/SettingView.xaml.cs" Line="17" Column="43" />
+      <File FileName="_17NSJ.Shared/Views/MasterDetailView.xaml" Line="18" Column="38" />
+      <File FileName="_17NSJ.Shared/Views/AppInfo.xaml" Line="3" Column="93" />
+      <File FileName="_17NSJ.Shared/Views/AppInfo.xaml.cs" Line="1" Column="1" />
+      <File FileName="_17NSJ.Shared/Views/Policy.xaml" Line="5" Column="118" />
+      <File FileName="_17NSJ.Shared/Views/Agreement.xaml" Line="5" Column="66" />
+      <File FileName="_17NSJ.Shared/Views/License.xaml" Line="3" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

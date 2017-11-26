@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="_17NSJ.Views.SettingView">
-	<Label Text="setting" />
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="_17NSJ.Views.SettingView">
+    <TableView>
+        <TableRoot>
+            <TableSection>
+                <TextCell Text="利用規約" Tapped="AgreementTapped" />             
+                <TextCell Text="プライバシーポリシー" Tapped="PolicyTapped" />             
+            </TableSection>
+            <TableSection>
+                <TextCell Text="ライセンス" Tapped="LicenseTapped" />             
+                <TextCell Text="アプリケーション情報" Tapped="AppInfoTapped" />             
+            </TableSection>
+        </TableRoot>     
+    </TableView>
 </ContentPage>
