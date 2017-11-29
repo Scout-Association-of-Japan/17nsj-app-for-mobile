@@ -111,6 +111,7 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Renderer\" />
+    <Folder Include="Platforms\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -125,6 +126,7 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Renderer\CustomIndicatorWebViewRenderer.cs" />
     <Compile Include="Renderer\NonSeparatorTableViewRenderer.cs" />
+    <Compile Include="Platforms\AssemblyService.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ci_menu_with_logo.png" />
