@@ -1,5 +1,6 @@
 ﻿using Xamarin.Forms;
 using _17NSJ.Views;
+using _17NSJ.Services;
 
 namespace _17NSJ
 {
@@ -8,6 +9,7 @@ namespace _17NSJ
         public App()
         {
             InitializeComponent();
+            InitialzeServiceAsync();
 
             MainPage = new NavigationPage(new TopView())
             {
@@ -15,6 +17,13 @@ namespace _17NSJ
                 BarTextColor = Color.White
             };
         }
+
+        public async void InitialzeServiceAsync()
+        {
+            Token = await new AuthService().GetToken();
+        }
+
+        public string Token { get; set; }
 
         protected override void OnStart()
         {
