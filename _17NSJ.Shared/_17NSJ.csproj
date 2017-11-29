@@ -208,6 +208,7 @@
     <Compile Include="Models\MasterItem.cs" />
     <Compile Include="Constants\MasterMenu.cs" />
     <Compile Include="Interfaces\IAssemblyService.cs" />
+    <Compile Include="Constants\SecretConstants.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
