@@ -205,6 +205,8 @@
       <DependentUpon>AppInfo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\NewsInfo.cs" />
+    <Compile Include="Models\MasterItem.cs" />
+    <Compile Include="Constants\MasterMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

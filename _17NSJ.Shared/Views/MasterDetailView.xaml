@@ -11,33 +11,29 @@
                 <OnPlatform x:TypeArguments = "Thickness" iOS = "0, 20, 0, 0" />
             </ContentPage.Padding>
             <StackLayout HorizontalOptions="Center">
-                <cont:NonSeparatorTableView Intent="Menu" HasUnevenRows="True" BackgroundColor="#65BBF3" >
-                    <cont:NonSeparatorTableView.Root>
-                        <TableRoot>
-                            <TableSection>
-                                <ImageCell Text="HOME" TextColor="White" ImageSource="master_home.png"  Tapped="HomeTapped"/>
-                                <ViewCell><BoxView Color="White" HeightRequest="1.5"/></ViewCell>
-                                <ImageCell Text="NEWS＆INFO" TextColor="White" ImageSource="master_newsinfo.png" Tapped="NewsInfoTapped"/>
-                                <ImageCell Text="SCHEDULE" TextColor="White" ImageSource="master_schedule.png" Tapped="ScheduleTapped"/>
-                                <ImageCell Text="MAP" TextColor="White" ImageSource="master_map.png" Tapped="MapTapped"/>
-                                <ImageCell Text="ACTIVITY" TextColor="White" ImageSource="master_activity.png" Tapped="ActivityTapped"/>
-                                <ViewCell><BoxView Color="White" HeightRequest="1.5"/></ViewCell>
-                                <ImageCell Text="WEATHER" TextColor="White" ImageSource="master_weather.png" Tapped="WeatherTapped"/>
-                                <ImageCell Text="SOCIAL" TextColor="White" ImageSource="master_social.png" Tapped="SocialTapped"/>
-                                <ImageCell Text="MOVIE" TextColor="White" ImageSource="master_movie.png" Tapped="MovieTapped"/>
-                                <ImageCell Text="NEWSPAPER" TextColor="White" ImageSource="master_newspaper.png" Tapped="NewspaperTapped"/>
-                                <ImageCell Text="FRIENDSHIP" TextColor="White" ImageSource="master_friendship.png" Tapped="FriendshipTapped"/>
-                                <ImageCell Text="SHOP INFO" TextColor="White" ImageSource="master_shop.png" Tapped="ShopTapped"/>
-                                <ImageCell Text="DOCUMENT" TextColor="White" ImageSource="master_document.png" Tapped="DocumentTapped"/>
-                                <ImageCell Text="DAY VISITOR" TextColor="White" ImageSource="master_visitor.png" Tapped="VisitorTapped"/>
-                                <ViewCell><BoxView Color="White" HeightRequest="1.5"/></ViewCell>
-                                <ImageCell Text="OUTLINE" TextColor="White" ImageSource="master_outline.png" Tapped="OutlineTapped"/>
-                                <ViewCell><BoxView Color="White" HeightRequest="1.5"/></ViewCell>
-                                <ImageCell Text="SETTING" TextColor="White" ImageSource="master_setting.png" Tapped="SettingTapped"/>
-                            </TableSection>
-                        </TableRoot>
-                    </cont:NonSeparatorTableView.Root>
-                </cont:NonSeparatorTableView>
+                 <ListView x:Name="listView" ItemSelected="Handle_ItemSelected" SeparatorVisibility="None" BackgroundColor="#65BBF3">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="1.5" />
+                                    </Grid.RowDefinitions>
+                                    <Grid Margin="0,0,0,-5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="50" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Image Grid.Column="0" Source="{Binding IconSource}" VerticalOptions="CenterAndExpand" />
+                                        <Label Grid.Column="1" Text="{Binding Title}" TextColor="White" VerticalOptions="CenterAndExpand" />
+                                    </Grid>
+                                <BoxView Grid.Row="1" Color="White" HeightRequest="1.5" IsVisible="{Binding IsLineVisible}" />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>
