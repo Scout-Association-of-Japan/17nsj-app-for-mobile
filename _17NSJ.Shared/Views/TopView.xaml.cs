@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using _17NSJ.Interfaces;
+using _17NSJ.Services;
 using Xamarin.Forms;
 
 namespace _17NSJ.Views
@@ -10,8 +11,21 @@ namespace _17NSJ.Views
         public TopView()
         {
             InitializeComponent();
+            CheckUpdateAsync();
 
             NavigationPage.SetHasNavigationBar(this, false);
+        }
+
+         async void CheckUpdateAsync()
+        {
+            var config = await new AppDataService().GetAppConfigAsync();
+            if (config.ForceUpdate)
+            {
+                if (config.Version != DependencyService.Get<IAssemblyService>().GetVersionName())
+                {
+                    await DisplayAlert("タイトル", "メッセージ", "OK");
+                }
+            }
         }
 
         //1段目

@@ -211,6 +211,9 @@
     <Compile Include="Constants\SecretConstants.cs" />
     <Compile Include="Services\AuthService.cs" />
     <Compile Include="Models\AuthResultModel.cs" />
+    <Compile Include="Services\AppDataService.cs" />
+    <Compile Include="Models\NewsModel.cs" />
+    <Compile Include="Models\MobileAppConfigModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

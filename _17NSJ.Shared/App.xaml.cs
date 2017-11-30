@@ -1,6 +1,7 @@
 ﻿using Xamarin.Forms;
 using _17NSJ.Views;
 using _17NSJ.Services;
+using _17NSJ.Interfaces;
 
 namespace _17NSJ
 {
@@ -9,7 +10,7 @@ namespace _17NSJ
         public App()
         {
             InitializeComponent();
-            InitialzeServiceAsync();
+            InitialzeTokenAsync();
 
             MainPage = new NavigationPage(new TopView())
             {
@@ -18,11 +19,12 @@ namespace _17NSJ
             };
         }
 
-        public async void InitialzeServiceAsync()
+        public async void InitialzeTokenAsync()
         {
             Token = await new AuthService().GetToken();
         }
 
+        //使うときは(Application.Current as App).Token
         public string Token { get; set; }
 
         protected override void OnStart()
