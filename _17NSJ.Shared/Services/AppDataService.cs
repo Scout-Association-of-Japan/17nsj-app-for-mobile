@@ -38,7 +38,7 @@ namespace _17NSJ.Services
 
                 using (var client = new HttpClient(handler))
                 {
-                    client.DefaultRequestHeaders.Add("Authorization", "Bearer " + (Application.Current as App).Token);
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", (Application.Current as App).Token);
                     response = await client.GetAsync(uri);
                 }
 
