@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace _17NSJ.Models
 {
-    public class NewsCategoryModel
+    public class NewsInfoCategoryModel
     {
         /// <summary>
         /// カテゴリーを取得または設定します。

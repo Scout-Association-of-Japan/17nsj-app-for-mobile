@@ -81,5 +81,12 @@ namespace _17NSJ.Models
         /// <value>ラベルカラー</value>
         [JsonProperty("Color", NullValueHandling = NullValueHandling.Ignore)]
         public string Color { get; set; }
+
+        /// <summary>
+        /// カテゴリー名を取得または設定します。
+        /// </summary>
+        /// <value>カテゴリー名</value>
+        [JsonProperty("CategoryName", NullValueHandling = NullValueHandling.Ignore)]
+        public string CategoryName { get; set; }
     }
 }

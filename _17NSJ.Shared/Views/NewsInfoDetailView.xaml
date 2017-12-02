@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="_17NSJ.Views.NewsInfoDetailView">
+	<ScrollView>
+        <StackLayout>
+            <Grid BackgroundColor="Blue" HeightRequest="25">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5" />
+                </Grid.ColumnDefinitions>
+                <Label x:Name="serialId" Grid.Column="1" VerticalOptions="Center" FontSize="10" TextColor="White" />
+                <Label x:Name="createdAt" Grid.Column="2" VerticalOptions="Center" FontSize="10" HorizontalOptions="Center" TextColor="White" />
+                <Label x:Name="author" Grid.Column="3" VerticalOptions="Center" FontSize="10" HorizontalOptions="End" TextColor="White" />
+            </Grid>
+            <Label x:Name="title" HorizontalOptions="Center" FontSize="30" Margin="30,0" />
+            <Image x:Name="media" />
+            <Label x:Name="outline" HorizontalOptions="Center" FontSize="15" Margin="30,0" />
+            <Label x:Name="category" HorizontalOptions="Center" FontSize="15" Margin="30,0" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -29,6 +29,7 @@ namespace _17NSJ.Views
             {
                 var category = categories.Where(e=>  news.Category == e.Category).FirstOrDefault();
                 news.Color = category.Color;
+                news.CategoryName = category.CategoryName;
 
                 if(string.IsNullOrEmpty(news.ThumbnailURL))
                 {
@@ -52,11 +53,11 @@ namespace _17NSJ.Views
 
         private void ItemSelected(object sender, ItemTappedEventArgs e)
         {
-            var item = e.Item as SocialModel;
+            var news = e.Item as NewsInfoModel;
 
-            if (item != null)
+            if (news != null)
             {
-                Device.OpenUri(new Uri(item.Url));
+                Navigation.PushAsync(new NewsInfoDetailView(news));
             }
         }
     }

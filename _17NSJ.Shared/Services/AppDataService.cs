@@ -25,7 +25,7 @@ namespace _17NSJ.Services
             return JsonConvert.DeserializeObject<MobileAppConfigModel>(responseText);
         }
 
-        public async Task<ObservableCollection<NewsCategoryModel>> GetNewsCategoriesAsync()
+        public async Task<ObservableCollection<NewsInfoCategoryModel>> GetNewsCategoriesAsync()
         {
             if (string.IsNullOrEmpty((Application.Current as App).Token))
             {
@@ -34,7 +34,7 @@ namespace _17NSJ.Services
 
             HttpResponseMessage response = await GetAsyncBase(new Uri($"{SecretConstants.ApiUrl}news_categories"));
             var responseText = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<ObservableCollection<NewsCategoryModel>>(responseText);
+            return JsonConvert.DeserializeObject<ObservableCollection<NewsInfoCategoryModel>>(responseText);
         }
 
         public async Task<ObservableCollection<NewsInfoModel>> GetNewsAsync()
