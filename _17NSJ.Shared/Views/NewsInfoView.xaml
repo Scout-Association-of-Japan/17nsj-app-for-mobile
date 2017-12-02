@@ -5,7 +5,7 @@
     x:Class="_17NSJ.Views.NewsInfoView">
     <Grid>
         <StackLayout>
-            <ListView x:Name="newsInfoList" ItemTapped="ItemSelected" RowHeight="70">
+            <ListView x:Name="newsInfoList" ItemTapped="ItemSelected" RowHeight="70" IsPullToRefreshEnabled="true" Refreshing="ListPulled">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell Height="200">

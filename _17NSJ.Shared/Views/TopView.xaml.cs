@@ -11,7 +11,8 @@ namespace _17NSJ.Views
         public TopView()
         {
             InitializeComponent();
-            CheckUpdateAsync();
+            //TODO Service側直し
+            // CheckUpdateAsync();
 
             NavigationPage.SetHasNavigationBar(this, false);
         }

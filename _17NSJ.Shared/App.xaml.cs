@@ -10,18 +10,12 @@ namespace _17NSJ
         public App()
         {
             InitializeComponent();
-            InitialzeTokenAsync();
 
             MainPage = new NavigationPage(new TopView())
             {
                 BarBackgroundColor = new Color(0.00, 0.44, 0.74),
                 BarTextColor = Color.White
             };
-        }
-
-        public async void InitialzeTokenAsync()
-        {
-            Token = await new AuthService().GetToken();
         }
 
         //使うときは(Application.Current as App).Token

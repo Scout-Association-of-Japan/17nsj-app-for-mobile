@@ -30,8 +30,6 @@ namespace _17NSJ.Views
             }
         }
 
-
-
         private void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             // 選択された画面を抽出      

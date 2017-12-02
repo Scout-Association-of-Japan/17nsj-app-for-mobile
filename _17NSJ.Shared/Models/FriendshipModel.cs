@@ -1,7 +1,7 @@
 ﻿using System;
 namespace _17NSJ.Models
 {
-    public class Social:NotificationObject
+    public class FriendshipModel : NotificationObject
     {
         private string imagePath;
         public string ImagePath
@@ -34,6 +34,24 @@ namespace _17NSJ.Models
                 if (this.title != value)
                 {
                     this.title = value;
+                    this.RaisePropertyChanged();
+                }
+            }
+        }
+
+        private string hashTag;
+        public string HashTag
+        {
+            get
+            {
+                return this.hashTag;
+            }
+
+            set
+            {
+                if (this.hashTag != value)
+                {
+                    this.hashTag = value;
                     this.RaisePropertyChanged();
                 }
             }

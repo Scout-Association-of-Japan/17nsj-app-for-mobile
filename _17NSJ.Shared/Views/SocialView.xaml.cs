@@ -18,7 +18,7 @@ namespace _17NSJ.Views
 
         void ItemSelected(object sender, ItemTappedEventArgs e)
         {
-            var item = e.Item as Social;
+            var item = e.Item as SocialModel;
 
             if(item != null)
             {

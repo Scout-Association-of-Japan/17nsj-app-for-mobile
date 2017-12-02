@@ -135,7 +135,7 @@
     </Compile>
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Models\NotificationObject.cs" />
-    <Compile Include="Models\Social.cs" />
+    <Compile Include="Models\SocialModel.cs" />
     <Compile Include="Views\DocumentView.xaml.cs">
       <DependentUpon>DocumentView.xaml</DependentUpon>
     </Compile>
@@ -190,7 +190,7 @@
     <Compile Include="Controls\NonSeparatorTableView.cs" />
     <Compile Include="Controls\CollapseButton.cs" />
     <Compile Include="Constants\SocialList.cs" />
-    <Compile Include="Models\Friendship.cs" />
+    <Compile Include="Models\FriendshipModel.cs" />
     <Compile Include="Constants\FriendshipList.cs" />
     <Compile Include="Views\Agreement.xaml.cs">
       <DependentUpon>Agreement.xaml</DependentUpon>
@@ -204,16 +204,17 @@
     <Compile Include="Views\AppInfo.xaml.cs">
       <DependentUpon>AppInfo.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\NewsInfo.cs" />
-    <Compile Include="Models\MasterItem.cs" />
+    <Compile Include="Models\MasterItemModel.cs" />
     <Compile Include="Constants\MasterMenu.cs" />
     <Compile Include="Interfaces\IAssemblyService.cs" />
     <Compile Include="Constants\SecretConstants.cs" />
     <Compile Include="Services\AuthService.cs" />
     <Compile Include="Models\AuthResultModel.cs" />
     <Compile Include="Services\AppDataService.cs" />
-    <Compile Include="Models\NewsModel.cs" />
+    <Compile Include="Models\NewsInfoModel.cs" />
     <Compile Include="Models\MobileAppConfigModel.cs" />
+    <Compile Include="Models\ActivityModel.cs" />
+    <Compile Include="Models\NewsCategoryModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

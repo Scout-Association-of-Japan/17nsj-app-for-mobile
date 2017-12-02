@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
+using System.Threading.Tasks;
 using _17NSJ.Models;
-
+using _17NSJ.Services;
 using Xamarin.Forms;
 
 namespace _17NSJ.Views
@@ -12,21 +14,45 @@ namespace _17NSJ.Views
         public NewsInfoView()
         {
             InitializeComponent();
-
-            var list = new ObservableCollection<NewsInfo>
-            {
-                new NewsInfo() { Color="#2e8b57", Title="タイトルこんにちはタイトルこんにちはああ", ThumbnailURL="https://pbs.twimg.com/profile_images/898696996814376960/9ObeFpCx_400x400.jpg", Outline="アウトラインアウトラインアウトラインアウトラインアウトラインアウトラインアウトラインアウトラインアウトラインアウトライン"},
-                new NewsInfo() { Color="#00008b", Title="タイトル2", ThumbnailURL="https://pbs.twimg.com/profile_images/898696996814376960/9ObeFpCx_400x400.jpg", Outline="アウトラインアウトラインアウトラインアウトラインアウトラインアウトラインアウトラインアウトラインアウトラインアウトライン"},
-                new NewsInfo() { Color="#ff0000", Title="タイトル3", ThumbnailURL="https://pbs.twimg.com/profile_images/898696996814376960/9ObeFpCx_400x400.jpg", Outline="アウトラインアウトラインアウトラインアウトラインアウトラインアウトラインアウトラインアウトラインアウトラインアウトライン"},
-                new NewsInfo() { Color="#32cd32", Title="タイトル4", ThumbnailURL="https://pbs.twimg.com/profile_images/898696996814376960/9ObeFpCx_400x400.jpg", Outline="アウトラインアウトラインアウトラインアウトラインアウトラインアウトラインアウトラインアウトラインアウトラインアウトライン"}
-            };
-
-            this.newsInfoList.ItemsSource = list;
+            GetNewsAsync();
         }
 
-        void ItemSelected(object sender, ItemTappedEventArgs e)
+        private async void GetNewsAsync()
         {
-            var item = e.Item as Social;
+            this.indicator.IsVisible = true;
+
+            var service = new AppDataService();
+            var categories = await service.GetNewsCategoriesAsync();
+            var newslist = await service.GetNewsAsync();
+
+            foreach(var news in newslist)
+            {
+                var category = categories.Where(e=>  news.Category == e.Category).FirstOrDefault();
+                news.Color = category.Color;
+
+                if(string.IsNullOrEmpty(news.ThumbnailURL))
+                {
+                    news.ThumbnailURL = category.ThumbnailURL;
+                }
+            }
+
+            //TODO リリース時削除
+            await Task.Delay(3000);
+
+            this.newsInfoList.ItemsSource = newslist;
+
+            this.newsInfoList.EndRefresh();
+            this.indicator.IsVisible = false;
+        }
+
+        private void ListPulled(object sender, System.EventArgs e)
+        {
+            GetNewsAsync();
+        }
+
+        private void ItemSelected(object sender, ItemTappedEventArgs e)
+        {
+            var item = e.Item as SocialModel;
 
             if (item != null)
             {

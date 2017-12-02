@@ -16,7 +16,7 @@ namespace _17NSJ.Views
 
         void ItemSelected(object sender, ItemTappedEventArgs e)
         {
-            var item = e.Item as Friendship;
+            var item = e.Item as FriendshipModel;
 
             if(item != null)
             {

@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace _17NSJ.Models
 {
-    public class NewsModel
+    public class NewsInfoModel
     {
         /// <summary>
         /// カテゴリーを取得または設定します。
@@ -74,5 +74,12 @@ namespace _17NSJ.Models
         /// <value>有効フラグ</value>
         [JsonProperty("IsAvailable", NullValueHandling = NullValueHandling.Ignore)]
         public bool IsAvailable { get; set; }
+
+        /// <summary>
+        /// ラベルカラーを取得または設定します。
+        /// </summary>
+        /// <value>ラベルカラー</value>
+        [JsonProperty("Color", NullValueHandling = NullValueHandling.Ignore)]
+        public string Color { get; set; }
     }
 }
