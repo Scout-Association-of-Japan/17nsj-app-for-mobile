@@ -223,6 +223,7 @@
       <DependentUpon>NewsInfoDetailView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Effects\LineBreakLabelEffect.cs" />
+    <Compile Include="Models\ActivityCategoryModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

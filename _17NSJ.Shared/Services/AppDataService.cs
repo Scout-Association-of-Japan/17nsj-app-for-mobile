@@ -15,11 +15,6 @@ namespace _17NSJ.Services
     {
         public async Task<MobileAppConfigModel> GetAppConfigAsync()
         {
-            if (string.IsNullOrEmpty((Application.Current as App).Token))
-            {
-                (Application.Current as App).Token = await new AuthService().GetToken();
-            }
-
             HttpResponseMessage response = await GetAsyncBase(new Uri($"{SecretConstants.ApiUrl}mobile_app_config"));
             var responseText = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<MobileAppConfigModel>(responseText);
@@ -27,11 +22,6 @@ namespace _17NSJ.Services
 
         public async Task<ObservableCollection<NewsInfoCategoryModel>> GetNewsCategoriesAsync()
         {
-            if (string.IsNullOrEmpty((Application.Current as App).Token))
-            {
-                (Application.Current as App).Token = await new AuthService().GetToken();
-            }
-
             HttpResponseMessage response = await GetAsyncBase(new Uri($"{SecretConstants.ApiUrl}news_categories"));
             var responseText = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<ObservableCollection<NewsInfoCategoryModel>>(responseText);
@@ -39,33 +29,33 @@ namespace _17NSJ.Services
 
         public async Task<ObservableCollection<NewsInfoModel>> GetNewsAsync()
         {
-            if (string.IsNullOrEmpty((Application.Current as App).Token))
-            {
-                (Application.Current as App).Token = await new AuthService().GetToken();
-            }
-
             HttpResponseMessage response = await GetAsyncBase(new Uri($"{SecretConstants.ApiUrl}news"));
             var responseText = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<ObservableCollection<NewsInfoModel>>(responseText);
         }
 
+        public async Task<ObservableCollection<ActivityCategoryModel>> GetActivityCategoriesAsync()
+        {
+            HttpResponseMessage response = await GetAsyncBase(new Uri($"{SecretConstants.ApiUrl}activity_categories"));
+            var responseText = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<ObservableCollection<ActivityCategoryModel>>(responseText);
+        }
+
         public async Task<ObservableCollection<ActivityModel>> GetActivitiesAsync()
         {
-            if (string.IsNullOrEmpty((Application.Current as App).Token))
-            {
-                (Application.Current as App).Token = await new AuthService().GetToken();
-            }
-
             HttpResponseMessage response = await GetAsyncBase(new Uri($"{SecretConstants.ApiUrl}activities"));
             var responseText = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<ObservableCollection<ActivityModel>>(responseText);
         }
 
 
-
-
         private async Task<HttpResponseMessage> GetAsyncBase(Uri uri)
         {
+            if (string.IsNullOrEmpty((Application.Current as App).Token))
+            {
+                (Application.Current as App).Token = await new AuthService().GetToken();
+            }
+
             try
             {
                 var handler = new HttpClientHandler() { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate };
