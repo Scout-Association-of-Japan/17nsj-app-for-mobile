@@ -2,9 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:cont="clr-namespace:_17NSJ.Controls"
+    xmlns:af="clr-namespace:AiForms.Layouts;assembly=AiForms.Layouts"
     x:Class="_17NSJ.Views.NewsInfoView">
     <Grid>
         <StackLayout>
+            <af:RepeatableWrapLayout x:Name="categoryList" Padding="5" Spacing="5">
+                <af:RepeatableWrapLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Grid HeightRequest="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <BoxView Color="{Binding Color}" />
+                            <Label Text="{Binding CategoryName}" Margin="-5,0,0,0" Grid.Column="1" FontSize="10" />
+                        </Grid>
+                    </DataTemplate>
+                </af:RepeatableWrapLayout.ItemTemplate>
+            </af:RepeatableWrapLayout>
+            
+            <BoxView HeightRequest="1" Color="Gray" />
+
             <ListView x:Name="newsInfoList" ItemTapped="ItemSelected" RowHeight="70" IsPullToRefreshEnabled="true" Refreshing="ListPulled">
                 <ListView.ItemTemplate>
                     <DataTemplate>

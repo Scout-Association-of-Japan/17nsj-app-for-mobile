@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+using _17NSJ.Constants;
 using _17NSJ.Models;
 using _17NSJ.Services;
 using Xamarin.Forms;
@@ -38,8 +39,9 @@ namespace _17NSJ.Views
             }
 
             //TODO リリース時削除
-            await Task.Delay(3000);
+            await Task.Delay(2000);
 
+            this.categoryList.ItemsSource = categories;
             this.newsInfoList.ItemsSource = newslist;
 
             this.newsInfoList.EndRefresh();
