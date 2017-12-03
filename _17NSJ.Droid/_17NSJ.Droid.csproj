@@ -120,6 +120,7 @@
     <Compile Include="Renderer\CustomIndicatorWebViewRenderer.cs" />
     <Compile Include="Renderer\NonSeparatorTableViewRenderer.cs" />
     <Compile Include="Platforms\AssemblyService.cs" />
+    <Compile Include="Effects\LineBreakLabelEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -148,6 +149,7 @@
   <ItemGroup>
     <Folder Include="Renderer\" />
     <Folder Include="Platforms\" />
+    <Folder Include="Effects\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets')" />

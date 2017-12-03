@@ -3,6 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:cont="clr-namespace:_17NSJ.Controls"
     xmlns:af="clr-namespace:AiForms.Layouts;assembly=AiForms.Layouts"
+    xmlns:effect="clr-namespace:_17NSJ.Effects"
     x:Class="_17NSJ.Views.NewsInfoView">
     <Grid>
         <StackLayout>
@@ -32,13 +33,18 @@
                                 <Image Source="{Binding ThumbnailURL}" Margin="10,10" />
                                 <StackLayout>
                                     <Label Text="{Binding Title}" VerticalTextAlignment="Center" FontSize="20" TextColor="Gray" Margin="0,5,0,0" />
-                                    <Label Text="{Binding Outline}" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
+                                    <Label Text="{Binding Outline}" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0">
+                                        <Label.Effects>
+                                            <effect:LineBreakLabelEffect />
+                                        </Label.Effects>
+                                    </Label>
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            
         </StackLayout>
             
         <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" IsVisible="false"/>       

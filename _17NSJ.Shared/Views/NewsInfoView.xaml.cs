@@ -43,7 +43,7 @@ namespace _17NSJ.Views
 
             this.categoryList.ItemsSource = categories;
             this.newsInfoList.ItemsSource = newslist;
-
+            
             this.newsInfoList.EndRefresh();
             this.indicator.IsVisible = false;
         }
