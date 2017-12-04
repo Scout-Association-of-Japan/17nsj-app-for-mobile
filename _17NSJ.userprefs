@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{E38D0FC9-0B24-46A5-B80F-B7D4387CE128}|Default">
   <MonoDevelop.Ide.ItemProperties.__17NSJ.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/NewsInfoView.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/TopView.xaml.cs">
     <Files>
-      <File FileName="_17NSJ.Shared/Views/NewsInfoView.xaml" Line="26" Column="94" />
-      <File FileName="_17NSJ.Shared/Views/NewsInfoView.xaml.cs" Line="18" Column="78" />
+      <File FileName="_17NSJ.Shared/Services/AppDataService.cs" Line="20" Column="66" />
+      <File FileName="_17NSJ.Shared/Views/TopView.xaml.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -15,4 +15,5 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.__17NSJ.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3E7E9631-456A-455B-A438-BDFA7C260741" />
+  <MonoDevelop.Ide.ItemProperties.__17NSJ.UITests PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

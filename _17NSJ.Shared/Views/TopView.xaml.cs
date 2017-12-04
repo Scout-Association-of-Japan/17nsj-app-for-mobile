@@ -11,8 +11,7 @@ namespace _17NSJ.Views
         public TopView()
         {
             InitializeComponent();
-            //TODO Service側直し
-            // CheckUpdateAsync();
+            CheckUpdateAsync();
 
             NavigationPage.SetHasNavigationBar(this, false);
         }
@@ -22,9 +21,22 @@ namespace _17NSJ.Views
             var config = await new AppDataService().GetAppConfigAsync();
             if (config.ForceUpdate)
             {
-                if (config.Version != DependencyService.Get<IAssemblyService>().GetVersionName())
+                if(Device.RuntimePlatform == Device.iOS)
                 {
-                    await DisplayAlert("タイトル", "メッセージ", "OK");
+                    if (config.iOSVersion != DependencyService.Get<IAssemblyService>().GetVersionName())
+                    {
+                        await DisplayAlert("アップデートがあります。", "アプリを最新バージョンにアップデートしてください。", "ストアを開く");
+                        Device.OpenUri(new Uri(config.iOSStoreURL));
+                    }
+                }
+
+                if (Device.RuntimePlatform == Device.Android)
+                {
+                    if (config.DroidVersion != DependencyService.Get<IAssemblyService>().GetVersionName())
+                    {
+                        await DisplayAlert("アップデートがあります。", "アプリを最新バージョンにアップデートしてください。", "ストアを開く");
+                        Device.OpenUri(new Uri(config.DroidStoreURL));
+                    }
                 }
             }
         }
