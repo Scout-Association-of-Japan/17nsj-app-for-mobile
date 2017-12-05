@@ -11,5 +11,10 @@ namespace _17NSJ.Views
         {
             InitializeComponent();
         }
+
+        void calLoaded(object sender, Xamarin.Forms.WebNavigatedEventArgs e)
+        {
+            indicator.IsVisible = false;
+        }
     }
 }
