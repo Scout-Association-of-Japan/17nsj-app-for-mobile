@@ -224,6 +224,7 @@
     </Compile>
     <Compile Include="Effects\LineBreakLabelEffect.cs" />
     <Compile Include="Models\ActivityCategoryModel.cs" />
+    <Compile Include="Models\MovieModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

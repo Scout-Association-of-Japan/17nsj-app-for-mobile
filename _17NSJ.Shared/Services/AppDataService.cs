@@ -48,6 +48,12 @@ namespace _17NSJ.Services
             return JsonConvert.DeserializeObject<ObservableCollection<ActivityModel>>(responseText);
         }
 
+        public async Task<ObservableCollection<MovieModel>> GetMoviesAsync()
+        {
+            HttpResponseMessage response = await GetAsyncBase(new Uri($"{SecretConstants.ApiUrl}movies"));
+            var responseText = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<ObservableCollection<MovieModel>>(responseText);
+        }
 
         private async Task<HttpResponseMessage> GetAsyncBase(Uri uri)
         {
