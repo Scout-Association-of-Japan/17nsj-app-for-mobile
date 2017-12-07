@@ -125,6 +125,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\KeyValueCell.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -225,6 +229,9 @@
     <Compile Include="Effects\LineBreakLabelEffect.cs" />
     <Compile Include="Models\ActivityCategoryModel.cs" />
     <Compile Include="Models\MovieModel.cs" />
+    <Compile Include="Controls\KeyValueCell.xaml.cs">
+      <DependentUpon>KeyValueCell.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

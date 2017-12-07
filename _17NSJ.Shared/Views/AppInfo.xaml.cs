@@ -11,9 +11,12 @@ namespace _17NSJ.Views
         {
             InitializeComponent();
 
-            appName.Text = "アプリ名:" + DependencyService.Get<IAssemblyService>().GetPackageName();
-            appVer.Text = "Version:" +DependencyService.Get<IAssemblyService>().GetVersionName();
-            buildVer.Text = "Build:" +DependencyService.Get<IAssemblyService>().GetBuildName();
+            appName.Key = "アプリ名";
+            appName.Value = DependencyService.Get<IAssemblyService>().GetPackageName();
+            appVer.Key = "Version";
+            appVer.Value = DependencyService.Get<IAssemblyService>().GetVersionName();
+            buildVer.Key = "Build";
+            buildVer.Value = DependencyService.Get<IAssemblyService>().GetBuildName();
         }
     }
 }
