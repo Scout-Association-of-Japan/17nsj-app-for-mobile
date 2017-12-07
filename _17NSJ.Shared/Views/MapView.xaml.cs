@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using _17NSJ.Constants;
 using Xamarin.Forms;
 
 namespace _17NSJ.Views
@@ -10,6 +10,7 @@ namespace _17NSJ.Views
         public MapView()
         {
             InitializeComponent();
+            mapView.Source = SecretConstants.MapUrl;
         }
 
         void mapLoaded(object sender, Xamarin.Forms.WebNavigatedEventArgs e)
