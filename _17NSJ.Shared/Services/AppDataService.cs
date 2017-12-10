@@ -55,6 +55,13 @@ namespace _17NSJ.Services
             return JsonConvert.DeserializeObject<ObservableCollection<MovieModel>>(responseText);
         }
 
+        public async Task<ObservableCollection<NewspaperModel>> GetNewspapersAsync()
+        {
+            HttpResponseMessage response = await GetAsyncBase(new Uri($"{SecretConstants.ApiUrl}newspapers"));
+            var responseText = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<ObservableCollection<NewspaperModel>>(responseText);
+        }
+
         private async Task<HttpResponseMessage> GetAsyncBase(Uri uri)
         {
             if (string.IsNullOrEmpty((Application.Current as App).Token))

@@ -1,10 +1,13 @@
 ﻿<Properties StartupConfiguration="{E38D0FC9-0B24-46A5-B80F-B7D4387CE128}|Default">
   <MonoDevelop.Ide.ItemProperties.__17NSJ.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/AppInfo.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/NewspaperView.xaml">
     <Files>
-      <File FileName="_17NSJ.Shared/Views/SettingView.xaml" Line="9" Column="17" />
-      <File FileName="_17NSJ.Shared/Views/AppInfo.xaml" Line="18" Column="59" />
-      <File FileName="_17NSJ.Shared/Views/AppInfo.xaml.cs" Line="23" Column="1" />
+      <File FileName="_17NSJ.Shared/Views/NewspaperView.xaml.cs" Line="26" Column="13" />
+      <File FileName="_17NSJ.Shared/Views/NewspaperView.xaml" Line="15" Column="85" />
+      <File FileName="_17NSJ.Shared/Models/NewspaperModel.cs" Line="41" Column="34" />
+      <File FileName="_17NSJ.Shared/Services/AppDataService.cs" Line="58" Column="63" />
+      <File FileName="_17NSJ.Shared/Views/NewsInfoView.xaml.cs" Line="41" Column="27" />
+      <File FileName="_17NSJ.iOS/Main.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

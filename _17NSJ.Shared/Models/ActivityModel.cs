@@ -101,7 +101,7 @@ namespace _17NSJ.Models
         /// </summary>
         /// <value>The created by.</value>
         [JsonProperty("CreatedBy", NullValueHandling = NullValueHandling.Ignore)]
-        public DateTime CreatedBy { get; set; }
+        public string CreatedBy { get; set; }
 
         /// <summary>
         /// Gets or sets the updated at.
@@ -115,7 +115,7 @@ namespace _17NSJ.Models
         /// </summary>
         /// <value>The updated by.</value>
         [JsonProperty("UpdatedBy", NullValueHandling = NullValueHandling.Ignore)]
-        public DateTime UpdatedBy { get; set; }
+        public string UpdatedBy { get; set; }
 
         /// <summary>
         /// ラベルカラーを取得または設定します。

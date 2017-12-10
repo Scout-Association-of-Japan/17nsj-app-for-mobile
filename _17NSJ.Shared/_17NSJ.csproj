@@ -232,6 +232,7 @@
     <Compile Include="Controls\KeyValueCell.xaml.cs">
       <DependentUpon>KeyValueCell.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\NewspaperModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

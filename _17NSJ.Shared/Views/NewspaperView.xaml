@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="_17NSJ.Views.NewspaperView">
-	<Label Text="news paper" />
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:cont="clr-namespace:_17NSJ.Controls"
+    x:Class="_17NSJ.Views.NewspaperView">
+	<Grid>
+        <StackLayout>
+            <ListView x:Name="newspaperList" SeparatorColor="Transparent" ItemTapped="ItemSelected" HasUnevenRows="true" IsPullToRefreshEnabled="true" Refreshing="ListPulled">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <StackLayout BackgroundColor="#CBCBCB">
+                                    <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="CenterAndExpand" Margin="0,5,0,-5" />
+                                    <Label Text="{Binding CreatedAt, StringFormat='{0:yyyy/MM/dd HH:mm}'}" FontSize="10" HorizontalOptions="EndAndExpand" />
+                                </StackLayout>
+                                <Image Source="{Binding ThumbnailURL}" Margin="10,10" />
+                                <BoxView HeightRequest="20" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>            
+        </StackLayout>
+        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" IsVisible="false"/>       
+    </Grid>
 </ContentPage>
