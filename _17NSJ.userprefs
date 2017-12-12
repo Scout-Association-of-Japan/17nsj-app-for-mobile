@@ -1,20 +1,12 @@
 ﻿<Properties StartupConfiguration="{E38D0FC9-0B24-46A5-B80F-B7D4387CE128}|Default">
   <MonoDevelop.Ide.ItemProperties.__17NSJ.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/ActivityView.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.iOS/Main.cs">
     <Files>
-      <File FileName="_17NSJ.Shared/Views/NewspaperView.xaml.cs" Line="26" Column="13" />
-      <File FileName="_17NSJ.Shared/Views/NewspaperView.xaml" Line="15" Column="105" />
-      <File FileName="_17NSJ.Shared/Views/ActivityView.xaml" Line="37" Column="108" />
-      <File FileName="_17NSJ.Shared/Views/ActivityView.xaml.cs" Line="24" Column="13" />
-      <File FileName="_17NSJ.Shared/Models/ActivityModel.cs" Line="6" Column="31" />
-      <File FileName="_17NSJ.Shared/Views/NewsInfoDetailView.xaml" Line="24" Column="18" />
-      <File FileName="_17NSJ.Shared/Views/NewsInfoView.xaml" Line="25" Column="33" />
-      <File FileName="_17NSJ.Shared/Views/NewsInfoView.xaml.cs" Line="42" Column="54" />
-      <File FileName="_17NSJ.Shared/Views/ActivityDetailView.xaml" Line="11" Column="85" />
-      <File FileName="_17NSJ.Shared/Views/ActivityDetailView.xaml.cs" Line="30" Column="1" />
-      <File FileName="_17NSJ.Shared/Views/NewsInfoDetailView.xaml.cs" Line="1" Column="1" />
-      <File FileName="_17NSJ.Shared/Views/MovieView.xaml.cs" Line="25" Column="53" />
-      <File FileName="_17NSJ.Shared/Services/AppDataService.cs" Line="96" Column="17" />
+      <File FileName="_17NSJ.Shared/Views/ActivityView.xaml.cs" Line="49" Column="50" />
+      <File FileName="_17NSJ.Shared/Views/ActivityView.xaml" Line="38" Column="151" />
+      <File FileName="_17NSJ.Shared/Models/ActivityModel.cs" Line="137" Column="39" />
+      <File FileName="_17NSJ.Shared/Views/OutlineView.xaml" Line="7" Column="54" />
+      <File FileName="_17NSJ.iOS/Main.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

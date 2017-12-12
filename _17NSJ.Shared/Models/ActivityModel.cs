@@ -123,5 +123,17 @@ namespace _17NSJ.Models
         /// <value>ラベルカラー</value>
         [JsonProperty("Color", NullValueHandling = NullValueHandling.Ignore)]
         public string Color { get; set; }
+
+        /// <summary>
+        /// Gets or sets the color of the waiting info background.
+        /// </summary>
+        /// <value>The color of the waiting info background.</value>
+        public string WaitingInfoBackgroundColor { get; set; }
+
+        /// <summary>
+        /// Gets or sets the state of the waiting info.
+        /// </summary>
+        /// <value>The state of the waiting info.</value>
+        public string WaitingInfoState { get; set; }
     }
 }
