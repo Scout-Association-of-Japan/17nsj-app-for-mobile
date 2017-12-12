@@ -21,6 +21,8 @@ namespace _17NSJ.Views
             this.waitingTime.Text = act.WaitingTime;
             this.updatedAt.Text = act.UpdatedAt.ToString("yyyy/MM/dd HH:mm");
             this.outline.Text = act.Outline;
+            this.category.Text = "区分";
+            this.date.Text = "日時";
             this.location.Source = @"https://www.google.co.jp/maps/@37.4387465,137.3275352,18.65z";
         }
     }
