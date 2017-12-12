@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="_17NSJ.Views.ActivityDetailView">
+	<ScrollView>
+        <StackLayout>
+            <Grid BackgroundColor="Blue" HeightRequest="25">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5" />
+                </Grid.ColumnDefinitions>
+                <Label x:Name="serialId" Grid.Column="1" VerticalOptions="Center" FontSize="10" TextColor="White" />
+                <Label x:Name="createdAt" Grid.Column="2" VerticalOptions="Center" FontSize="10" HorizontalOptions="Center" TextColor="White" />
+                <Label x:Name="author" Grid.Column="3" VerticalOptions="Center" FontSize="10" HorizontalOptions="End" TextColor="White" />
+            </Grid>
+            <Image x:Name="image" />
+            <Label x:Name="title" HorizontalOptions="Center" FontSize="30" Margin="30,0" BackgroundColor="Gray"/>
+            <Grid x:Name="waitingInfo" BackgroundColor="#F7931E" Padding="10,2">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="待ち時間：" TextColor="White" HorizontalOptions="Center" FontSize="15" />
+                        <Label x:Name="waitingTime" TextColor="White" HorizontalOptions="Center" FontSize="15" />
+                        <Label Text="分" TextColor="White" HorizontalOptions="Center" FontSize="15" />
+                    </StackLayout>
+                    <Label x:Name="updatedAt" TextColor="White" HorizontalOptions="Center" FontSize="10" Margin="0,-7,0,0"/>
+                </StackLayout>
+            </Grid>
+            <Label x:Name="outline" HorizontalOptions="Center" FontSize="15" Margin="30,0" />
+            <Label x:Name="category" HorizontalOptions="Center" FontSize="15" Margin="30,0" />
+            <Label x:Name="date" HorizontalOptions="Center" FontSize="15" Margin="30,0" />
+            <WebView x:Name="location" HeightRequest="200"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

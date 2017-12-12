@@ -44,7 +44,7 @@ namespace _17NSJ.Views
 
             if (act != null)
             {
-                
+                Navigation.PushAsync(new ActivityDetailView(act));
             }
         }
     }

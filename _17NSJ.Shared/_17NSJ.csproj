@@ -129,6 +129,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\ActivityDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -233,6 +237,9 @@
       <DependentUpon>KeyValueCell.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\NewspaperModel.cs" />
+    <Compile Include="Views\ActivityDetailView.xaml.cs">
+      <DependentUpon>ActivityDetailView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
