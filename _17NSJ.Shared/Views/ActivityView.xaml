@@ -1,4 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="_17NSJ.Views.ActivityView">
-	<Label Text="activity" />
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:cont="clr-namespace:_17NSJ.Controls"
+    x:Class="_17NSJ.Views.ActivityView">
+	<Grid>
+        <StackLayout>
+            <ListView x:Name="activityList" ItemTapped="ItemSelected" HasUnevenRows="true" IsPullToRefreshEnabled="true" Refreshing="ListPulled">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <BoxView WidthRequest="10" Color="Red"/>
+                                <Image Source="{Binding ThumbnailURL}" Margin="10,10" />
+                                <StackLayout>
+                                    <Label Text="{Binding Title}" VerticalTextAlignment="Center" FontSize="20" TextColor="Gray" Margin="0,5,0,0" />
+                                    <Grid IsVisible="{Binding CanWaitable}" BackgroundColor="#F7931E" Padding="10,2">
+                                        <StackLayout>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="待ち時間：" TextColor="White" HorizontalOptions="Center" FontSize="15" />
+                                                <Label Text="{Binding WaitingTime}" TextColor="White" HorizontalOptions="Center" FontSize="15" />
+                                                <Label Text="分" TextColor="White" HorizontalOptions="Center" FontSize="15" />
+                                            </StackLayout>
+                                            <Label Text="{Binding UpdatedAt, StringFormat='{0:yyyy/MM/dd HH:mm}'}" TextColor="White" HorizontalOptions="Center" FontSize="10" Margin="0,-7,0,0"/>
+                                        </StackLayout>
+                                    </Grid>
+                                    <Label Text="区分" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
+                                    <Label Text="日時" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
+                                    <Label Text="場所" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" IsVisible="false"/>       
+    </Grid>
 </ContentPage>
