@@ -34,7 +34,7 @@
                                     <Label Text="{Binding Title}" VerticalTextAlignment="Center" FontSize="20" TextColor="Gray" Margin="0,5,0,0" />
                                     <Grid IsVisible="{Binding CanWaitable}" BackgroundColor="#F7931E" Padding="10,2">
                                         <StackLayout>
-                                            <StackLayout Orientation="Horizontal">
+                                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                                                 <Label Text="待ち時間：" TextColor="White" HorizontalOptions="Center" FontSize="15" />
                                                 <Label Text="{Binding WaitingTime}" TextColor="White" HorizontalOptions="Center" FontSize="15" />
                                                 <Label Text="分" TextColor="White" HorizontalOptions="Center" FontSize="15" />
