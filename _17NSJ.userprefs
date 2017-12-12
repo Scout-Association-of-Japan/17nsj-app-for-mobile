@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{E38D0FC9-0B24-46A5-B80F-B7D4387CE128}|Default">
   <MonoDevelop.Ide.ItemProperties.__17NSJ.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/NewsInfoView.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/ActivityView.xaml.cs">
     <Files>
       <File FileName="_17NSJ.Shared/Views/NewspaperView.xaml.cs" Line="26" Column="13" />
-      <File FileName="_17NSJ.Shared/Views/NewspaperView.xaml" Line="4" Column="47" />
-      <File FileName="_17NSJ.Shared/Views/ActivityView.xaml" Line="19" Column="138" />
-      <File FileName="_17NSJ.Shared/Views/ActivityView.xaml.cs" Line="31" Column="1" />
+      <File FileName="_17NSJ.Shared/Views/NewspaperView.xaml" Line="15" Column="105" />
+      <File FileName="_17NSJ.Shared/Views/ActivityView.xaml" Line="4" Column="70" />
+      <File FileName="_17NSJ.Shared/Views/ActivityView.xaml.cs" Line="23" Column="27" />
       <File FileName="_17NSJ.Shared/Models/ActivityModel.cs" Line="6" Column="31" />
       <File FileName="_17NSJ.Shared/Views/NewsInfoDetailView.xaml" Line="26" Column="1" />
-      <File FileName="_17NSJ.Shared/Views/NewsInfoView.xaml" Line="53" Column="1" />
+      <File FileName="_17NSJ.Shared/Views/NewsInfoView.xaml" Line="5" Column="70" />
+      <File FileName="_17NSJ.Shared/Views/NewsInfoView.xaml.cs" Line="44" Column="55" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

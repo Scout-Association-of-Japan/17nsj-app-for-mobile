@@ -20,11 +20,13 @@ namespace _17NSJ.Views
             this.indicator.IsVisible = true;
 
             var service = new AppDataService();
+            var categories = await service.GetActivityCategoriesAsync();
             var actList = await service.GetActivitiesAsync();
 
             //TODO リリース時削除
             await Task.Delay(2000);
 
+            this.categoryList.ItemsSource = categories;
             this.activityList.ItemsSource = actList;
 
             this.activityList.EndRefresh();
