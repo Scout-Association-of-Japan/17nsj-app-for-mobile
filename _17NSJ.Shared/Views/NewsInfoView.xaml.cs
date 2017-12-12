@@ -38,12 +38,8 @@ namespace _17NSJ.Views
                 }
             }
 
-            //TODO リリース時削除
-            await Task.Delay(2000);
-
             this.categoryList.ItemsSource = categories;
-            this.newsInfoList.ItemsSource = newslist;
-            
+            this.newsInfoList.ItemsSource = newslist;          
             this.newsInfoList.EndRefresh();
             this.indicator.IsVisible = false;
         }

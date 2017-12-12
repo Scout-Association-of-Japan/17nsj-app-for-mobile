@@ -23,12 +23,8 @@ namespace _17NSJ.Views
             var categories = await service.GetActivityCategoriesAsync();
             var actList = await service.GetActivitiesAsync();
 
-            //TODO リリース時削除
-            await Task.Delay(2000);
-
             this.categoryList.ItemsSource = categories;
             this.activityList.ItemsSource = actList;
-
             this.activityList.EndRefresh();
             this.indicator.IsVisible = false;
         }

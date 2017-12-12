@@ -22,11 +22,7 @@ namespace _17NSJ.Views
             var service = new AppDataService();
             var moviesList = await service.GetMoviesAsync();
 
-            //TODO リリース時削除
-            await Task.Delay(2000);
-
             this.movieList.ItemsSource = moviesList;
-
             this.movieList.EndRefresh();
             this.indicator.IsVisible = false;
         }
