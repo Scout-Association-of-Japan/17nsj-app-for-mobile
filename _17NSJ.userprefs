@@ -1,12 +1,11 @@
 ﻿<Properties StartupConfiguration="{E38D0FC9-0B24-46A5-B80F-B7D4387CE128}|Default">
   <MonoDevelop.Ide.ItemProperties.__17NSJ.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.iOS/Main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/ActivityDetailView.xaml.cs">
     <Files>
-      <File FileName="_17NSJ.Shared/Views/ActivityView.xaml.cs" Line="49" Column="50" />
-      <File FileName="_17NSJ.Shared/Views/ActivityView.xaml" Line="38" Column="151" />
-      <File FileName="_17NSJ.Shared/Models/ActivityModel.cs" Line="137" Column="39" />
-      <File FileName="_17NSJ.Shared/Views/OutlineView.xaml" Line="7" Column="54" />
-      <File FileName="_17NSJ.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="_17NSJ.Shared/Views/ActivityView.xaml" Line="56" Column="1" />
+      <File FileName="_17NSJ.Shared/Views/ActivityDetailView.xaml" Line="11" Column="27" />
+      <File FileName="_17NSJ.Shared/Views/ActivityDetailView.xaml.cs" Line="15" Column="58" />
+      <File FileName="_17NSJ.Shared/Views/ActivityView.xaml.cs" Line="50" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -5,20 +5,21 @@
 	<ScrollView>
         <StackLayout>
             <Image x:Name="image" Margin="0,10,0,0" />
-            <Label x:Name="title" HorizontalOptions="Center" FontSize="30" Margin="30,0" BackgroundColor="Gray"/>
+            <Grid BackgroundColor="#CBCBCB">
+                <Label x:Name="title" HorizontalOptions="Center" FontSize="30" Margin="30,0" />
+            </Grid>
             <Grid x:Name="waitingInfo" BackgroundColor="#F7931E" Padding="10,2">
                 <StackLayout>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                        <Label Text="待ち時間：" TextColor="White" HorizontalOptions="Center" FontSize="15" />
-                        <Label x:Name="waitingTime" TextColor="White" HorizontalOptions="Center" FontSize="15" />
-                        <Label Text="分" TextColor="White" HorizontalOptions="Center" FontSize="15" />
+                        <Label x:Name="waitingInfoState" TextColor="White" HorizontalOptions="Center" FontSize="15" />
                     </StackLayout>
                     <Label x:Name="updatedAt" TextColor="White" HorizontalOptions="Center" FontSize="10" Margin="0,-7,0,0"/>
                 </StackLayout>
             </Grid>
-            <Label x:Name="outline" HorizontalOptions="Center" FontSize="15" Margin="30,0" />
-            <Label x:Name="category" HorizontalOptions="Center" FontSize="15" Margin="30,0" />
-            <Label x:Name="date" HorizontalOptions="Center" FontSize="15" Margin="30,0" />
+            <Label x:Name="outline" FontSize="15" Margin="10,0" />
+            <Label x:Name="category" FontSize="15" Margin="10,20,10,0" />
+            <Label x:Name="date" FontSize="15" Margin="10,0" />            
+            <Label Text="MAP" HorizontalOptions="CenterAndExpand" FontSize="15" Margin="0,20,0,0" />
             <WebView x:Name="location" HeightRequest="200"/>
         </StackLayout>
     </ScrollView>

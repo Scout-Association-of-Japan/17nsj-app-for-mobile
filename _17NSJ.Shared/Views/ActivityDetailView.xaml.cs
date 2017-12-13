@@ -12,13 +12,22 @@ namespace _17NSJ.Views
             InitializeComponent();
             this.image.Source = act.MediaURL;
             this.title.Text = act.Title;
+            this.waitingInfo.IsVisible = act.CanWaitable;
 
-            if (!act.CanWaitable)
+            //待機可能であり、クローズしていなければ
+            if (act.CanWaitable && !act.IsClosed)
             {
-                this.waitingInfo.IsVisible = false;
+                waitingInfo.BackgroundColor = Color.Orange;
+                waitingInfoState.Text = $"待ち時間：{act.WaitingTime}分";
             }
 
-            this.waitingTime.Text = act.WaitingTime;
+            //待機可能であり、クローズしているとき
+            else if (act.CanWaitable && act.IsClosed)
+            {
+                waitingInfo.BackgroundColor = Color.LightGray;
+                waitingInfoState.Text = $"クローズ";
+            }
+
             this.updatedAt.Text = act.UpdatedAt.ToString("yyyy/MM/dd HH:mm");
             this.outline.Text = act.Outline;
             this.category.Text = "区分";
