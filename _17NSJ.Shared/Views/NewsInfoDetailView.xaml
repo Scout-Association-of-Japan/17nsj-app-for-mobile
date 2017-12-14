@@ -13,13 +13,14 @@
                     <ColumnDefinition Width="5" />
                 </Grid.ColumnDefinitions>
                 <Label x:Name="serialId" Grid.Column="1" VerticalOptions="Center" FontSize="10" TextColor="White" />
-                <Label x:Name="createdAt" Grid.Column="2" VerticalOptions="Center" FontSize="10" HorizontalOptions="Center" TextColor="White" />
                 <Label x:Name="author" Grid.Column="3" VerticalOptions="Center" FontSize="10" HorizontalOptions="End" TextColor="White" />
             </Grid>
             <Label x:Name="title" HorizontalOptions="Center" FontSize="30" Margin="30,0" />
             <Image x:Name="media" />
             <Label x:Name="outline" HorizontalOptions="Center" FontSize="15" Margin="30,0" />
-            <Label x:Name="category" HorizontalOptions="Center" FontSize="15" Margin="30,0" />
+            <Label x:Name="category" HorizontalOptions="End" FontSize="10" Margin="30,-2" />
+            <Label x:Name="createdAt" HorizontalOptions="End" FontSize="10" Margin="30,-2" />
+            <Label x:Name="updatedAt" HorizontalOptions="End" FontSize="10" Margin="30,-2" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

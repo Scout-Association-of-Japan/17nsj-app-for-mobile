@@ -11,7 +11,8 @@ namespace _17NSJ.Views
         {
             InitializeComponent();
             this.serialId.Text = news.Category + "-" + news.Id;
-            this.createdAt.Text = news.CreatedAt.ToLocalTime().ToString("yyyy/MM/dd HH:mm");
+            this.createdAt.Text = "配信日："+news.CreatedAt.ToLocalTime().ToString("yyyy/MM/dd HH:mm");
+            this.updatedAt.Text = "最終更新日："+news.UpdatedAt.ToLocalTime().ToString("yyyy/MM/dd HH:mm");
             this.author.Text = "取材：" + news.Author;
             this.title.Text = news.Title;
             this.media.Source = news.MediaURL;

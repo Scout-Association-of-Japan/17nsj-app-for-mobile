@@ -1,11 +1,15 @@
 ﻿<Properties StartupConfiguration="{E38D0FC9-0B24-46A5-B80F-B7D4387CE128}|Default">
   <MonoDevelop.Ide.ItemProperties.__17NSJ.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/ActivityDetailView.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/NewsInfoDetailView.xaml">
     <Files>
       <File FileName="_17NSJ.Shared/Views/ActivityView.xaml" Line="56" Column="1" />
-      <File FileName="_17NSJ.Shared/Views/ActivityDetailView.xaml" Line="11" Column="27" />
-      <File FileName="_17NSJ.Shared/Views/ActivityDetailView.xaml.cs" Line="15" Column="58" />
-      <File FileName="_17NSJ.Shared/Views/ActivityView.xaml.cs" Line="50" Column="18" />
+      <File FileName="_17NSJ.Shared/Views/ActivityDetailView.xaml" Line="27" Column="1" />
+      <File FileName="_17NSJ.Shared/Views/ActivityDetailView.xaml.cs" Line="30" Column="13" />
+      <File FileName="_17NSJ.Shared/Views/ActivityView.xaml.cs" Line="38" Column="36" />
+      <File FileName="_17NSJ.Shared/Views/NewsInfoView.xaml" Line="53" Column="1" />
+      <File FileName="_17NSJ.Shared/Views/NewsInfoDetailView.xaml" Line="23" Column="90" />
+      <File FileName="_17NSJ.Shared/Views/NewsInfoDetailView.xaml.cs" Line="14" Column="40" />
+      <File FileName="_17NSJ.Shared/Models/NewsInfoModel.cs" Line="74" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -13,6 +17,7 @@
     <BreakpointStore>
       <Breakpoint file="/Users/junpei/Documents/GitHub/17nsj/17nsj-mobile-app/_17NSJ.Shared/Views/SocialView.xaml" relfile="_17NSJ.Shared/Views/SocialView.xaml" line="16" column="1" />
       <Breakpoint file="/Users/junpei/Documents/GitHub/17nsj/17nsj-mobile-app/_17NSJ.Shared/Views/ActivityView.xaml" relfile="_17NSJ.Shared/Views/ActivityView.xaml" line="21" column="1" />
+      <Breakpoint file="/Users/junpei/Documents/GitHub/17nsj/17nsj-mobile-app/_17NSJ.Shared/Views/ActivityDetailView.xaml" relfile="_17NSJ.Shared/Views/ActivityDetailView.xaml" line="7" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -69,6 +69,13 @@ namespace _17NSJ.Models
         public DateTime CreatedAt { get; set; }
 
         /// <summary>
+        /// 最終更新日時を取得または設定します。
+        /// </summary>
+        /// <value>最終更新日時</value>
+        [JsonProperty("UpdatedAt", NullValueHandling = NullValueHandling.Ignore)]
+        public DateTime UpdatedAt { get; set; }
+
+        /// <summary>
         /// 有効フラグを取得または設定します。
         /// </summary>
         /// <value>有効フラグ</value>
