@@ -2,5 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="_17NSJ.Views.Policy">
-    <Label Text="プライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシー" />	
+    <StackLayout>
+        <Label Text="プライバシーポリシー" HorizontalOptions="CenterAndExpand" FontSize="25" Margin="0,10" />
+        <Label Text="プライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシー" Margin="10,0" />   
+    </StackLayout>
 </ContentPage>
