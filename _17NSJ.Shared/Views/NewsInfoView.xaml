@@ -10,6 +10,7 @@
     </ContentPage.ToolbarItems>
     <Grid>
         <StackLayout>
+            <SearchBar Placeholder="Search" HeightRequest="45" />
             <af:RepeatableWrapLayout x:Name="categoryList" Padding="5" Spacing="5">
                 <af:RepeatableWrapLayout.ItemTemplate>
                     <DataTemplate>
