@@ -2,5 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="_17NSJ.Views.Agreement">
-    <Label Text="利用規約利用規約利用規約利用規約利用規約利用規約利用規約利用規約利用規約利用規約利用規約利用規約" />	
+    <StackLayout>
+        <Label Text="利用規約" HorizontalOptions="CenterAndExpand" FontSize="30" Margin="0,10" />
+        <Label Text="利用規約利用規約利用規約利用規約利用規約利用規約利用規約利用規約利用規約利用規約利用規約利用規約" Margin="10,0" />   
+    </StackLayout>
 </ContentPage>
