@@ -4,6 +4,9 @@
     xmlns:af="clr-namespace:AiForms.Layouts;assembly=AiForms.Layouts"
     xmlns:cont="clr-namespace:_17NSJ.Controls"
     x:Class="_17NSJ.Views.ActivityView">
+    <ContentPage.ToolbarItems>
+      <ToolbarItem Icon="filter.png" />
+    </ContentPage.ToolbarItems>
 	<Grid>
         <StackLayout>
             <af:RepeatableWrapLayout x:Name="categoryList" Padding="5" Spacing="5">

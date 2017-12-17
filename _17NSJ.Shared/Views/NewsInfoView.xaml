@@ -5,6 +5,9 @@
     xmlns:af="clr-namespace:AiForms.Layouts;assembly=AiForms.Layouts"
     xmlns:effect="clr-namespace:_17NSJ.Effects"
     x:Class="_17NSJ.Views.NewsInfoView">
+    <ContentPage.ToolbarItems>
+      <ToolbarItem Icon="filter.png" />
+    </ContentPage.ToolbarItems>
     <Grid>
         <StackLayout>
             <af:RepeatableWrapLayout x:Name="categoryList" Padding="5" Spacing="5">
