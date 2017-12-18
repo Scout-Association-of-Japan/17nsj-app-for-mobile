@@ -6,7 +6,7 @@
     xmlns:effect="clr-namespace:_17NSJ.Effects"
     x:Class="_17NSJ.Views.NewsInfoView">
     <ContentPage.ToolbarItems>
-      <ToolbarItem Icon="filter.png" />
+      <!--<ToolbarItem Icon="filter.png" />-->
     </ContentPage.ToolbarItems>
     <Grid>
         <StackLayout>

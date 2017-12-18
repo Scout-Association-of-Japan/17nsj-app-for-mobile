@@ -5,7 +5,7 @@
     xmlns:cont="clr-namespace:_17NSJ.Controls"
     x:Class="_17NSJ.Views.ActivityView">
     <ContentPage.ToolbarItems>
-      <ToolbarItem Icon="filter.png" />
+      <!--<ToolbarItem Icon="filter.png" />-->
     </ContentPage.ToolbarItems>
 	<Grid>
         <StackLayout>
