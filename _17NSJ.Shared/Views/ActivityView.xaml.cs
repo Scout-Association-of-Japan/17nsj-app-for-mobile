@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 using _17NSJ.Models;
@@ -10,6 +11,8 @@ namespace _17NSJ.Views
 {
     public partial class ActivityView : ContentPage
     {
+        ObservableCollection<ActivityModel> originalActivityList;
+
         public ActivityView()
         {
             InitializeComponent();
@@ -22,9 +25,9 @@ namespace _17NSJ.Views
 
             var service = new AppDataService();
             var categories = await service.GetActivityCategoriesAsync();
-            var actList = await service.GetActivitiesAsync();
+            originalActivityList = await service.GetActivitiesAsync();
 
-            foreach (var act in actList)
+            foreach (var act in originalActivityList)
             {
                 var category = categories.Where(e => act.Category == e.Category).FirstOrDefault();
                 act.Color = category.Color;
@@ -58,7 +61,7 @@ namespace _17NSJ.Views
             }
 
             this.categoryList.ItemsSource = categories;
-            this.activityList.ItemsSource = actList;
+            this.activityList.ItemsSource = FilterList(this.searchBar.Text); 
             this.activityList.EndRefresh();
             this.indicator.IsVisible = false;
         }
@@ -66,6 +69,12 @@ namespace _17NSJ.Views
         private void ListPulled(object sender, System.EventArgs e)
         {
             GetActivitiesAsync();
+        }
+
+        void SearchTextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
+        {
+            var control = sender as SearchBar;
+            this.activityList.ItemsSource = FilterList(control.Text);
         }
 
         private void ItemSelected(object sender, ItemTappedEventArgs e)
@@ -77,6 +86,19 @@ namespace _17NSJ.Views
             {
                 Navigation.PushAsync(new ActivityDetailView(act));
             }
+        }
+
+        private ObservableCollection<ActivityModel> FilterList(string query)
+        {
+            // クエリ文字がなければオリジナルのリストをすべて返す
+            if (string.IsNullOrEmpty(query))
+            {
+                return originalActivityList;
+            }
+
+            // タイトルか本文にクエリ文字が含まれるものを返す（本文はnullの可能性があるので最初にnullチェック)
+            var filterdList = originalActivityList.Where(x => x.Title.Contains(query) || (x.Outline != null && x.Outline.Contains(query))).ToList();
+            return new ObservableCollection<ActivityModel>(filterdList);
         }
     }
 }
