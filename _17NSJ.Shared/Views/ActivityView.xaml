@@ -44,9 +44,18 @@
                                             <Label Text="{Binding UpdatedAt, StringFormat='{0:yyyy/MM/dd HH:mm}'}" TextColor="White" HorizontalOptions="Center" FontSize="10" Margin="0,-7,0,0"/>
                                         </StackLayout>
                                     </Grid>
-                                    <Label Text="区分" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
-                                    <Label Text="日時" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
-                                    <Label Text="場所" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="区分" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
+                                        <Label Text="{Binding CategoryName}" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="日時" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
+                                        <Label Text="{Binding Term}" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="場所" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
+                                        <Label Text="{Binding Location}" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
+                                    </StackLayout>
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>

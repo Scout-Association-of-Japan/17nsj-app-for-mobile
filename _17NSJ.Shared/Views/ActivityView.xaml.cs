@@ -28,8 +28,9 @@ namespace _17NSJ.Views
             {
                 var category = categories.Where(e => act.Category == e.Category).FirstOrDefault();
                 act.Color = category.Color;
-                //act.CategoryName = category.CategoryName;
+                act.CategoryName = category.CategoryName;
 
+                //個別のサムネイルがなければカテゴリーごとのサムネイル
                 if (string.IsNullOrEmpty(act.ThumbnailURL))
                 {
                     act.ThumbnailURL = category.ThumbnailURL;
@@ -69,6 +70,7 @@ namespace _17NSJ.Views
 
         private void ItemSelected(object sender, ItemTappedEventArgs e)
         {
+            this.activityList.SelectedItem = null;
             var act = e.Item as ActivityModel;
 
             if (act != null)

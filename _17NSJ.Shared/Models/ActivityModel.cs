@@ -6,13 +6,6 @@ namespace _17NSJ.Models
     public class ActivityModel
     {
         /// <summary>
-        /// アクセストークンを取得または設定します。
-        /// </summary>
-        /// <value>アクセストークン</value>
-        [JsonProperty("access_token", NullValueHandling = NullValueHandling.Ignore)]
-        public string Token { get; set; }
-
-        /// <summary>
         /// Gets or sets the category.
         /// </summary>
         /// <value>The category.</value>
@@ -90,20 +83,6 @@ namespace _17NSJ.Models
         public string IsAvailable { get; set; }
 
         /// <summary>
-        /// Gets or sets the created at.
-        /// </summary>
-        /// <value>The created at.</value>
-        [JsonProperty("CreatedAt", NullValueHandling = NullValueHandling.Ignore)]
-        public DateTime CreatedAt { get; set; }
-
-        /// <summary>
-        /// Gets or sets the created by.
-        /// </summary>
-        /// <value>The created by.</value>
-        [JsonProperty("CreatedBy", NullValueHandling = NullValueHandling.Ignore)]
-        public string CreatedBy { get; set; }
-
-        /// <summary>
         /// Gets or sets the updated at.
         /// </summary>
         /// <value>The updated at.</value>
@@ -111,18 +90,39 @@ namespace _17NSJ.Models
         public DateTime UpdatedAt { get; set; }
 
         /// <summary>
-        /// Gets or sets the updated by.
-        /// </summary>
-        /// <value>The updated by.</value>
-        [JsonProperty("UpdatedBy", NullValueHandling = NullValueHandling.Ignore)]
-        public string UpdatedBy { get; set; }
-
-        /// <summary>
         /// ラベルカラーを取得または設定します。
         /// </summary>
         /// <value>ラベルカラー</value>
         [JsonProperty("Color", NullValueHandling = NullValueHandling.Ignore)]
         public string Color { get; set; }
+
+        /// <summary>
+        /// 期間を取得または設定します。
+        /// </summary>
+        /// <value>期間</value>
+        [JsonProperty("Term", NullValueHandling = NullValueHandling.Ignore)]
+        public string Term { get; set; }
+
+        /// <summary>
+        /// 場所を取得または設定します。
+        /// </summary>
+        /// <value>場所</value>
+        [JsonProperty("Location", NullValueHandling = NullValueHandling.Ignore)]
+        public string Location { get; set; }
+
+        /// <summary>
+        /// マップのURLを取得または設定します。
+        /// </summary>
+        /// <value>マップのURL</value>
+        [JsonProperty("MapURL", NullValueHandling = NullValueHandling.Ignore)]
+        public string MapURL { get; set; }
+
+        /// <summary>
+        /// 待機情報の更新日時を取得または設定します。
+        /// </summary>
+        /// <value>待機情報の更新日時</value>
+        [JsonProperty("WaitingInfoUpdatedAt", NullValueHandling = NullValueHandling.Ignore)]
+        public string WaitingInfoUpdatedAt { get; set; }
 
         /// <summary>
         /// Gets or sets the color of the waiting info background.
@@ -135,5 +135,11 @@ namespace _17NSJ.Models
         /// </summary>
         /// <value>The state of the waiting info.</value>
         public string WaitingInfoState { get; set; }
+
+        /// <summary>
+        /// Gets or sets the name of the category.
+        /// </summary>
+        /// <value>The name of the category.</value>
+        public string CategoryName { get; set; }
     }
 }
