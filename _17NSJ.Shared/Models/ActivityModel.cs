@@ -122,7 +122,7 @@ namespace _17NSJ.Models
         /// </summary>
         /// <value>待機情報の更新日時</value>
         [JsonProperty("WaitingInfoUpdatedAt", NullValueHandling = NullValueHandling.Ignore)]
-        public string WaitingInfoUpdatedAt { get; set; }
+        public DateTime WaitingInfoUpdatedAt { get; set; }
 
         /// <summary>
         /// Gets or sets the color of the waiting info background.

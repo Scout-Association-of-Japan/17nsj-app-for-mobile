@@ -13,14 +13,15 @@
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                         <Label x:Name="waitingInfoState" TextColor="White" HorizontalOptions="Center" FontSize="15" />
                     </StackLayout>
-                    <Label x:Name="updatedAt" TextColor="White" HorizontalOptions="Center" FontSize="10" Margin="0,-7,0,0"/>
+                    <Label x:Name="WaitingInfoUpdatedAt" TextColor="White" HorizontalOptions="Center" FontSize="10" Margin="0,-7,0,0"/>
                 </StackLayout>
             </Grid>
             <Label x:Name="outline" FontSize="15" Margin="10,0" />
             <Label x:Name="category" FontSize="15" Margin="10,20,10,0" />
-            <Label x:Name="date" FontSize="15" Margin="10,0" />            
+            <Label x:Name="term" FontSize="15" Margin="10,0" />            
+            <Label x:Name="location" FontSize="15" Margin="10,0" />            
             <Label Text="MAP" HorizontalOptions="CenterAndExpand" FontSize="15" Margin="0,20,0,0" />
-            <WebView x:Name="location" HeightRequest="200"/>
+            <WebView x:Name="map" HeightRequest="200"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

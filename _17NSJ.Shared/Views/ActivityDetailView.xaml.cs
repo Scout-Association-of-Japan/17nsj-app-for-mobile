@@ -28,11 +28,12 @@ namespace _17NSJ.Views
                 waitingInfoState.Text = $"クローズ";
             }
 
-            this.updatedAt.Text = act.UpdatedAt.ToString("yyyy/MM/dd HH:mm");
+            this.WaitingInfoUpdatedAt.Text = act.WaitingInfoUpdatedAt.ToString("yyyy/MM/dd HH:mm");
             this.outline.Text = act.Outline;
-            this.category.Text = "区分";
-            this.date.Text = "日時";
-            this.location.Source = @"https://www.google.co.jp/maps/@37.4387465,137.3275352,18.65z";
+            this.category.Text = "区分：" + act.CategoryName;
+            this.term.Text = "日時：" + act.Term;
+            this.location.Text = "場所：" + act.Location;
+            this.map.Source = @"https://www.google.co.jp/maps/@37.4387465,137.3275352,18.65z";
         }
     }
 }

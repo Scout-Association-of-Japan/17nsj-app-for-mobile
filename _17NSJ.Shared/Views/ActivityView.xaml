@@ -33,7 +33,7 @@
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
                                 <BoxView WidthRequest="10" Color="{Binding Color}"/>
-                                <Image Source="{Binding ThumbnailURL}" Margin="10,10" />
+                                <Image Source="{Binding ThumbnailURL}" WidthRequest="50" Margin="10,10" />
                                 <StackLayout>
                                     <Label Text="{Binding Title}" VerticalTextAlignment="Center" FontSize="20" TextColor="Gray" Margin="0,5,0,0" />
                                     <Grid IsVisible="{Binding CanWaitable}" BackgroundColor="{Binding WaitingInfoBackgroundColor}" Padding="10,2">
@@ -41,19 +41,19 @@
                                             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                                                 <Label Text="{Binding WaitingInfoState}" TextColor="White" HorizontalOptions="Center" FontSize="15" />
                                             </StackLayout>
-                                            <Label Text="{Binding UpdatedAt, StringFormat='{0:yyyy/MM/dd HH:mm}'}" TextColor="White" HorizontalOptions="Center" FontSize="10" Margin="0,-7,0,0"/>
+                                            <Label Text="{Binding WaitingInfoUpdatedAt, StringFormat='{0:yyyy/MM/dd HH:mm}'}" TextColor="White" HorizontalOptions="Center" FontSize="10" Margin="0,-7,0,0"/>
                                         </StackLayout>
                                     </Grid>
                                     <StackLayout Orientation="Horizontal">
-                                        <Label Text="区分" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
+                                        <Label Text="区分:" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
                                         <Label Text="{Binding CategoryName}" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal">
-                                        <Label Text="日時" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
+                                        <Label Text="日時:" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
                                         <Label Text="{Binding Term}" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal">
-                                        <Label Text="場所" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
+                                        <Label Text="場所:" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
                                         <Label Text="{Binding Location}" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0" />
                                     </StackLayout>
                                 </StackLayout>
