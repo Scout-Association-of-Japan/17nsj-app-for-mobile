@@ -2,8 +2,34 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="_17NSJ.Views.Agreement">
-    <StackLayout>
-        <Label Text="利用規約" HorizontalOptions="CenterAndExpand" FontSize="30" Margin="0,10" />
-        <Label Text="利用規約利用規約利用規約利用規約利用規約利用規約利用規約利用規約利用規約利用規約利用規約利用規約" Margin="10,0" />   
-    </StackLayout>
+    <ScrollView>
+        <StackLayout>
+            <Label Text="利用規約" HorizontalOptions="CenterAndExpand" FontSize="30" Margin="0,10" />
+            <Label Text="はじめに" Font="Bold" Margin="10,0" />
+            <Label x:Name="BeforeArticle" FontSize="13" Margin="10,0" />
+            <Label Text="第１条　適用範囲" Font="Bold"  Margin="10,10,0,0" />
+            <Label x:Name="Article1" FontSize="13" Margin="10,0" />
+            <Label Text="第２条　知的財産権等" Font="Bold" Margin="10,10,0,0" />
+            <Label x:Name="Article2" FontSize="13" Margin="10,0" />
+            <Label Text="第３条　禁止事項" Font="Bold" Margin="10,10,0,0" />
+            <Label x:Name="Article3" FontSize="13" Margin="10,0" />
+            <Label Text="第４条　本サービスの停止・中断・変更" Font="Bold" Margin="10,10,0,0" />
+            <Label x:Name="Article4" FontSize="13" Margin="10,0" />
+            <Label Text="第５条　保証の否認および免責" Font="Bold" Margin="10,10,0,0" />
+            <Label x:Name="Article5" FontSize="13" Margin="10,0" />
+            <Label Text="第６条　利用者情報の取り扱い" Font="Bold" Margin="10,10,0,0" />
+            <Label x:Name="Article6" FontSize="13" Margin="10,0" />
+            <Label Text="第７条　規約改訂" Font="Bold" Margin="10,0" />
+            <Label x:Name="Article7" FontSize="13" Margin="10,0" />
+            <Label Text="第８条　利用契約上の地位の譲渡等" Font="Bold" Margin="10,10,0,0" />
+            <Label x:Name="Article8" FontSize="13" Margin="10,0" />
+            <Label Text="第９条　分離可能性" Font="Bold" Margin="10,10,0,0" />
+            <Label x:Name="Article9" FontSize="13" Margin="10,0" />
+            <Label Text="第１０条　準拠法および管轄裁判所" Font="Bold" Margin="10,10,0,0" />
+            <Label x:Name="Article10" FontSize="13" Margin="10,0" />
+            <Label Text="以上" FontSize="13" HorizontalOptions="EndAndExpand" Margin="10,0" />
+            <Label Text="2017年12月15日制定" FontSize="13" Margin="10,0" />
+            <Label Text="公益財団法人ボーイスカウト日本連盟" FontSize="13" Margin="10,0" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

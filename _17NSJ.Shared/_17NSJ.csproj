@@ -240,6 +240,7 @@
     <Compile Include="Views\ActivityDetailView.xaml.cs">
       <DependentUpon>ActivityDetailView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Constants\AgreementArticles.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
