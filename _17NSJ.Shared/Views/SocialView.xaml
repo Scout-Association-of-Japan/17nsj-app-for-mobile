@@ -3,8 +3,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="_17NSJ.Views.SocialView">
     <StackLayout>
-        <Label Text="OFFICIAL SOCIAL MEDIA" FontSize="28" HorizontalOptions="Center" HeightRequest="60" TextColor="Gray" VerticalTextAlignment="Center" />
-        <ListView x:Name="socialList" ItemTapped="ItemSelected" RowHeight="70">
+        <Label Text="公式リンク集" FontSize="28" HorizontalOptions="Center" HeightRequest="60" TextColor="Gray" VerticalTextAlignment="Center" />
+        <ListView x:Name="socialList" SeparatorVisibility="None" ItemTapped="ItemSelected" RowHeight="70">
             <ListView.ItemTemplate>
               <DataTemplate>
                 <ViewCell Height="200">
