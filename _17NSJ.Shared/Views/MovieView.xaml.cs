@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Threading.Tasks;
+using _17NSJ.Exceptions;
 using _17NSJ.Models;
 using _17NSJ.Services;
 using Xamarin.Forms;
@@ -20,7 +22,22 @@ namespace _17NSJ.Views
             this.indicator.IsVisible = true;
 
             var service = new AppDataService();
-            var moviesList = await service.GetMoviesAsync();
+            ObservableCollection<MovieModel> moviesList;
+
+            try
+            {
+                moviesList = await service.GetMoviesAsync();
+            }
+            catch(OutOfServiceException)
+            {
+                await DisplayAlert(string.Empty, "この機能は現在ご利用いただけません。", "OK");
+                this.movieList.ItemsSource = null;
+                this.movieList.ItemsSource = null;
+                this.movieList.SeparatorVisibility = SeparatorVisibility.None;
+                this.movieList.EndRefresh();
+                this.indicator.IsVisible = false;
+                return;
+            }
 
             this.movieList.ItemsSource = moviesList;
             this.movieList.EndRefresh();

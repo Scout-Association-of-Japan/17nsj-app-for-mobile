@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+using _17NSJ.Exceptions;
 using _17NSJ.Models;
 using _17NSJ.Services;
 using Xamarin.Forms;
@@ -24,8 +25,23 @@ namespace _17NSJ.Views
             this.indicator.IsVisible = true;
 
             var service = new AppDataService();
-            var categories = await service.GetActivityCategoriesAsync();
-            originalActivityList = await service.GetActivitiesAsync();
+            ObservableCollection<ActivityCategoryModel> categories;
+
+            try
+            {
+                categories = await service.GetActivityCategoriesAsync();
+                originalActivityList = await service.GetActivitiesAsync();
+            }
+            catch (OutOfServiceException)
+            {
+                await DisplayAlert(string.Empty, "この機能は現在ご利用いただけません。", "OK");
+                this.categoryList.ItemsSource = null;
+                this.activityList.ItemsSource = null;
+                this.activityList.SeparatorVisibility = SeparatorVisibility.None;
+                this.activityList.EndRefresh();
+                this.indicator.IsVisible = false;
+                return;
+            }
 
             foreach (var act in originalActivityList)
             {

@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 using _17NSJ.Constants;
+using _17NSJ.Exceptions;
 using _17NSJ.Models;
 using _17NSJ.Services;
 using Xamarin.Forms;
@@ -25,8 +26,24 @@ namespace _17NSJ.Views
             this.indicator.IsVisible = true;
 
             var service = new AppDataService();
-            var categories = await service.GetNewsCategoriesAsync();
-            originalNewsInfoList = await service.GetNewsAsync();
+            ObservableCollection<NewsInfoCategoryModel> categories;
+
+            try
+            {
+                categories = await service.GetNewsCategoriesAsync();
+                originalNewsInfoList = await service.GetNewsAsync();
+            }
+            catch(OutOfServiceException)
+            {
+                await DisplayAlert(string.Empty,"この機能は現在ご利用いただけません。","OK");
+                this.categoryList.ItemsSource = null;
+                this.newsInfoList.ItemsSource = null;
+                this.newsInfoList.SeparatorVisibility = SeparatorVisibility.None;
+                this.newsInfoList.EndRefresh();
+                this.indicator.IsVisible = false;
+                return;
+            }
+
 
             foreach(var news in originalNewsInfoList)
             {

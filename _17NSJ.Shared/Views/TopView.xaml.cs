@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using _17NSJ.Interfaces;
+using _17NSJ.Models;
 using _17NSJ.Services;
+using _17NSJ.Exceptions;
 using Xamarin.Forms;
 
 namespace _17NSJ.Views
@@ -18,7 +20,22 @@ namespace _17NSJ.Views
 
          async void CheckUpdateAsync()
         {
-            var config = await new AppDataService().GetAppConfigAsync();
+            MobileAppConfigModel config;
+            try
+            {
+                config = await new AppDataService().GetAppConfigAsync();
+            }
+            catch(OutOfServiceException)
+            {
+                await DisplayAlert("", "現在一部の機能がご利用いただけません。", "OK");
+                return;
+            }
+            catch
+            {
+                await DisplayAlert("", "エラーが発生しました。しばらく経ってからもう一度お試しください。", "OK");
+                return;
+            }
+
             if (config.ForceUpdate)
             {
                 if(Device.RuntimePlatform == Device.iOS)

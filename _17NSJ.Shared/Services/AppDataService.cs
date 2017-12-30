@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using _17NSJ.Constants;
+using _17NSJ.Exceptions;
 using _17NSJ.Models;
 using Newtonsoft.Json;
 using Xamarin.Forms;
@@ -91,11 +92,10 @@ namespace _17NSJ.Services
 
                 return response;
             }
-            catch (Exception e)
+            catch
             {
-                // TODO 失敗した時の処理
-                e.ToString();
-                return null;
+                // todo:例外時のロギング
+                throw new OutOfServiceException();
             }
         }
     }
