@@ -24,9 +24,6 @@ namespace _17NSJ.Views
             var service = new AppDataService();
             var newspaperlist = await service.GetNewspapersAsync();
 
-            //TODO リリース時削除
-            await Task.Delay(2000);
-
             this.newspaperList.ItemsSource = newspaperlist.OrderByDescending(e => e.Id).ToList();
 
             this.newspaperList.EndRefresh();
