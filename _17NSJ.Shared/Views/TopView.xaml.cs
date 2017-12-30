@@ -27,7 +27,7 @@ namespace _17NSJ.Views
             }
             catch(OutOfServiceException)
             {
-                await DisplayAlert("", "現在一部の機能がご利用いただけません。", "OK");
+                // サービス停止中の場合、何もしない
                 return;
             }
             catch
