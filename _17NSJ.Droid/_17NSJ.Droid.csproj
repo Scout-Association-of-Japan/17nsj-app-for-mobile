@@ -106,6 +106,15 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.4.0.280\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Lottie">
+      <HintPath>..\packages\Com.Airbnb.Android.Lottie.2.2.5.0\lib\MonoAndroid40\Lottie.dll</HintPath>
+    </Reference>
+    <Reference Include="Lottie.Forms">
+      <HintPath>..\packages\Com.Airbnb.Xamarin.Forms.Lottie.2.3.4\lib\MonoAndroid70\Lottie.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Lottie.Forms.Droid">
+      <HintPath>..\packages\Com.Airbnb.Xamarin.Forms.Lottie.2.3.4\lib\MonoAndroid70\Lottie.Forms.Droid.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\_17NSJ.Shared\_17NSJ.csproj">
@@ -121,6 +130,7 @@
     <Compile Include="Renderer\NonSeparatorTableViewRenderer.cs" />
     <Compile Include="Platforms\AssemblyService.cs" />
     <Compile Include="Effects\LineBreakLabelEffect.cs" />
+    <Compile Include="SplashActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -142,9 +152,12 @@
     <AndroidResource Include="Resources\drawable\tab_map.png" />
     <AndroidResource Include="Resources\drawable\tab_news_info.png" />
     <AndroidResource Include="Resources\drawable\tab_schedule.png" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\layout\Activity_Splash.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\loading.gif" />
+    <AndroidAsset Include="Assets\splash.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Renderer\" />

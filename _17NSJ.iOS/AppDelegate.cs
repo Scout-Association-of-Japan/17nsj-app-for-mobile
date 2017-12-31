@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Lottie.Forms.iOS.Renderers;
 using UIKit;
 
 namespace _17NSJ.iOS
@@ -10,18 +11,31 @@ namespace _17NSJ.iOS
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
+        public override UIWindow Window { get; set; }
+
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
+            if (Window == null)
+            {
+                Window = new UIWindow(frame: UIScreen.MainScreen.Bounds);
+                var initialViewController = new SplashViewController();
+                Window.RootViewController = initialViewController;
+                Window.MakeKeyAndVisible();
 
-            // Code for starting up the Xamarin Test Cloud Agent
+                return true;
+            }
+            else
+            {
+                global::Xamarin.Forms.Forms.Init();
+                AnimationViewRenderer.Init();
+
+                // Code for starting up the Xamarin Test Cloud Agent
 #if DEBUG
-			Xamarin.Calabash.Start();
+                Xamarin.Calabash.Start();
 #endif
-
-            LoadApplication(new App());
-
-            return base.FinishedLaunching(app, options);
+                LoadApplication(new App());
+                return base.FinishedLaunching(app, options);
+            }
         }
     }
 }
