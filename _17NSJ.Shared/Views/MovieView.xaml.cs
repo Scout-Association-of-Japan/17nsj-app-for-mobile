@@ -19,6 +19,7 @@ namespace _17NSJ.Views
 
         private async void GetMoviesAsync()
         {
+            this.error.IsVisible = false;
             this.indicator.IsVisible = true;
 
             var service = new AppDataService();
@@ -30,7 +31,7 @@ namespace _17NSJ.Views
             }
             catch(OutOfServiceException)
             {
-                await DisplayAlert(string.Empty, "この機能は現在ご利用いただけません。", "OK");
+                this.error.IsVisible = true;
                 this.movieList.ItemsSource = null;
                 this.movieList.ItemsSource = null;
                 this.movieList.SeparatorVisibility = SeparatorVisibility.None;
@@ -57,6 +58,11 @@ namespace _17NSJ.Views
             {
                 Device.OpenUri(new Uri(movie.URL));
             }
+        }
+
+        void ReloadTapped(object sender, System.EventArgs e)
+        {
+            GetMoviesAsync();
         }
 
     }

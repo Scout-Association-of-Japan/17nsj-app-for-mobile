@@ -265,6 +265,12 @@
     <BundleResource Include="Resources\filter%402x.png" />
     <BundleResource Include="Resources\filter%403x.png" />
     <BundleResource Include="splash.json" />
+    <BundleResource Include="Resources\error.png" />
+    <BundleResource Include="Resources\error%402x.png" />
+    <BundleResource Include="Resources\error%403x.png" />
+    <BundleResource Include="Resources\reload.png" />
+    <BundleResource Include="Resources\reload%402x.png" />
+    <BundleResource Include="Resources\reload%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets')" />

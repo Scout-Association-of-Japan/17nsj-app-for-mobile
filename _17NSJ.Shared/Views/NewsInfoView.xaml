@@ -28,6 +28,12 @@
             
             <BoxView HeightRequest="1" Color="Gray" />
 
+            <StackLayout x:Name="error" IsVisible="false">
+                <Image Source="error.png" HorizontalOptions="CenterAndExpand" />
+                <Label Text="この機能は現在ご利用になれません。" HorizontalOptions="CenterAndExpand" />
+                <Button Image="reload.png" Pressed="ReloadTapped"  />
+            </StackLayout>
+
             <ListView x:Name="newsInfoList" ItemTapped="ItemSelected" RowHeight="70" IsPullToRefreshEnabled="true" Refreshing="ListPulled">
                 <ListView.ItemTemplate>
                     <DataTemplate>

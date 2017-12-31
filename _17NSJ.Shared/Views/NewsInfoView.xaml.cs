@@ -23,6 +23,7 @@ namespace _17NSJ.Views
 
         private async void GetNewsAsync()
         {
+            this.error.IsVisible = false;
             this.indicator.IsVisible = true;
 
             var service = new AppDataService();
@@ -35,7 +36,7 @@ namespace _17NSJ.Views
             }
             catch(OutOfServiceException)
             {
-                await DisplayAlert(string.Empty,"この機能は現在ご利用いただけません。","OK");
+                this.error.IsVisible = true;
                 this.categoryList.ItemsSource = null;
                 this.newsInfoList.ItemsSource = null;
                 this.newsInfoList.SeparatorVisibility = SeparatorVisibility.None;
@@ -82,6 +83,11 @@ namespace _17NSJ.Views
         {
             var control = sender as SearchBar;
             this.newsInfoList.ItemsSource  = FilterList(control.Text);
+        }
+
+        void ReloadTapped(object sender, System.EventArgs e)
+        {
+           GetNewsAsync();
         }
 
         private ObservableCollection<NewsInfoModel> FilterList(string query)
