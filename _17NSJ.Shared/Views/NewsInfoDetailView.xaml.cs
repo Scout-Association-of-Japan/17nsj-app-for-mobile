@@ -10,6 +10,7 @@ namespace _17NSJ.Views
         public NewsInfoDetailView(NewsInfoModel news)
         {
             InitializeComponent();
+            this.colorBar.BackgroundColor = Color.FromHex(news.Color);
             this.serialId.Text = news.Category + "-" + news.Id;
             this.createdAt.Text = "配信日："+news.CreatedAt.ToLocalTime().ToString("yyyy/MM/dd HH:mm");
             this.updatedAt.Text = "最終更新日："+news.UpdatedAt.ToLocalTime().ToString("yyyy/MM/dd HH:mm");

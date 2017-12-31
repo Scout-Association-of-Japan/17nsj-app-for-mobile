@@ -4,7 +4,7 @@
     x:Class="_17NSJ.Views.NewsInfoDetailView">
 	<ScrollView>
         <StackLayout>
-            <Grid BackgroundColor="Blue" HeightRequest="25">
+            <Grid x:Name="colorBar" HeightRequest="25">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="5" />
                     <ColumnDefinition Width="*" />
