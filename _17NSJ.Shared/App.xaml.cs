@@ -2,6 +2,11 @@
 using _17NSJ.Views;
 using _17NSJ.Services;
 using _17NSJ.Interfaces;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Push;
+using _17NSJ.Constants;
 
 namespace _17NSJ
 {
@@ -23,7 +28,10 @@ namespace _17NSJ
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            // App Centerのイニシャライズ
+            AppCenter.Start($"ios={SecretConstants.AppCenteriOS};" + $"android={SecretConstants.AppCenterDroid}", typeof(Analytics), typeof(Crashes), typeof(Push));
+
+            // TODO: プッシュ通知の活性・不活性
         }
 
         protected override void OnSleep()
