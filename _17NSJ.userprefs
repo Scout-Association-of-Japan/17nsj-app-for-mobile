@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{E38D0FC9-0B24-46A5-B80F-B7D4387CE128}|Default">
+﻿<Properties StartupConfiguration="{D62F9632-C595-4839-AD1B-A4C8F8087993}|Default">
   <MonoDevelop.Ide.ItemProperties.__17NSJ.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/TopView.xaml.cs">
     <Files>
