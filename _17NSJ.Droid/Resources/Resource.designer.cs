@@ -2159,6 +2159,7 @@ namespace _17NSJ.Droid
 			global::Lottie.Forms.Droid.Resource.Styleable.ViewStubCompat_android_id = global::_17NSJ.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::Lottie.Forms.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId = global::_17NSJ.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Lottie.Forms.Droid.Resource.Styleable.ViewStubCompat_android_layout = global::_17NSJ.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Microsoft.AppCenter.Push.Android.Resource.String.library_name = global::_17NSJ.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::_17NSJ.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -5839,11 +5840,11 @@ namespace _17NSJ.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f09003f
-			public const int ApplicationName = 2131296319;
+			// aapt resource value: 0x7f090040
+			public const int ApplicationName = 2131296320;
 			
-			// aapt resource value: 0x7f09003e
-			public const int Hello = 2131296318;
+			// aapt resource value: 0x7f09003f
+			public const int Hello = 2131296319;
 			
 			// aapt resource value: 0x7f090015
 			public const int abc_action_bar_home_description = 2131296277;
@@ -5946,6 +5947,9 @@ namespace _17NSJ.Droid
 			
 			// aapt resource value: 0x7f090038
 			public const int character_counter_pattern = 2131296312;
+			
+			// aapt resource value: 0x7f09003e
+			public const int library_name = 2131296318;
 			
 			// aapt resource value: 0x7f090000
 			public const int mr_button_content_description = 2131296256;
