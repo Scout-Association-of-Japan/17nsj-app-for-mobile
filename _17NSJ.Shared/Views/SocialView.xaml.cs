@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using _17NSJ.Constants;
 using _17NSJ.Models;
 using _17NSJ.ViewModels;
+using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
 
 namespace _17NSJ.Views
@@ -12,6 +13,9 @@ namespace _17NSJ.Views
     {
         public SocialView()
         {
+            // トラッキングコード
+            Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "SocialView" } });
+
             InitializeComponent();
             this.socialList.ItemsSource = SocialList.List;
         }

@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using _17NSJ.Constants;
+using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
 
 namespace _17NSJ.Views
 {
-    public partial class Agreement : ContentPage
+    public partial class AgreementView : ContentPage
     {
-        public Agreement()
+        public AgreementView()
         {
+            // トラッキングコード
+            Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "Agreement" } });
+
             InitializeComponent();
             this.BeforeArticle.Text = AgreementArticles.BeforeArticle;
             this.Article1.Text = AgreementArticles.Article1;

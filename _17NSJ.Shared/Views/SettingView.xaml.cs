@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
 
 namespace _17NSJ.Views
@@ -9,27 +9,30 @@ namespace _17NSJ.Views
     {
         public SettingView()
         {
+            // トラッキングコード
+            Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "SettingView" } });
+
             InitializeComponent();
         }
 
         void AgreementTapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Agreement());
+            Navigation.PushAsync(new AgreementView());
         }
 
         void PolicyTapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Policy());
+            Navigation.PushAsync(new PolicyView());
         }
 
         void LicenseTapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new License());
+            Navigation.PushAsync(new LicenseView());
         }
 
         void AppInfoTapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new AppInfo());
+            Navigation.PushAsync(new AppInfoView());
         }
     }
 }

@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
 
 namespace _17NSJ.Views
 {
-    public partial class License : ContentPage
+    public partial class LicenseView : ContentPage
     {
-        public License()
+        public LicenseView()
         {
+            // トラッキングコード
+            Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "LicenseView" } });
+
             InitializeComponent();
             ObservableCollection<string> list = new ObservableCollection<string>();
             list.Add("Xamarin.Forms");

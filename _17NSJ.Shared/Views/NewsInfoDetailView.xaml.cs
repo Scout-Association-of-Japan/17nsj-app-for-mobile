@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using _17NSJ.Models;
+using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
 
 namespace _17NSJ.Views
@@ -9,6 +10,9 @@ namespace _17NSJ.Views
     {
         public NewsInfoDetailView(NewsInfoModel news)
         {
+            // トラッキングコード
+            Analytics.TrackEvent("NewsInfo", new Dictionary<string, string> { { "ID", $"{news.Category}-{news.Id}" } });
+
             InitializeComponent();
             this.colorBar.BackgroundColor = Color.FromHex(news.Color);
             this.serialId.Text = news.Category + "-" + news.Id;

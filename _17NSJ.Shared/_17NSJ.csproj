@@ -105,19 +105,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Agreement.xaml">
+    <EmbeddedResource Include="Views\AgreementView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Policy.xaml">
+    <EmbeddedResource Include="Views\PolicyView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\License.xaml">
+    <EmbeddedResource Include="Views\LicenseView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\AppInfo.xaml">
+    <EmbeddedResource Include="Views\AppInfoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -204,17 +204,17 @@
     <Compile Include="Constants\SocialList.cs" />
     <Compile Include="Models\FriendshipModel.cs" />
     <Compile Include="Constants\FriendshipList.cs" />
-    <Compile Include="Views\Agreement.xaml.cs">
-      <DependentUpon>Agreement.xaml</DependentUpon>
+    <Compile Include="Views\AgreementView.xaml.cs">
+      <DependentUpon>AgreementView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Policy.xaml.cs">
-      <DependentUpon>Policy.xaml</DependentUpon>
+    <Compile Include="Views\PolicyView.xaml.cs">
+      <DependentUpon>PolicyView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\License.xaml.cs">
-      <DependentUpon>License.xaml</DependentUpon>
+    <Compile Include="Views\LicenseView.xaml.cs">
+      <DependentUpon>LicenseView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\AppInfo.xaml.cs">
-      <DependentUpon>AppInfo.xaml</DependentUpon>
+    <Compile Include="Views\AppInfoView.xaml.cs">
+      <DependentUpon>AppInfoView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\MasterItemModel.cs" />
     <Compile Include="Constants\MasterMenu.cs" />

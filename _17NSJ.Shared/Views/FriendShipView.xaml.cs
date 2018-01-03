@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using _17NSJ.Constants;
 using _17NSJ.Models;
+using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
 
 namespace _17NSJ.Views
@@ -10,6 +11,9 @@ namespace _17NSJ.Views
     {
         public FriendShipView()
         {
+            // トラッキングコード
+            Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "FriendShipView" } });
+
             InitializeComponent();
             this.friendshiplList.ItemsSource = FriendshipList.List;
         }

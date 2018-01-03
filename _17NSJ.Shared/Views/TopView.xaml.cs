@@ -5,6 +5,7 @@ using _17NSJ.Models;
 using _17NSJ.Services;
 using _17NSJ.Exceptions;
 using Xamarin.Forms;
+using Microsoft.AppCenter.Analytics;
 
 namespace _17NSJ.Views
 {
@@ -12,6 +13,9 @@ namespace _17NSJ.Views
     {
         public TopView()
         {
+            // トラッキングコード
+            Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "TopView" } });
+
             InitializeComponent();
             CheckUpdateAsync();
 

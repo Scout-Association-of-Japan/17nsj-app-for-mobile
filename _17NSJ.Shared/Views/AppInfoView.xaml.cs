@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using _17NSJ.Interfaces;
+using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
 
 namespace _17NSJ.Views
 {
-    public partial class AppInfo : ContentPage
+    public partial class AppInfoView : ContentPage
     {
-        public AppInfo()
+        public AppInfoView()
         {
+            // トラッキングコード
+            Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "AppInfoView" } });
+
             InitializeComponent();
 
             appName.Key = "アプリ名";

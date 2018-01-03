@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using _17NSJ.Models;
+using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
 
 namespace _17NSJ.Views
@@ -9,6 +10,9 @@ namespace _17NSJ.Views
     {
         public ActivityDetailView(ActivityModel act)
         {
+            // トラッキングコード
+            Analytics.TrackEvent("ActivityDetail", new Dictionary<string, string> { { "ID", $"{act.Category}-{act.Id}" } });
+
             InitializeComponent();
             this.image.Source = act.MediaURL;
             this.title.Text = act.Title;

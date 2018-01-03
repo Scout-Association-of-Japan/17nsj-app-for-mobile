@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using _17NSJ.Constants;
-
+using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
 
 namespace _17NSJ.Views
 {
-    public partial class Policy : ContentPage
+    public partial class PolicyView : ContentPage
     {
-        public Policy()
+        public PolicyView()
         {
+            // トラッキングコード
+            Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "PolicyView" } });
+
             InitializeComponent();
             this.Article1.Text = PolicyArticles.Article1;
             this.Article2.Text = PolicyArticles.Article2;

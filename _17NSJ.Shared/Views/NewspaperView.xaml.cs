@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using _17NSJ.Models;
 using _17NSJ.Services;
+using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
 
 namespace _17NSJ.Views
@@ -13,6 +14,9 @@ namespace _17NSJ.Views
     {
         public NewspaperView()
         {
+            // トラッキングコード
+            Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "NewspaperView" } });
+            
             InitializeComponent();
             GetNewspapersAsync();
         }

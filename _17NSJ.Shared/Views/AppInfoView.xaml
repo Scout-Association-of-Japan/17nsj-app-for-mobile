@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:cont="clr-namespace:_17NSJ.Controls"
-    x:Class="_17NSJ.Views.AppInfo">
+    x:Class="_17NSJ.Views.AppInfoView">
     <StackLayout>
         <TableView Intent="Settings">
             <TableView.Root>
