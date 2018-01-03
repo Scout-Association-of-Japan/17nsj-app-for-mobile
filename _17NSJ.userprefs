@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{D62F9632-C595-4839-AD1B-A4C8F8087993}|Default">
-  <MonoDevelop.Ide.ItemProperties.__17NSJ.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/TopView.xaml.cs">
+  <MonoDevelop.Ide.ItemProperties.__17NSJ.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/TopView.xaml">
     <Files>
-      <File FileName="_17NSJ.Shared/Views/ActivityDetailView.xaml.cs" Line="15" Column="1" />
-      <File FileName="_17NSJ.Shared/Views/TopView.xaml.cs" Line="17" Column="13" />
+      <File FileName="_17NSJ.Shared/Controls/CollapseButton.cs" Line="10" Column="44" />
+      <File FileName="_17NSJ.Shared/Views/TopView.xaml" Line="13" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

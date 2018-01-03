@@ -9,6 +9,8 @@ namespace _17NSJ.Controls
         {
             const int _animationTime = 100;
 
+            this.BackgroundColor = Color.Transparent;
+
             Pressed += async (sender, e) =>
             {
                 var btn = sender as CollapseButton;

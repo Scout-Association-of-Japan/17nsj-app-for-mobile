@@ -5,5 +5,5 @@
   <color name="black">#000</color>
   <color name="accent">#FFC107</color>
   <color name="window_background">#F5F5F5</color>
-  <drawable name="bg_color">#02d1c4</drawable> 
+  <drawable name="bg_color">#ffffff</drawable> 
 </resources>
