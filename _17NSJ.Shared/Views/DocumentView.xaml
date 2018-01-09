@@ -1,4 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="_17NSJ.Views.DocumentView">
-	<Label Text="document" />
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:cont="clr-namespace:_17NSJ.Controls"
+    xmlns:effect="clr-namespace:_17NSJ.Effects"
+    x:Class="_17NSJ.Views.DocumentView">
+	<Grid>
+        <StackLayout>
+            <StackLayout x:Name="error" IsVisible="false">
+                <Image Source="error.png" HorizontalOptions="CenterAndExpand" />
+                <Label Text="この機能は現在ご利用になれません。" HorizontalOptions="CenterAndExpand" />
+                <Button Image="reload.png" Pressed="ReloadTapped"  />
+            </StackLayout>
+            
+            <ListView x:Name="documentList" ItemTapped="ItemSelected" RowHeight="70" IsPullToRefreshEnabled="true" Refreshing="ListPulled">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="200">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding ThumbnailURL}" Margin="10,10" />
+                                <StackLayout>
+                                    <Label Text="{Binding Title}" VerticalTextAlignment="Center" FontSize="20" TextColor="Gray" Margin="0,5,0,0" />
+                                    <Label Text="{Binding Outline}" VerticalTextAlignment="Center" FontSize="10" TextColor="Gray" LineBreakMode="TailTruncation" Margin="0,-5,0,0">
+                                        <Label.Effects>
+                                            <effect:LineBreakLabelEffect />
+                                        </Label.Effects>
+                                    </Label>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>        
+        </StackLayout>
+        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" IsVisible="false"/>       
+    </Grid>
 </ContentPage>

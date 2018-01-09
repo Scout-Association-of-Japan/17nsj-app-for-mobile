@@ -243,6 +243,7 @@
     <Compile Include="Constants\AgreementArticles.cs" />
     <Compile Include="Constants\PolicyArticles.cs" />
     <Compile Include="Exceptions\OutOfServiceException.cs" />
+    <Compile Include="Models\DocumentModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

@@ -1,5 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Threading.Tasks;
+using _17NSJ.Exceptions;
+using _17NSJ.Models;
+using _17NSJ.Services;
 using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
 
@@ -13,6 +18,55 @@ namespace _17NSJ.Views
             Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "DocumentView" } });
 
             InitializeComponent();
+            GetDocumentsAsync();
+        }
+
+        private async void GetDocumentsAsync()
+        {
+            this.error.IsVisible = false;
+            this.indicator.IsVisible = true;
+
+            var service = new AppDataService();
+            ObservableCollection<DocumentModel> docsList;
+
+            try
+            {
+                docsList = await service.GetDocumentsAsync();
+            }
+            catch (OutOfServiceException)
+            {
+                this.error.IsVisible = true;
+                this.documentList.ItemsSource = null;
+                this.documentList.ItemsSource = null;
+                this.documentList.SeparatorVisibility = SeparatorVisibility.None;
+                this.documentList.EndRefresh();
+                this.indicator.IsVisible = false;
+                return;
+            }
+
+            this.documentList.ItemsSource = docsList;
+            this.documentList.EndRefresh();
+            this.indicator.IsVisible = false;
+        }
+
+        private void ListPulled(object sender, System.EventArgs e)
+        {
+            GetDocumentsAsync();
+        }
+
+        private void ItemSelected(object sender, ItemTappedEventArgs e)
+        {
+            var doc = e.Item as DocumentModel;
+
+            if (doc != null)
+            {
+                Device.OpenUri(new Uri(doc.URL));
+            }
+        }
+
+        void ReloadTapped(object sender, System.EventArgs e)
+        {
+            GetDocumentsAsync();
         }
     }
 }
