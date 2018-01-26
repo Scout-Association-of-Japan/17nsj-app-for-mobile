@@ -7,6 +7,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Microsoft.AppCenter.Push;
+using _17NSJ.Constants;
 
 namespace _17NSJ.Droid
 {
@@ -22,7 +24,14 @@ namespace _17NSJ.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
+            Push.SetSenderId(SecretConstants.SenderId);
             LoadApplication(new App());
+        }
+
+        protected override void OnNewIntent(Intent intent)
+        {
+            base.OnNewIntent(intent);
+            Push.CheckLaunchedFromNotification(this, intent);
         }
     }
 }

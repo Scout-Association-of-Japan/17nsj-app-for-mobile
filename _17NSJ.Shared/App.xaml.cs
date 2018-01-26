@@ -7,11 +7,18 @@ using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Microsoft.AppCenter.Push;
 using _17NSJ.Constants;
+using System.Linq;
 
 namespace _17NSJ
 {
     public partial class App : Application
     {
+
+        static App()
+        {
+            Push.PushNotificationReceived += OnPushNotificationReceived;
+        }
+
         public App()
         {
             InitializeComponent();
@@ -42,6 +49,19 @@ namespace _17NSJ
         protected override void OnResume()
         {
             // Handle when your app resumes
+        }
+
+        static void OnPushNotificationReceived(object sender, PushNotificationReceivedEventArgs e)
+        {
+            Xamarin.Forms.Device.BeginInvokeOnMainThread(() =>
+            {
+                var message = e.Message;
+                if (e.CustomData != null && e.CustomData.Count > 0)
+                {
+                    message += "\nCustom data = {" + string.Join(",", e.CustomData.Select(kv => kv.Key + "=" + kv.Value)) + "}";
+                }
+                Current.MainPage.DisplayAlert(e.Title, message, "OK");
+            });
         }
     }
 }
