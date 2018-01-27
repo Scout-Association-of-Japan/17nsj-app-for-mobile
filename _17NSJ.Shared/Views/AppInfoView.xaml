@@ -11,10 +11,10 @@
                     <cont:KeyValueCell x:Name="appVer" />             
                     <cont:KeyValueCell x:Name="buildVer" />             
                 </TableSection>
-                <TableSection Title="権利情報">
-                    <TextCell Text="Designed by Takuma Ishii" Detail="Scout Association of Japan" />                  
-                    <TextCell Text="Developed by Junpei Tsuchida" Detail="17NSJ PR Dept," />                
-                    <TextCell Text="(C) Scout Association of Japan" />                  
+                <TableSection>
+                    <TextCell TextColor="Black" Text="Designed by Takuma Ishii" Detail="Scout Association of Japan" />                  
+                    <TextCell TextColor="Black" Text="Developed by Junpei Tsuchida" Detail="17NSJ PR Dept," />                
+                    <TextCell TextColor="Black" Text="(C) Scout Association of Japan" />                  
                 </TableSection>
             </TableView.Root>
         </TableView>

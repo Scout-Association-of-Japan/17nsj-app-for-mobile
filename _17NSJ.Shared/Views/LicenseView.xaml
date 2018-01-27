@@ -5,7 +5,7 @@
     <ListView x:Name="licenseList" SeparatorVisibility="None">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="{Binding}"/>
+                <TextCell TextColor="Black" Text="{Binding}"/>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

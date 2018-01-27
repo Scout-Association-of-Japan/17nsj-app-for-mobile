@@ -5,12 +5,12 @@
     <TableView>
         <TableRoot>
             <TableSection>
-                <TextCell Text="利用規約" Tapped="AgreementTapped" />             
-                <TextCell Text="プライバシーポリシー" Tapped="PolicyTapped" />             
+                <TextCell Text="利用規約"  TextColor="Black"  Tapped="AgreementTapped" />             
+                <TextCell Text="プライバシーポリシー"  TextColor="Black"  Tapped="PolicyTapped" />             
             </TableSection>
             <TableSection>
-                <TextCell Text="ライセンス" Tapped="LicenseTapped" />             
-                <TextCell Text="アプリケーション情報" Tapped="AppInfoTapped" />             
+                <TextCell Text="ライセンス"  TextColor="Black"  Tapped="LicenseTapped"/>
+                <TextCell Text="アプリケーション情報" TextColor="Black" Tapped="AppInfoTapped" />             
             </TableSection>
         </TableRoot>     
     </TableView>
