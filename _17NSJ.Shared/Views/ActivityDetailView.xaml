@@ -20,8 +20,8 @@
             <Label x:Name="category" FontSize="15" Margin="10,20,10,0" />
             <Label x:Name="term" FontSize="15" Margin="10,0" />            
             <Label x:Name="location" FontSize="15" Margin="10,0" />            
-            <Label Text="MAP" HorizontalOptions="CenterAndExpand" FontSize="15" Margin="0,20,0,0" />
-            <WebView x:Name="map" HeightRequest="200"/>
+            <WebView x:Name="map" HeightRequest="300"/>
+            <Label Text="この情報は最新でない可能性がります。&#xA;大会本部から変更連絡があった場合はそちらを優先してください。" FontSize="8" HorizontalOptions="EndAndExpand" />                       
         </StackLayout>
     </ScrollView>
 </ContentPage>
