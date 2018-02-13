@@ -8,6 +8,7 @@ using Microsoft.AppCenter.Crashes;
 using Microsoft.AppCenter.Push;
 using _17NSJ.Constants;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace _17NSJ
 {
@@ -23,11 +24,38 @@ namespace _17NSJ
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new TopView())
+            try
             {
-                BarBackgroundColor = new Color(0.00, 0.44, 0.74),
-                BarTextColor = Color.White
-            };
+                var isAgreed = Application.Current.Properties["IsAgreed"] as bool?;
+
+                if ((isAgreed is null) || ((bool)isAgreed) == false)
+                {
+                    //初期ローンチ
+                    MainPage = new NavigationPage(new InitAgreementView())
+                    {
+                        BarBackgroundColor = new Color(0.00, 0.44, 0.74),
+                        BarTextColor = Color.White
+                    };
+                }
+                else
+                {
+                    AppCenter.Start($"ios={SecretConstants.AppCenteriOS};" + $"android={SecretConstants.AppCenterDroid}", typeof(Analytics), typeof(Crashes), typeof(Push));
+                    MainPage = new NavigationPage(new TopView())
+                    {
+                        BarBackgroundColor = new Color(0.00, 0.44, 0.74),
+                        BarTextColor = Color.White
+                    };
+                }
+            }
+            catch (KeyNotFoundException)
+            {
+                //初期ローンチ
+                MainPage = new NavigationPage(new InitAgreementView())
+                {
+                    BarBackgroundColor = new Color(0.00, 0.44, 0.74),
+                    BarTextColor = Color.White
+                };
+            }
         }
 
         //使うときは(Application.Current as App).Token
@@ -35,10 +63,7 @@ namespace _17NSJ
 
         protected override void OnStart()
         {
-            // App Centerのイニシャライズ
-            AppCenter.Start($"ios={SecretConstants.AppCenteriOS};" + $"android={SecretConstants.AppCenterDroid}", typeof(Analytics), typeof(Crashes), typeof(Push));
-
-            // TODO: プッシュ通知の活性・不活性
+            // Handle when your app start
         }
 
         protected override void OnSleep()

@@ -133,6 +133,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\InitAgreementView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -244,6 +248,9 @@
     <Compile Include="Constants\PolicyArticles.cs" />
     <Compile Include="Exceptions\OutOfServiceException.cs" />
     <Compile Include="Models\DocumentModel.cs" />
+    <Compile Include="Views\InitAgreementView.xaml.cs">
+      <DependentUpon>InitAgreementView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

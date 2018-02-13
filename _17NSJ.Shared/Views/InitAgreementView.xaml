@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="_17NSJ.Views.InitAgreementView" xmlns:cont="clr-namespace:_17NSJ.Controls">
+    <Grid>         
+        <!-- Background -->         
+        <Image Aspect="AspectFill" Source="agreement_back.jpg" />         
+       
+        <ScrollView>
+            <StackLayout>
+                <Image Source="outline_logo.png" Margin="0,70,0,0" />
+                <cont:ImageButton Source="agree_button.png" Tapped="AgreeButtonClicked" Margin="0,50,0,0" />
+                <cont:ImageButton Source="agreement_button.png" Tapped="ViewAgreementClicked" Margin="0,30,0,0" />
+                <cont:ImageButton Source="policy_button.png" Tapped="ViewPolicyClicked" />
+            </StackLayout>
+        </ScrollView>    
+    </Grid> 
+</ContentPage>
