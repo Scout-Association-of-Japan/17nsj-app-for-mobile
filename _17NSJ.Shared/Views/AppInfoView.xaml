@@ -12,8 +12,8 @@
                     <cont:KeyValueCell x:Name="buildVer" />             
                 </TableSection>
                 <TableSection>
-                    <TextCell TextColor="Black" Text="Designed by Takuma Ishii" Detail="Scout Association of Japan" />                  
-                    <TextCell TextColor="Black" Text="Developed by Junpei Tsuchida" Detail="17NSJ PR Dept," Tapped="Handle_Tapped" />                
+                    <TextCell TextColor="Black" Text="Designed by External Relation &amp; RP Department" Detail="Scout Association of Japan" />                  
+                    <TextCell TextColor="Black" Text="Developed by Digital promotion team" Detail="17NSJ PR Dept," Tapped="Handle_Tapped" />                
                     <TextCell TextColor="Black" Text="(C) Scout Association of Japan" />                  
                 </TableSection>
             </TableView.Root>
