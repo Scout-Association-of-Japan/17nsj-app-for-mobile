@@ -28,6 +28,7 @@ namespace _17NSJ.Views
         private async void GetNewsAsync()
         {
             this.error.IsVisible = false;
+            this.newsInfoList.IsVisible = true;
             this.indicator.IsVisible = true;
 
             var service = new AppDataService();
@@ -41,6 +42,7 @@ namespace _17NSJ.Views
             catch(OutOfServiceException)
             {
                 this.error.IsVisible = true;
+                this.newsInfoList.IsVisible = false;
                 this.categoryList.ItemsSource = null;
                 this.newsInfoList.ItemsSource = null;
                 this.newsInfoList.SeparatorVisibility = SeparatorVisibility.None;

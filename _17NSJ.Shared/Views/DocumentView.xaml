@@ -6,11 +6,14 @@
     x:Class="_17NSJ.Views.DocumentView">
 	<Grid>
         <StackLayout>
-            <StackLayout x:Name="error" IsVisible="false">
-                <Image Source="error.png" HorizontalOptions="CenterAndExpand" />
-                <Label Text="この機能は現在ご利用になれません。" HorizontalOptions="CenterAndExpand" />
-                <Button Image="reload.png" Pressed="ReloadTapped"  />
-            </StackLayout>
+            <ScrollView x:Name="error" IsVisible="false">
+                <StackLayout>
+                    <Image Source="error.png" HorizontalOptions="CenterAndExpand" />
+                    <Label Text="この機能は現在ご利用になれません。" HorizontalOptions="CenterAndExpand" />
+                    <Label Text="Webプロキシ環境など特殊環境下では正常に通信できない場合があります。" FontSize="9" HorizontalOptions="Center" />
+                    <Button Image="reload.png" Pressed="ReloadTapped"  />
+                </StackLayout>
+            </ScrollView>
             
             <ListView x:Name="documentList" ItemTapped="ItemSelected" RowHeight="70" IsPullToRefreshEnabled="true" Refreshing="ListPulled">
                 <ListView.ItemTemplate>

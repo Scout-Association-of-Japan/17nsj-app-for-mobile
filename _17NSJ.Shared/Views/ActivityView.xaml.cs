@@ -27,6 +27,7 @@ namespace _17NSJ.Views
         private async void GetActivitiesAsync()
         {
             this.error.IsVisible = false;
+            this.activityList.IsVisible = true;
             this.indicator.IsVisible = true;
 
             var service = new AppDataService();
@@ -40,6 +41,7 @@ namespace _17NSJ.Views
             catch (OutOfServiceException)
             {
                 this.error.IsVisible = true;
+                this.activityList.IsVisible = false;
                 this.categoryList.ItemsSource = null;
                 this.activityList.ItemsSource = null;
                 this.activityList.SeparatorVisibility = SeparatorVisibility.None;

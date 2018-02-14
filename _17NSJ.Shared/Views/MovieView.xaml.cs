@@ -24,6 +24,7 @@ namespace _17NSJ.Views
         private async void GetMoviesAsync()
         {
             this.error.IsVisible = false;
+            this.movieList.IsVisible = true;
             this.indicator.IsVisible = true;
 
             var service = new AppDataService();
@@ -36,6 +37,7 @@ namespace _17NSJ.Views
             catch(OutOfServiceException)
             {
                 this.error.IsVisible = true;
+                this.movieList.IsVisible = false;
                 this.movieList.ItemsSource = null;
                 this.movieList.ItemsSource = null;
                 this.movieList.SeparatorVisibility = SeparatorVisibility.None;

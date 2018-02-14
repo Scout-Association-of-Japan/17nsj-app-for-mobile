@@ -24,6 +24,7 @@ namespace _17NSJ.Views
         private async void GetDocumentsAsync()
         {
             this.error.IsVisible = false;
+            this.documentList.IsVisible = true;
             this.indicator.IsVisible = true;
 
             var service = new AppDataService();
@@ -36,6 +37,7 @@ namespace _17NSJ.Views
             catch (OutOfServiceException)
             {
                 this.error.IsVisible = true;
+                this.documentList.IsVisible = false;
                 this.documentList.ItemsSource = null;
                 this.documentList.ItemsSource = null;
                 this.documentList.SeparatorVisibility = SeparatorVisibility.None;
