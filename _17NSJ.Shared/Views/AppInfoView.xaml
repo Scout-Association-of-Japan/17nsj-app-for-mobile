@@ -13,7 +13,7 @@
                 </TableSection>
                 <TableSection>
                     <TextCell TextColor="Black" Text="Designed by Takuma Ishii" Detail="Scout Association of Japan" />                  
-                    <TextCell TextColor="Black" Text="Developed by Junpei Tsuchida" Detail="17NSJ PR Dept," />                
+                    <TextCell TextColor="Black" Text="Developed by Junpei Tsuchida" Detail="17NSJ PR Dept," Tapped="Handle_Tapped" />                
                     <TextCell TextColor="Black" Text="(C) Scout Association of Japan" />                  
                 </TableSection>
             </TableView.Root>
