@@ -30,6 +30,7 @@ namespace _17NSJ.Views
             count++;
             if(count == 10)
             {
+                count = 0;
                 Navigation.PushAsync(new SecretView());
             }
         }
