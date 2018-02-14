@@ -10,7 +10,7 @@
                     <StackLayout Orientation="Horizontal">
                         <Image Source="{Binding ImagePath}" Margin="20,10"/>
                         <StackLayout>
-                        <Label Text="{Binding Title}" VerticalTextAlignment="Center" FontSize="30" TextColor="Gray" Margin="0,7,0,-5" />
+                        <Label Text="{Binding Title}" VerticalTextAlignment="Center" FontSize="20" TextColor="Gray" Margin="0,15,0,-5" />
                         <Label Text="{Binding HashTag}" VerticalTextAlignment="Center" FontSize="15" TextColor="Gray" />
                         </StackLayout>
                     </StackLayout>
