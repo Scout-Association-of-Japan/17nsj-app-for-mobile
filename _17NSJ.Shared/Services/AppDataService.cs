@@ -72,6 +72,7 @@ namespace _17NSJ.Services
 
         private async Task<HttpResponseMessage> GetAsyncBase(Uri uri)
         {
+            // トークンが空のときは取得
             if (string.IsNullOrEmpty((Application.Current as App).Token))
             {
                 (Application.Current as App).Token = await new AuthService().GetToken();
@@ -91,17 +92,37 @@ namespace _17NSJ.Services
                 if ((response.StatusCode == HttpStatusCode.BadRequest) ||
                     (response.StatusCode == HttpStatusCode.Unauthorized))
                 {
-                    // TODO トークン切れかもしれないとき
-                    return response;
+                    // トークン切れかもしれないとき、トークンを再度取得
+                    (Application.Current as App).Token = await new AuthService().GetToken();
+
+                    try
+                    {
+                        // ハンドラを使いまわしするとDispose例外になるので再作成
+                        var reHandler = new HttpClientHandler() { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate };
+
+                        using (var client = new HttpClient(reHandler))
+                        {
+                            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", (Application.Current as App).Token);
+                            response = await client.GetAsync(uri);
+                        }
+
+                        response.EnsureSuccessStatusCode();
+                        return response;
+                    }
+                    catch
+                    {
+                        //２回目でも成功コード以外ならサービス提供外
+                        // TODO 例外時のロギング
+                        throw new OutOfServiceException();
+                    }
                 }
 
                 response.EnsureSuccessStatusCode();
-
                 return response;
             }
             catch
             {
-                // todo:例外時のロギング
+                // TODO 例外時のロギング
                 throw new OutOfServiceException();
             }
         }

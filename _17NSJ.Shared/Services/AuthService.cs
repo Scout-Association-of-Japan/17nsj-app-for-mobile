@@ -41,11 +41,10 @@ namespace _17NSJ.Services
 
                 return JsonConvert.DeserializeObject<AuthResultModel>(responseText).Token;
             }
-            catch(Exception e)
+            catch(Exception)
             {
-                // TODO 失敗した時の処理
-                e.ToString();
-                return null;
+                // TODO 例外時のロギング
+                return string.Empty;
             }
         }
 
