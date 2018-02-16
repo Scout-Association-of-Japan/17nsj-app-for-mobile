@@ -14,7 +14,18 @@ namespace _17NSJ.Views
             Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "ScheduleView" } });
 
             InitializeComponent();
-            scheduleView.Source = SecretConstants.ScheduleUrl;
+        }
+
+        protected override void OnSizeAllocated(double width, double height)
+        {
+            base.OnSizeAllocated(width, height);
+
+            var html = new HtmlWebViewSource
+            {
+                Html = $@"<html><body><iframe src=""{SecretConstants.ScheduleUrl}"" style=""border-width:0"" width=""{width - 5}"" height=""{height - 10}"" frameborder=""0"" scrolling=""no""></iframe></body></html>",
+            };
+
+            scheduleView.Source = html;
         }
 
         void calLoaded(object sender, Xamarin.Forms.WebNavigatedEventArgs e)
