@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>_17NSJ</string>
+	<string>17NSJ</string>
 	<key>CFBundleName</key>
-	<string>_17NSJ</string>
+	<string>17NSJ</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.junpei.17nsj</string>
 	<key>CFBundleShortVersionString</key>
@@ -38,11 +38,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>XSAppIconAssets</key>
-	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>
 	</array>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcon.appiconset</string>
 </dict>
 </plist>
