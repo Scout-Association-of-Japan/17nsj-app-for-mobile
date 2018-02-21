@@ -312,7 +312,6 @@
     <BundleResource Include="Resources\reload.png" />
     <BundleResource Include="Resources\reload%402x.png" />
     <BundleResource Include="Resources\reload%403x.png" />
-    <BundleResource Include="Resources\agreement_back.jpg" />
     <BundleResource Include="Resources\agree_button.png" />
     <BundleResource Include="Resources\agree_button%402x.png" />
     <BundleResource Include="Resources\agree_button%403x.png" />
@@ -322,6 +321,7 @@
     <BundleResource Include="Resources\policy_button.png" />
     <BundleResource Include="Resources\policy_button%402x.png" />
     <BundleResource Include="Resources\policy_button%403x.png" />
+    <BundleResource Include="Resources\agreement_back.png" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />
