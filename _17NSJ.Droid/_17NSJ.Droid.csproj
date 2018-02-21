@@ -295,6 +295,16 @@
     <AndroidResource Include="Resources\drawable-xhdpi\top_sponsor.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\top_visitor.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\top_weather.png" />
+    <AndroidResource Include="Resources\drawable\agreement_back.jpg" />
+    <AndroidResource Include="Resources\drawable\agree_button.png" />
+    <AndroidResource Include="Resources\drawable\agreement_button.png" />
+    <AndroidResource Include="Resources\drawable\policy_button.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\policy_button.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\agree_button.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\agreement_button.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\agree_button.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\agreement_button.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\policy_button.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\loading.gif" />
