@@ -25,7 +25,7 @@ namespace _17NSJ.Constants
                 //new MasterItemModel() {Title = "DAY VISITOR",IconSource="master_visitor.png", IsLineVisible=true, TargetType = typeof(DayVisitorView)},
                 new MasterItemModel() {Title = "概要",IconSource="master_outline.png", IsLineVisible=true, TargetType = typeof(OutlineView)},
                 //new MasterItemModel() {Title = "SPONSOR",IconSource="master_sponsor.png", IsLineVisible=true, TargetType = typeof(SponsorView)},
-                new MasterItemModel() {Title = "設定",IconSource="master_setting.png", IsLineVisible=false, TargetType = typeof(SettingView)}
+                new MasterItemModel() {Title = "その他",IconSource="master_setting.png", IsLineVisible=false, TargetType = typeof(SettingView)}
             };
         }
 
