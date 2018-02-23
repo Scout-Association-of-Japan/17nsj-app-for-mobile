@@ -8,8 +8,6 @@ namespace _17NSJ.Views
 {
     public partial class AppInfoView : ContentPage
     {
-        int count = 0;
-
         public AppInfoView()
         {
             // トラッキングコード
@@ -25,14 +23,11 @@ namespace _17NSJ.Views
             buildVer.Value = DependencyService.Get<IAssemblyService>().GetBuildName();
         }
 
-        void Handle_Tapped(object sender, System.EventArgs e)
+        void CreditTapped(object sender, System.EventArgs e)
         {
-            count++;
-            if(count == 10)
-            {
-                count = 0;
-                Navigation.PushAsync(new SecretView());
-            }
+            Navigation.PushAsync(new CreditPage());
         }
+
+
     }
 }

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="_17NSJ.Views.SettingView">
-    <TableView>
+    <TableView Intent="Settings">
         <TableRoot>
             <TableSection>
                 <TextCell Text="利用規約"  TextColor="Black"  Tapped="AgreementTapped" />             

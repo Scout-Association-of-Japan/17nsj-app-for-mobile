@@ -141,6 +141,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\CreditPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -257,6 +261,9 @@
     </Compile>
     <Compile Include="Views\SecretView.xaml.cs">
       <DependentUpon>SecretView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CreditPage.xaml.cs">
+      <DependentUpon>CreditPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

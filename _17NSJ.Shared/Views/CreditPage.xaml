@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="_17NSJ.Views.CreditPage">
+	<TableView Intent="Data">
+        <TableView.Root>
+            <TableSection Title="企画">
+                <TextCell TextColor="Black" Text="17NSJ 広報部" />                           
+            </TableSection>
+            <TableSection Title="開発・運用">             
+                <TextCell TextColor="Black" Text="デジタルプロモーション班" Detail="17NSJ広報部" Tapped="Handle_Tapped" />                              
+                <TextCell TextColor="Black" Text="ボーイスカウト日本連盟" />                              
+            </TableSection>
+            <TableSection Title="開発支援">             
+                <TextCell TextColor="Black" Text="ICTタスクチーム" Detail="ボーイスカウト日本連盟" />                        
+            </TableSection>
+        </TableView.Root>
+    </TableView>
+</ContentPage>
