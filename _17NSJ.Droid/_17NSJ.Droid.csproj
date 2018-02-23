@@ -305,6 +305,7 @@
     <AndroidResource Include="Resources\drawable-xhdpi\agreement_button.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\policy_button.png" />
     <AndroidResource Include="Resources\drawable\agreement_back.png" />
+    <AndroidResource Include="Resources\drawable\special.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\loading.gif" />

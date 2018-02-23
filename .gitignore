@@ -62,3 +62,5 @@ _17NSJ.iOS/obj
 _17NSJ.UITests/bin
 _17NSJ.UITests/obj
 _17NSJ.Shared/Constants/SecretConstants.cs
+_17NSJ.iOS/Resources/special.png
+_17NSJ.Droid/Resources/drawable/special.png
