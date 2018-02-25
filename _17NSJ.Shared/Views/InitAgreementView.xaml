@@ -7,9 +7,9 @@
         <ScrollView>
             <StackLayout>
                 <Image Source="outline_logo.png" Margin="40,30,40,0" />
-                <cont:ImageButton Source="agree_button.png" Tapped="AgreeButtonClicked" Margin="40,30,40,0" />
-                <cont:ImageButton Source="agreement_button.png" Tapped="ViewAgreementClicked" Margin="40,30,40,0" />
-                <cont:ImageButton Source="policy_button.png" Tapped="ViewPolicyClicked" Margin="40,0,40,30" />
+                <cont:ImageButton Source="agree_button.png" Tapped="AgreeButtonClicked" Margin="40,30,40,0" AutomationId="InitAgreementView.Agree" />
+                <cont:ImageButton Source="agreement_button.png" Tapped="ViewAgreementClicked" Margin="40,30,40,0" AutomationId="InitAgreementView.Agreement" />
+                <cont:ImageButton Source="policy_button.png" Tapped="ViewPolicyClicked" Margin="40,0,40,30" AutomationId="InitAgreementView.Policy" />
             </StackLayout>
         </ScrollView>    
     </Grid> 

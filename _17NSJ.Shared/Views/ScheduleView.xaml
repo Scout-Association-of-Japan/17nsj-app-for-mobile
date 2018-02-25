@@ -5,6 +5,6 @@
     x:Class="_17NSJ.Views.ScheduleView">
     <Grid>
         <WebView x:Name="scheduleView" Navigated="calLoaded" />
-        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator"/>
+        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" AutomationId="ScheduleView.Indicator" />
     </Grid>
 </ContentPage>

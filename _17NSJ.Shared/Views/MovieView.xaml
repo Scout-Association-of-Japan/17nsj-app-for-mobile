@@ -36,6 +36,6 @@
             </ListView>
             
         </StackLayout>
-        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" IsVisible="false"/>       
+        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" IsVisible="false" AutomationId="MovieView.Indicator" />       
     </Grid>
 </ContentPage>

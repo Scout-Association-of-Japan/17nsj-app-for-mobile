@@ -72,6 +72,6 @@
                 </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
-        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" IsVisible="false"/>       
+        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" IsVisible="false" AutomationId="ActivityView.Indicator" />       
     </Grid>
 </ContentPage>

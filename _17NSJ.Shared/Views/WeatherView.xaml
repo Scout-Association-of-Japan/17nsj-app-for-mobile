@@ -5,6 +5,6 @@
     x:Class="_17NSJ.Views.WeatherView">
 	<Grid>
         <WebView Source="https://weather.yahoo.co.jp/weather/jp/17/5620/17205.html" Navigated="siteLoaded" />
-        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator"/>
+        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" AutomationId="WeatherView.Indicator"/>
     </Grid>
 </ContentPage>

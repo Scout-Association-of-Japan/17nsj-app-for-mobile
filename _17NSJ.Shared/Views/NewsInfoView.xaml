@@ -60,6 +60,6 @@
             
         </StackLayout>
             
-        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" IsVisible="false"/>       
+        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" IsVisible="false" AutomationId="NewsInfoView.Indicator" />       
     </Grid>
 </ContentPage>

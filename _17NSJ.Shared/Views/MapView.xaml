@@ -5,6 +5,6 @@
     x:Class="_17NSJ.Views.MapView">
     <Grid>
     	<WebView x:Name="mapView" Navigated="mapLoaded" />
-        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator"/>
+        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" AutomationId="MapView.Indicator" />
     </Grid>
 </ContentPage>

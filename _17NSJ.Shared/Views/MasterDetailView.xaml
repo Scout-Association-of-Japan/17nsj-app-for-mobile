@@ -26,7 +26,7 @@
                                             <ColumnDefinition Width="*" />
                                         </Grid.ColumnDefinitions>
                                         <Image Grid.Column="0" Source="{Binding IconSource}" VerticalOptions="CenterAndExpand" />
-                                        <Label Grid.Column="1" Text="{Binding Title}" TextColor="White" VerticalOptions="CenterAndExpand" />
+                                        <Label Grid.Column="1" Text="{Binding Title}" TextColor="White" VerticalOptions="CenterAndExpand" AutomationId="MasterDetailView.MasterItemLabel" />
                                     </Grid>
                                 <BoxView Grid.Row="1" Color="White" HeightRequest="1.5" IsVisible="{Binding IsLineVisible}" />
                                 </Grid>
