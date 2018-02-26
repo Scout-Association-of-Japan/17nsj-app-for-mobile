@@ -9,7 +9,7 @@
                 <TextCell Text="プライバシーポリシー"  TextColor="Black"  Tapped="PolicyTapped" />             
             </TableSection>
             <TableSection>
-                <TextCell Text="ライセンス"  TextColor="Black"  Tapped="LicenseTapped"/>
+                <TextCell Text="ライセンス"  TextColor="Black"  Tapped="LicenseTapped" />
                 <TextCell Text="アプリケーション情報" TextColor="Black" Tapped="AppInfoTapped" />             
             </TableSection>
         </TableRoot>     

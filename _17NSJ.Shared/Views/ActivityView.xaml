@@ -9,7 +9,7 @@
     </ContentPage.ToolbarItems>
 	<Grid>
         <StackLayout>
-            <SearchBar x:Name="searchBar" HeightRequest="45" TextChanged="SearchTextChanged" />
+            <SearchBar x:Name="searchBar" HeightRequest="45" TextChanged="SearchTextChanged" AutomationId="ActivityView.SearchBar" />
             <af:RepeatableWrapLayout x:Name="categoryList" Padding="5" Spacing="5">
                 <af:RepeatableWrapLayout.ItemTemplate>
                     <DataTemplate>
@@ -36,7 +36,7 @@
                 </StackLayout>
             </ScrollView>
             
-            <ListView x:Name="activityList" ItemTapped="ItemSelected" HasUnevenRows="true" IsPullToRefreshEnabled="true" Refreshing="ListPulled">
+            <ListView x:Name="activityList" ItemTapped="ItemSelected" HasUnevenRows="true" IsPullToRefreshEnabled="true" Refreshing="ListPulled" AutomationId="ActivityView.ListView">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

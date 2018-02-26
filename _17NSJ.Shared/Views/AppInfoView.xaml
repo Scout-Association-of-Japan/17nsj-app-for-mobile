@@ -12,7 +12,7 @@
                     <cont:KeyValueCell x:Name="buildVer" />             
                 </TableSection>
                 <TableSection>
-                    <TextCell TextColor="Black" Text="クレジット" Tapped="CreditTapped" />                                
+                    <TextCell TextColor="Black" Text="クレジット" Tapped="CreditTapped" AutomationId="AppInfoView.Credit" />                                
                 </TableSection>
             </TableView.Root>
         </TableView>

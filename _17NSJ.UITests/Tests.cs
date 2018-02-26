@@ -27,7 +27,7 @@ namespace _17NSJ.UITests
         }
 
         /// <summary>
-        /// 初期起動時い表示される同意画面の各画面をテストします。
+        /// 初期起動時に表示される同意画面の各画面をテストします。
         /// </summary>
         [Test]
         public void AgreementView()
@@ -120,6 +120,12 @@ namespace _17NSJ.UITests
             app.WaitForNoElement(x => x.Marked("ActivityView.Indicator"), timeout: TimeSpan.FromSeconds(30));
             await Task.Delay(3000);
             app.Screenshot("ActivityView");
+            app.EnterText(x => x.Marked("ActivityView.SearchBar"), "K");
+            app.PressEnter();
+            app.Screenshot("ActivityViewFiltered");
+            app.Tap(x => x.Marked("ActivityView.ListView").Child(0));
+            app.Screenshot("ActivityDetailView");
+            app.Back();
             TapHamburger();
             TapMasterItem("ホーム");
         }
@@ -239,6 +245,15 @@ namespace _17NSJ.UITests
             //SettingView
             app.Tap("TopView.Setting");
             app.Screenshot("SettingView");
+            app.Tap(x => x.Marked("ライセンス"));
+            app.Screenshot("LicenseView");
+            app.Back();
+            app.Tap(x => x.Marked("アプリケーション情報"));
+            app.Screenshot("AppInfoView");
+            app.Tap(x => x.Marked("クレジット"));
+            app.Screenshot("CreditView");
+            app.Back();
+            app.Back();
             TapHamburger();
             TapMasterItem("ホーム");
         }
