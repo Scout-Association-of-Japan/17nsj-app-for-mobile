@@ -26,12 +26,6 @@ namespace _17NSJ.UITests
             app = AppInitializer.StartApp(platform);
         }
 
-        [Test]
-        public void WelcomeTextIsDisplayed2()
-        {
-            app.Screenshot("Welcome screen.");
-        }
-
         /// <summary>
         /// 初期起動時い表示される同意画面の各画面をテストします。
         /// </summary>
@@ -45,94 +39,202 @@ namespace _17NSJ.UITests
             app.Back();
             app.Tap("InitAgreementView.Policy");
             app.Screenshot("PolicyView");
+            app.Back();
+            app.Tap("InitAgreementView.Agree");
+
+            //TopViewの保存
+            app.Screenshot("TopView");
         }
 
         /// <summary>
-        /// TopViewから各Viewへの繊維をテストします
+        /// TopViewからNewsInfoViewへの遷移をテストします
         /// </summary>
         [Test]
-        public async Task TopToEachViewAsync()
+        public async Task TopToNewsInfo()
         {
             //同意画面に同意
             app.WaitForElement("InitAgreementView.Agreement");
             app.Tap("InitAgreementView.Agree");
 
-            //TopViewの保存
-            app.Screenshot("TopView");
-
-            //NewsInfoView
             app.Tap("TopView.NewsInfo");
             app.WaitForNoElement(x => x.Marked("NewsInfoView.Indicator"), timeout: TimeSpan.FromSeconds(30));
             await Task.Delay(3000);
             app.Screenshot("NewsInfoView");
+            app.EnterText(x => x.Marked("NewsInfoView.SearchBar"), "テ");
+            app.PressEnter();
+            app.Screenshot("NewsInfoViewFiltered");
+            app.Tap(x => x.Marked("NewsInfoView.ListView").Child(0));
+            app.Screenshot("NewsInfoDetailView");
+            app.Back();
             TapHamburger();
             TapMasterItem("ホーム");
+        }
 
-            //ScheduleView
+        /// <summary>
+        /// TopViewからScheduleViewへの遷移をテストします
+        /// </summary>
+        [Test]
+        public async Task TopToSchedule()
+        {
+            //同意画面に同意
+            app.WaitForElement("InitAgreementView.Agreement");
+            app.Tap("InitAgreementView.Agree");
+
             app.Tap("TopView.Schedule");
             app.WaitForNoElement(x => x.Marked("ScheduleView.Indicator"), timeout: TimeSpan.FromSeconds(30));
             await Task.Delay(3000);
             app.Screenshot("ScheduleView");
             TapHamburger();
             TapMasterItem("ホーム");
+        }
 
-            //MapView
+        /// <summary>
+        /// TopViewからMapViewへの遷移をテストします
+        /// </summary>
+        [Test]
+        public async Task TopToMap()
+        {
+            //同意画面に同意
+            app.WaitForElement("InitAgreementView.Agreement");
+            app.Tap("InitAgreementView.Agree");
+
             app.Tap("TopView.Map");
             app.WaitForNoElement(x => x.Marked("MapView.Indicator"), timeout: TimeSpan.FromSeconds(30));
             await Task.Delay(3000);
             app.Screenshot("MapView");
             TapHamburger();
             TapMasterItem("ホーム");
+        }
 
-            //AvtivityView
+        /// <summary>
+        /// TopViewからActivityViewへの遷移をテストします
+        /// </summary>
+        [Test]
+        public async Task TopToActivity()
+        {
+            //同意画面に同意
+            app.WaitForElement("InitAgreementView.Agreement");
+            app.Tap("InitAgreementView.Agree");
+
             app.Tap("TopView.Activity");
             app.WaitForNoElement(x => x.Marked("ActivityView.Indicator"), timeout: TimeSpan.FromSeconds(30));
             await Task.Delay(3000);
             app.Screenshot("ActivityView");
             TapHamburger();
             TapMasterItem("ホーム");
+        }
 
-            //WeatherView
+        /// <summary>
+        /// TopViewからWeatherViewへの遷移をテストします
+        /// </summary>
+        [Test]
+        public async Task TopToWeather()
+        {
+            //同意画面に同意
+            app.WaitForElement("InitAgreementView.Agreement");
+            app.Tap("InitAgreementView.Agree");
+
             app.Tap("TopView.Weather");
             app.WaitForNoElement(x => x.Marked("WeatherView.Indicator"), timeout: TimeSpan.FromSeconds(30));
             await Task.Delay(3000);
             app.Screenshot("WeatherView");
             TapHamburger();
             TapMasterItem("ホーム");
+        }
 
-            //SocialView
+        /// <summary>
+        /// TopViewからSocialViewへの遷移をテストします
+        /// </summary>
+        [Test]
+        public void TopToSocial()
+        {
+            //同意画面に同意
+            app.WaitForElement("InitAgreementView.Agreement");
+            app.Tap("InitAgreementView.Agree");
+
             app.Tap("TopView.Social");
             app.Screenshot("SocialView");
             TapHamburger();
             TapMasterItem("ホーム");
+        }
 
-            //MovieView
+        /// <summary>
+        /// TopViewからMovieViewへの遷移をテストします
+        /// </summary>
+        [Test]
+        public async Task TopToMovie()
+        {
+            //同意画面に同意
+            app.WaitForElement("InitAgreementView.Agreement");
+            app.Tap("InitAgreementView.Agree");
+
             app.Tap("TopView.Movie");
             app.WaitForNoElement(x => x.Marked("MovieView.Indicator"), timeout: TimeSpan.FromSeconds(30));
             await Task.Delay(3000);
             app.Screenshot("MovieView");
             TapHamburger();
             TapMasterItem("ホーム");
+        }
 
-            //FriendshipView
+        /// <summary>
+        /// TopViewからFriendshipViewへの遷移をテストします
+        /// </summary>
+        [Test]
+        public void TopToFriendship()
+        {
+            //同意画面に同意
+            app.WaitForElement("InitAgreementView.Agreement");
+            app.Tap("InitAgreementView.Agree");
+
             app.Tap("TopView.Friendship");
             app.Screenshot("FriendshipView");
             TapHamburger();
             TapMasterItem("ホーム");
+        }
 
-            //DocumentView
+        /// <summary>
+        /// TopViewからDocumentViewへの遷移をテストします
+        /// </summary>
+        [Test]
+        public async Task TopToDocument()
+        {
+            //同意画面に同意
+            app.WaitForElement("InitAgreementView.Agreement");
+            app.Tap("InitAgreementView.Agree");
+
             app.Tap("TopView.Document");
             app.WaitForNoElement(x => x.Marked("DocumentView.Indicator"), timeout: TimeSpan.FromSeconds(30));
             await Task.Delay(3000);
             app.Screenshot("DocumentView");
             TapHamburger();
             TapMasterItem("ホーム");
+        }
 
-            //OutlineView
+        /// <summary>
+        /// TopViewからOutlineViewへの遷移をテストします
+        /// </summary>
+        [Test]
+        public void TopToOutline()
+        {
+            //同意画面に同意
+            app.WaitForElement("InitAgreementView.Agreement");
+            app.Tap("InitAgreementView.Agree");
+
             app.Tap("TopView.Outline");
             app.Screenshot("OutlineView");
             TapHamburger();
             TapMasterItem("ホーム");
+        }
+
+        /// <summary>
+        /// TopViewからSettingViewへの遷移をテストします
+        /// </summary>
+        [Test]
+        public void TopToSetting()
+        {
+            //同意画面に同意
+            app.WaitForElement("InitAgreementView.Agreement");
+            app.Tap("InitAgreementView.Agree");
 
             //SettingView
             app.Tap("TopView.Setting");
