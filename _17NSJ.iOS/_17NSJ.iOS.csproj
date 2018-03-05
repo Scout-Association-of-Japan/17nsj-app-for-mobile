@@ -36,7 +36,7 @@
     <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: Takuma Ishii (VRPSJ9R2T5)</CodesignKey>
     <MtouchFloat32>true</MtouchFloat32>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>SdkOnly</MtouchLink>
@@ -80,7 +80,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
-<CodesignProvision></CodesignProvision>
+<CodesignProvision>Visual Studio: 17NSJ Development</CodesignProvision>
 <BuildIpa>true</BuildIpa>
 <IpaIncludeArtwork>true</IpaIncludeArtwork>
   </PropertyGroup>

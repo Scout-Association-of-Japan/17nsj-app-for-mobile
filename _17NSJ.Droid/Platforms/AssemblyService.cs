@@ -21,16 +21,16 @@ namespace _17NSJ.Droid.Platforms
         public string GetVersionName()
         {
             var context = Forms.Context;
-            var name = context.PackageManager.GetPackageInfo(context.PackageName, 0).VersionName;
-            return name;
+            var code = context.PackageManager.GetPackageInfo(context.PackageName, 0).VersionCode;
+            return code.ToString();
         }
 
         //アプリバージョンコードを取得する
         public string GetBuildName()
         {
             var context = Forms.Context;
-            var code = context.PackageManager.GetPackageInfo(context.PackageName, 0).VersionCode;
-            return code.ToString();
+            var name = context.PackageManager.GetPackageInfo(context.PackageName, 0).VersionName;
+            return name;
         }
     }
 }
