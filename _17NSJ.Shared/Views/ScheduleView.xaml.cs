@@ -26,10 +26,6 @@ namespace _17NSJ.Views
             };
 
             scheduleView.Source = html;
-        }
-
-        void calLoaded(object sender, Xamarin.Forms.WebNavigatedEventArgs e)
-        {
             indicator.IsVisible = false;
         }
     }

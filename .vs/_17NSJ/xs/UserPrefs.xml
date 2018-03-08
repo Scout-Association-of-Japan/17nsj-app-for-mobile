@@ -1,15 +1,14 @@
-﻿<Properties StartupConfiguration="{D62F9632-C595-4839-AD1B-A4C8F8087993}|Default">
-  <MonoDevelop.Ide.ItemProperties.__17NSJ.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/App.xaml.cs">
+﻿<Properties StartupConfiguration="{E38D0FC9-0B24-46A5-B80F-B7D4387CE128}|Default">
+  <MonoDevelop.Ide.ItemProperties.__17NSJ.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.03157df38d296b27" />
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="_17NSJ.Shared/Views/TopView.xaml" Line="162" Column="1" />
-      <File FileName="_17NSJ.Shared/Constants/SecretConstants.cs" Line="7" Column="76" />
-      <File FileName="_17NSJ.Shared/Views/TopView.xaml.cs" Line="1" Column="1" />
-      <File FileName="_17NSJ.Shared/App.xaml.cs" Line="38" Column="34" />
-      <File FileName="_17NSJ.Droid/MainActivity.cs" Line="34" Column="10" />
+      <File FileName="_17NSJ.Shared/App.xaml.cs" Line="11" Column="34" />
+      <File FileName="_17NSJ.Shared/Views/InitAgreementView.xaml.cs" Line="6" Column="35" />
+      <File FileName="_17NSJ.iOS/Entitlements.plist" />
+      <File FileName="_17NSJ.iOS/AppDelegate.cs" Line="42" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/junpei/Documents/GitHub/17nsj/17nsj-mobile-app/_17NSJ.Shared/Views/SocialView.xaml" relfile="_17NSJ.Shared/Views/SocialView.xaml" line="16" column="1" />
@@ -19,6 +18,6 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.__17NSJ.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.B1FDC7F0-4A89-4314-BBC0-EF17C9BBA449" />
+  <MonoDevelop.Ide.ItemProperties.__17NSJ.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.7e38ce4f115965631f22d1cf3fa6494c85052fdb" automaticSigning="False" identitySerialNumber="695F3627948322C" />
   <MonoDevelop.Ide.ItemProperties.__17NSJ.UITests PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

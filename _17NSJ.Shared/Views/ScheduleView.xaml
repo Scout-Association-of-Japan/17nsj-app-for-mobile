@@ -4,7 +4,7 @@
     xmlns:cont="clr-namespace:_17NSJ.Controls"
     x:Class="_17NSJ.Views.ScheduleView">
     <Grid>
-        <WebView x:Name="scheduleView" Navigated="calLoaded" />
+        <WebView x:Name="scheduleView" />
         <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" AutomationId="ScheduleView.Indicator" />
     </Grid>
 </ContentPage>
