@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using _17NSJ.Constants;
 using _17NSJ.Models;
 using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
@@ -37,7 +38,15 @@ namespace _17NSJ.Views
             this.category.Text = "区分：" + act.CategoryName;
             this.term.Text = "日時：" + act.Term;
             this.location.Text = "場所：" + act.Location;
-            this.map.Source = @"https://www.google.co.jp/maps/@37.4387465,137.3275352,18.65z";
+
+            if (!string.IsNullOrEmpty(act.MapURL))
+            {
+                this.map.Source = act.MapURL;
+            }
+            else
+            {
+                this.map.Source = SecretConstants.MapUrl;
+            }
         }
     }
 }

@@ -6,6 +6,7 @@ using _17NSJ.Services;
 using _17NSJ.Exceptions;
 using Xamarin.Forms;
 using Microsoft.AppCenter.Analytics;
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 namespace _17NSJ.Views
 {
@@ -13,13 +14,18 @@ namespace _17NSJ.Views
     {
         public TopView()
         {
+            // iOS用のSetUseSafeArea設定
+            On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
+            
             // トラッキングコード
             Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "TopView" } });
 
             InitializeComponent();
             CheckUpdateAsync();
 
-            NavigationPage.SetHasNavigationBar(this, false);
+            Xamarin.Forms.NavigationPage.SetHasNavigationBar(this, false);
+
+
         }
 
          async void CheckUpdateAsync()
