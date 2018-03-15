@@ -14,5 +14,11 @@ namespace _17NSJ.Views
 
             InitializeComponent();
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            Application.Current.MainPage = new TopView();
+            return true;
+        }
     }
 }

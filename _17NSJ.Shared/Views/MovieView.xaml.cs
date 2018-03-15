@@ -71,5 +71,10 @@ namespace _17NSJ.Views
             GetMoviesAsync();
         }
 
+        protected override bool OnBackButtonPressed()
+        {
+            Application.Current.MainPage = new TopView();
+            return true;
+        }
     }
 }

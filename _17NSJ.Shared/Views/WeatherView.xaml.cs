@@ -19,5 +19,11 @@ namespace _17NSJ.Views
         {
             indicator.IsVisible = false;
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            Application.Current.MainPage = new TopView();
+            return true;
+        }
     }
 }

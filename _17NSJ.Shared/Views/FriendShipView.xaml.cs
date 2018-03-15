@@ -27,5 +27,11 @@ namespace _17NSJ.Views
                 Device.OpenUri(new Uri(item.Url));
             }
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            Application.Current.MainPage = new TopView();
+            return true;
+        }
     }
 }

@@ -28,5 +28,11 @@ namespace _17NSJ.Views
             scheduleView.Source = html;
             indicator.IsVisible = false;
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            Application.Current.MainPage = new TopView();
+            return true;
+        }
     }
 }

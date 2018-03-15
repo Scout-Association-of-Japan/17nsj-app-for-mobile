@@ -108,5 +108,11 @@ namespace _17NSJ.Views
             var filterdList = originalNewsInfoList.Where(x => x.Title.Contains(query) || (x.Outline != null &&x.Outline.Contains(query))).ToList();
             return new ObservableCollection<NewsInfoModel>(filterdList);
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            Application.Current.MainPage = new TopView();
+            return true;
+        }
     }
 }

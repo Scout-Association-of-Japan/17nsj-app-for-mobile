@@ -70,5 +70,11 @@ namespace _17NSJ.Views
         {
             GetDocumentsAsync();
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            Application.Current.MainPage = new TopView();
+            return true;
+        }
     }
 }

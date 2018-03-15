@@ -34,5 +34,11 @@ namespace _17NSJ.Views
         {
             Navigation.PushAsync(new AppInfoView());
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            Application.Current.MainPage = new TopView();
+            return true;
+        }
     }
 }
