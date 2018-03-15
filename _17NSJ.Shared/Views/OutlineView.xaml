@@ -22,6 +22,14 @@
             <Label Text="会期" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
             <Label Text="平成30年(2018)年" TextColor="#95989A" HorizontalTextAlignment="Center" Font="20" />
             <Label Text="8月4日(土)〜10日(金)" TextColor="#95989A" HorizontalTextAlignment="Center" Font="20" />
+            <BoxView HeightRequest="1" Color="Gray"/>
+            <Label Text=" 8月 4日(土)  参加者入場・設営" TextColor="#95989A" HorizontalTextAlignment="Start" Font="15" />
+            <Label Text=" 8月 5日(日)  開会式" TextColor="#95989A" HorizontalTextAlignment="Start" Font="15" />
+            <Label Text=" 8月 6日(月)  プログラム" TextColor="#95989A" HorizontalTextAlignment="Start" Font="15" />
+            <Label Text=" 8月 7日(火)  信仰奨励・ジャンボリー大集会" TextColor="#95989A" HorizontalTextAlignment="Start" Font="15" />
+            <Label Text=" 8月 8日(水)  プログラム" TextColor="#95989A" HorizontalTextAlignment="Start" Font="15" />
+            <Label Text=" 8月 9日(木)  プログラム・閉会式" TextColor="#95989A" HorizontalTextAlignment="Start" Font="15" />
+            <Label Text=" 8月10日(金)  撤営・参加者退場" TextColor="#95989A" HorizontalTextAlignment="Start" Font="15" />     
             
             <Label Text="会場" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
             <Label Text="石川県珠洲市蛸島町" TextColor="#95989A" HorizontalTextAlignment="Center" Font="20" />
