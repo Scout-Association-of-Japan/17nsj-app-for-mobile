@@ -38,5 +38,11 @@ namespace _17NSJ.iOS
                 return base.FinishedLaunching(app, options);
             }
         }
+
+        public override void OnActivated(UIApplication uiApplication)
+        {
+            base.OnActivated(uiApplication);
+            uiApplication.ApplicationIconBadgeNumber = 0;
+        }
     }
 }
