@@ -19,10 +19,8 @@ namespace _17NSJ.Views
 
         void AgreeButtonClicked(object sender, System.EventArgs e)
         {
-            /*実際に使うときは同意したら保存する
             Application.Current.Properties["IsAgreed"] = true;
             Application.Current.SavePropertiesAsync();
-            */
 
             AppCenter.Start($"ios={SecretConstants.AppCenteriOS};" + $"android={SecretConstants.AppCenterDroid}", typeof(Analytics), typeof(Crashes), typeof(Push));
             Application.Current.MainPage = new NavigationPage(new TopView())
