@@ -6,6 +6,9 @@
        
         <ScrollView>
             <StackLayout>
+                <StackLayout.Padding>
+                    <OnPlatform x:TypeArguments="Thickness" iOS="0, 50, 0, 0" Android="0, 0, 0, 0" />
+                </StackLayout.Padding>
                 <Image Source="outline_logo.png" Margin="40,30,40,0" />
                 <cont:ImageButton Source="agree_button.png" Tapped="AgreeButtonClicked" Margin="40,30,40,0" AutomationId="InitAgreementView.Agree" />
                 <cont:ImageButton Source="agreement_button.png" Tapped="ViewAgreementClicked" Margin="40,30,40,0" AutomationId="InitAgreementView.Agreement" />
