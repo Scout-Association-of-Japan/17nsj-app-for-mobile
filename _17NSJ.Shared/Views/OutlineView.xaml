@@ -16,8 +16,8 @@
 
             <Label Text="テーマ" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
             <Label Text="「冒険〜能登のチカラ未来へ〜」" TextColor="#95989A" HorizontalTextAlignment="Center" Font="20" />
-            <Label Text="英語テーマ：" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />
-            <Label Text="ADVENTURE - NOTO FOR FUTURE" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />
+            <Label Text="英語テーマ" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />
+            <Label Text="ADVENTURE - NOTO FOR FUTURE -" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />
 
             <Label Text="会期" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
             <Label Text="平成30年(2018)年" TextColor="#95989A" HorizontalTextAlignment="Center" Font="20" />
