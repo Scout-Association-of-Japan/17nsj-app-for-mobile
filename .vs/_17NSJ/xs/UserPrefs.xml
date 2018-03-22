@@ -1,23 +1,23 @@
 ﻿<Properties StartupConfiguration="{E38D0FC9-0B24-46A5-B80F-B7D4387CE128}|Default">
-  <MonoDevelop.Ide.ItemProperties.__17NSJ.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.03157df38d296b27" />
+  <MonoDevelop.Ide.ItemProperties.__17NSJ.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="_17NSJ.Shared/App.xaml.cs" Line="11" Column="34" />
-      <File FileName="_17NSJ.Shared/Views/InitAgreementView.xaml.cs" Line="6" Column="35" />
-      <File FileName="_17NSJ.iOS/Entitlements.plist" />
-      <File FileName="_17NSJ.iOS/AppDelegate.cs" Line="42" Column="2" />
+      <File FileName="_17NSJ.Shared/Views/OutlineView.xaml" Line="44" Column="12" />
+      <File FileName="_17NSJ.iOS/Info.plist" />
+      <File FileName="_17NSJ.Droid/Properties/AndroidManifest.xml" Line="8" Column="12" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/junpei/Documents/GitHub/17nsj/17nsj-mobile-app/_17NSJ.Shared/Views/SocialView.xaml" relfile="_17NSJ.Shared/Views/SocialView.xaml" line="16" column="1" />
       <Breakpoint file="/Users/junpei/Documents/GitHub/17nsj/17nsj-mobile-app/_17NSJ.Shared/Views/ActivityView.xaml" relfile="_17NSJ.Shared/Views/ActivityView.xaml" line="21" column="1" />
       <Breakpoint file="/Users/junpei/Documents/GitHub/17nsj/17nsj-mobile-app/_17NSJ.Shared/Views/ActivityDetailView.xaml" relfile="_17NSJ.Shared/Views/ActivityDetailView.xaml" line="7" column="1" />
+      <Breakpoint file="/Users/junpei/Documents/GitHub/17nsj/17nsj-mobile-app/_17NSJ.Shared/Services/AppDataService.cs" relfile="_17NSJ.Shared/Services/AppDataService.cs" line="49" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.__17NSJ.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.7e38ce4f115965631f22d1cf3fa6494c85052fdb" automaticSigning="False" identitySerialNumber="695F3627948322C" />
+  <MonoDevelop.Ide.ItemProperties.__17NSJ.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F9059881-BDFE-45E1-B236-9D47EBC09D33" automaticSigning="False" identitySerialNumber="695F3627948322C" />
   <MonoDevelop.Ide.ItemProperties.__17NSJ.UITests PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
