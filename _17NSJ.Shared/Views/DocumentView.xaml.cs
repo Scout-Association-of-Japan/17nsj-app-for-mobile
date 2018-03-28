@@ -39,7 +39,6 @@ namespace _17NSJ.Views
                 this.error.IsVisible = true;
                 this.documentList.IsVisible = false;
                 this.documentList.ItemsSource = null;
-                this.documentList.ItemsSource = null;
                 this.documentList.SeparatorVisibility = SeparatorVisibility.None;
                 this.documentList.EndRefresh();
                 this.indicator.IsVisible = false;

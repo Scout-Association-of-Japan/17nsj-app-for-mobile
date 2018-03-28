@@ -39,7 +39,6 @@ namespace _17NSJ.Views
                 this.error.IsVisible = true;
                 this.movieList.IsVisible = false;
                 this.movieList.ItemsSource = null;
-                this.movieList.ItemsSource = null;
                 this.movieList.SeparatorVisibility = SeparatorVisibility.None;
                 this.movieList.EndRefresh();
                 this.indicator.IsVisible = false;
