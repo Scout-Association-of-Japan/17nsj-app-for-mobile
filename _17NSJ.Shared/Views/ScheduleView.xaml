@@ -2,9 +2,49 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:cont="clr-namespace:_17NSJ.Controls"
+    xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar"
     x:Class="_17NSJ.Views.ScheduleView">
     <Grid>
-        <WebView x:Name="scheduleView" />
-        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" AutomationId="ScheduleView.Indicator" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <controls:Calendar Padding="10,10,10,0" 
+                               StartDay="Sunday" 
+                               SelectedBorderWidth="4" 
+                               DisabledBorderColor="Black"
+                               DateClicked="DateClicked"
+                               TitleLeftArrowTextColor ="#0071bc"
+                               TitleRightArrowTextColor ="#0071bc"
+                               SelectedBorderColor="#ff0000"
+                               x:Name="calendar">
+            </controls:Calendar>
+            <ListView Grid.Row="1" x:Name="list">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Margin="15,0,0,0">
+                                <Label Text="{Binding Title}" FontSize="20" />
+                                <StackLayout Orientation="Horizontal" IsVisible="{Binding HasRange}">
+                                    <Label Text="{Binding Start, StringFormat='{}{0:HH\\:mm}'}" FontSize="10" />
+                                    <Label Text=" ~ " FontSize="10" />
+                                    <Label Text="{Binding End, StringFormat='{}{0:HH\\:mm}'}" FontSize="10" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>       
+            </ListView>
+        </Grid>
+        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" AutomationId="ScheduleView.Indicator" IsVisible="false" />
+        <ScrollView x:Name="error" IsVisible="false">
+            <StackLayout>
+                <Image Source="error.png" HorizontalOptions="CenterAndExpand" />
+                <Label Text="この機能は現在ご利用になれません。" HorizontalOptions="CenterAndExpand" />
+                <Label Text="Webプロキシ環境など特殊環境下では正常に通信できない場合があります。" FontSize="9" HorizontalOptions="Center" />
+                <Button Image="reload.png" Pressed="ReloadTapped"  />
+            </StackLayout>
+        </ScrollView>
     </Grid>
 </ContentPage>

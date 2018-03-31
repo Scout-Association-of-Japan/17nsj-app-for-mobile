@@ -15,6 +15,8 @@ namespace _17NSJ.iOS
 
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("ja-JP");
+
             // Code for starting up the Xamarin Test Cloud Agent
             #if ENABLE_TEST_CLOUD
                 Xamarin.Calabash.Start();
@@ -33,7 +35,7 @@ namespace _17NSJ.iOS
             {
                 global::Xamarin.Forms.Forms.Init();
                 AnimationViewRenderer.Init();
-
+                XamForms.Controls.iOS.Calendar.Init();
                 LoadApplication(new App());
                 return base.FinishedLaunching(app, options);
             }

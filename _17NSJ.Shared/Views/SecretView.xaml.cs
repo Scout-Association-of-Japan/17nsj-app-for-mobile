@@ -10,6 +10,7 @@ namespace _17NSJ.Views
         public SecretView(string imgName)
         {
             Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "SecretView" } });
+            Analytics.TrackEvent("SecretView", new Dictionary<string, string> { { "Img", imgName } });
 
             InitializeComponent();
             this.img.Source = imgName;

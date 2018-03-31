@@ -17,13 +17,15 @@ namespace _17NSJ.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("ja-JP");
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-
+            XamForms.Controls.Droid.Calendar.Init();
             Push.SetSenderId(SecretConstants.SenderId);
             LoadApplication(new App());
         }

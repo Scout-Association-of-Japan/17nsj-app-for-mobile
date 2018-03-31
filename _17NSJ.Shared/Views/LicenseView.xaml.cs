@@ -19,6 +19,7 @@ namespace _17NSJ.Views
             list.Add("Newtonsoft.Json");
             list.Add("AiForms.Layouts");
             list.Add("Com.Airbnb.Xamarin.Forms.Lottie");
+            list.Add("XamForms.Controls.Calendar");
             this.licenseList.ItemsSource = list;
         }
     }

@@ -18,6 +18,7 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -140,6 +141,12 @@
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.5.0.280555\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="XamForms.Controls.Calendar">
+      <HintPath>..\packages\XamForms.Controls.Calendar.1.1.1\lib\MonoAndroid10\XamForms.Controls.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="XamForms.Controls.Calendar.Droid">
+      <HintPath>..\packages\XamForms.Controls.Calendar.1.1.1\lib\MonoAndroid10\XamForms.Controls.Calendar.Droid.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -308,6 +315,8 @@
     <AndroidResource Include="Resources\drawable\special_bp.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ci_menu_with_logo.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ci_menu_with_logo.png" />
+    <AndroidResource Include="Resources\drawable\special_sg.png" />
+    <AndroidResource Include="Resources\drawable\special_100.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\loading.gif" />

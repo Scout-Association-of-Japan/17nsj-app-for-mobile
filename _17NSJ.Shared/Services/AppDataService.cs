@@ -70,6 +70,13 @@ namespace _17NSJ.Services
             return JsonConvert.DeserializeObject<ObservableCollection<NewspaperModel>>(responseText);
         }
 
+        public async Task<ObservableCollection<ScheduleModel>> GetSchedulesAsync()
+        {
+            HttpResponseMessage response = await GetAsyncBase(new Uri($"{SecretConstants.ApiUrl}schedules"));
+            var responseText = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<ObservableCollection<ScheduleModel>>(responseText);
+        }
+
         private async Task<HttpResponseMessage> GetAsyncBase(Uri uri)
         {
             // トークンが空のときは取得
