@@ -7,11 +7,12 @@ namespace _17NSJ.Views
 {
     public partial class SecretView : ContentPage
     {
-        public SecretView()
+        public SecretView(string imgName)
         {
             Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "SecretView" } });
 
             InitializeComponent();
+            this.img.Source = imgName;
         }
     }
 }

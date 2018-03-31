@@ -5056,7 +5056,7 @@ namespace _17NSJ.Droid
 			public const int social_youtube = 2130837806;
 			
 			// aapt resource value: 0x7f02012f
-			public const int special = 2130837807;
+			public const int special_bp = 2130837807;
 			
 			// aapt resource value: 0x7f020130
 			public const int top_activity = 2130837808;

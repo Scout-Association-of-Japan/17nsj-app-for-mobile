@@ -22,7 +22,7 @@ namespace _17NSJ.Views
             if (count == 10)
             {
                 count = 0;
-                Navigation.PushAsync(new SecretView());
+                Navigation.PushAsync(new SecretView("special_bp.png"));
             }
         }
     }

@@ -330,7 +330,7 @@
     <BundleResource Include="Resources\policy_button%402x.png" />
     <BundleResource Include="Resources\policy_button%403x.png" />
     <BundleResource Include="Resources\agreement_back.png" />
-    <BundleResource Include="Resources\special.png" />
+    <BundleResource Include="Resources\special_bp.png" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />

@@ -27,8 +27,9 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidLinkMode>None</AndroidLinkMode>
 <RunCodeAnalysis>false</RunCodeAnalysis><EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+<AndroidLinkMode>None</AndroidLinkMode>
+<JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -304,7 +305,7 @@
     <AndroidResource Include="Resources\drawable-xhdpi\agreement_button.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\policy_button.png" />
     <AndroidResource Include="Resources\drawable\agreement_back.png" />
-    <AndroidResource Include="Resources\drawable\special.png" />
+    <AndroidResource Include="Resources\drawable\special_bp.png" />
     <AndroidResource Include="Resources\drawable-hdpi\ci_menu_with_logo.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\ci_menu_with_logo.png" />
   </ItemGroup>
