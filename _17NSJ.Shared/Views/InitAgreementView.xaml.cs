@@ -22,7 +22,9 @@ namespace _17NSJ.Views
             Application.Current.Properties["IsAgreed"] = true;
             Application.Current.SavePropertiesAsync();
 
+#if !DEBUG
             AppCenter.Start($"ios={SecretConstants.AppCenteriOS};" + $"android={SecretConstants.AppCenterDroid}", typeof(Analytics), typeof(Crashes), typeof(Push));
+#endif
             Application.Current.MainPage = new NavigationPage(new TopView())
             {
                 BarBackgroundColor = new Color(0.00, 0.44, 0.74),

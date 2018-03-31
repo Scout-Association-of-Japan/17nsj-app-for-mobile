@@ -39,7 +39,9 @@ namespace _17NSJ
                 }
                 else
                 {
+#if !DEBUG
                     AppCenter.Start($"ios={SecretConstants.AppCenteriOS};" + $"android={SecretConstants.AppCenterDroid}", typeof(Analytics), typeof(Crashes), typeof(Push));
+#endif
                     MainPage = new NavigationPage(new TopView())
                     {
                         BarBackgroundColor = new Color(0.00, 0.44, 0.74),
