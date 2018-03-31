@@ -23,6 +23,14 @@ namespace _17NSJ.Views
             this.media.Source = news.MediaURL;
             this.outline.Text = news.Outline;
             this.category.Text = "カテゴリー：" + news.CategoryName;
+
+            if(!string.IsNullOrEmpty(news.RelationalURL))
+            {
+                this.link.IsVisible = true;
+                var tgr = new TapGestureRecognizer();
+                tgr.Tapped += ((sender, e) => Device.OpenUri(new Uri(news.RelationalURL)));
+                this.link.GestureRecognizers.Add(tgr);
+            }
         }
     }
 }

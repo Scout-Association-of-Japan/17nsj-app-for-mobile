@@ -17,7 +17,8 @@
             </Grid>
             <Label x:Name="title" HorizontalOptions="Center" FontSize="30" Margin="30,0" />
             <Image x:Name="media" />
-            <Label x:Name="outline" HorizontalOptions="Center" FontSize="15" Margin="30,0" />
+            <Label x:Name="outline" HorizontalOptions="Center" FontSize="15" Margin="30,0,30,10" />
+            <Label x:Name="link" HorizontalOptions="Start" FontSize="15" Margin="30,0" TextColor="Blue" Text="関連リンク" IsVisible="false" />
             <Label x:Name="category" HorizontalOptions="End" FontSize="10" Margin="30,-2" />
             <Label x:Name="createdAt" HorizontalOptions="End" FontSize="10" Margin="30,-2" />
             <Label x:Name="updatedAt" HorizontalOptions="End" FontSize="10" Margin="30,-2" />
