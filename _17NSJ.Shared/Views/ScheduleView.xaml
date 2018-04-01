@@ -19,6 +19,8 @@
                                TitleRightArrowTextColor ="#0071bc"
                                BorderColor="#95989A"
                                SelectedBorderColor="#ff0000"
+                               EnableTitleMonthYearView = "true"
+                               TitleLabelFormat = "yyyy年MM月"
                                x:Name="calendar">
             </controls:Calendar>
             <ListView Grid.Row="1" x:Name="list">

@@ -24,9 +24,8 @@ namespace _17NSJ.Views
             Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "ScheduleView" } });
 
             InitializeComponent();
-            this.calendar.EnableTitleMonthYearView = true;
-            this.calendar.TitleLabelFormat = "yyyy年MM月";
-            empty.Add(new ScheduleModel() { Title = "スケジュールはありません", HasRange = false, Color="#ffffff" });
+
+            empty.Add(new ScheduleModel() { Title = "スケジュールはありません", HasRange = false, Color="#00000000" });
 
             GetSchedulesAsync();
         }
@@ -57,7 +56,7 @@ namespace _17NSJ.Views
 
             foreach (var hadScheduleDate in hadScheduleDateList)
             {
-                this.calendar.SpecialDates.Add(new SpecialDate(hadScheduleDate) { BackgroundColor = Color.FromHex("#389de0"), TextColor = Color.White, Selectable = true });
+                this.calendar.SpecialDates.Add(new SpecialDate(hadScheduleDate) { BackgroundColor = Color.FromHex("#389de0"), TextColor = Color.White, Selectable = true, BorderWidth=0});
             }
 
             calendar.RaiseSpecialDatesChanged();
