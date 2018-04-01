@@ -56,7 +56,7 @@ namespace _17NSJ.Views
 
             foreach (var hadScheduleDate in hadScheduleDateList)
             {
-                this.calendar.SpecialDates.Add(new SpecialDate(hadScheduleDate) { BackgroundColor = Color.FromHex("#389de0"), TextColor = Color.White, Selectable = true, BorderWidth=0});
+                this.calendar.SpecialDates.Add(new SpecialDate(hadScheduleDate) { BackgroundColor = Color.FromHex("#389de0"), TextColor = Color.White, Selectable = true});
             }
 
             calendar.RaiseSpecialDatesChanged();
@@ -102,6 +102,12 @@ namespace _17NSJ.Views
             {
                 this.list.ItemsSource = filterdList;
             }
+        }
+
+        protected override bool OnBackButtonPressed()
+        {
+            Application.Current.MainPage = new TopView();
+            return true;
         }
     }
 }

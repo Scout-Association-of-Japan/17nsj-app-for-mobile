@@ -11,19 +11,17 @@
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
             <controls:Calendar Padding="10,10,10,0" 
-                               StartDay="Sunday" 
-                               SelectedBorderWidth="4" 
-                               DisabledBorderColor="Black"
-                               DateClicked="DateClicked"
-                               TitleLeftArrowTextColor ="#0071bc"
-                               TitleRightArrowTextColor ="#0071bc"
-                               BorderColor="#95989A"
-                               SelectedBorderColor="#ff0000"
-                               EnableTitleMonthYearView = "true"
-                               TitleLabelFormat = "yyyy年MM月"
-                               x:Name="calendar">
-            </controls:Calendar>
-            <ListView Grid.Row="1" x:Name="list">
+                           StartDay="Sunday" 
+                           SelectedBorderWidth="6"
+                           TitleLabelFormat="yyyy年MM月"
+                           DisabledBorderColor="Black"
+                           DateClicked="DateClicked"
+                           TitleLeftArrowTextColor ="#0071bc"
+                           TitleRightArrowTextColor ="#0071bc"
+                           SelectedBorderColor="#ff0000"
+                           x:Name="calendar">
+        </controls:Calendar>
+            <ListView Grid.Row="1" x:Name="list" HasUnevenRows="true" Margin="10,0,10,0">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
