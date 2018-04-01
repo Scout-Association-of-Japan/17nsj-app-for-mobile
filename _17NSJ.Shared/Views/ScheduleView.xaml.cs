@@ -26,7 +26,7 @@ namespace _17NSJ.Views
             InitializeComponent();
             this.calendar.EnableTitleMonthYearView = true;
             this.calendar.TitleLabelFormat = "yyyy年MM月";
-            empty.Add(new ScheduleModel() { Title = "スケジュールはありません", HasRange = false });
+            empty.Add(new ScheduleModel() { Title = "スケジュールはありません", HasRange = false, Color="#ffffff" });
 
             GetSchedulesAsync();
         }

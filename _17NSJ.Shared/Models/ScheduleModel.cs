@@ -27,6 +27,13 @@ namespace _17NSJ.Models
         public DateTime Start { get; set; }
 
         /// <summary>
+        /// ラベルカラーを取得または設定します。
+        /// </summary>
+        /// <value>PDFのURL</value>
+        [JsonProperty("Color", NullValueHandling = NullValueHandling.Ignore)]
+        public string Color { get; set; }
+
+        /// <summary>
         /// 終了時間を取得または設定します。
         /// </summary>
         /// <value>PDFのURL</value>

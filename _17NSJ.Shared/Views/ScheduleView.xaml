@@ -17,6 +17,7 @@
                                DateClicked="DateClicked"
                                TitleLeftArrowTextColor ="#0071bc"
                                TitleRightArrowTextColor ="#0071bc"
+                               BorderColor="#95989A"
                                SelectedBorderColor="#ff0000"
                                x:Name="calendar">
             </controls:Calendar>
@@ -24,12 +25,15 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Margin="15,0,0,0">
-                                <Label Text="{Binding Title}" FontSize="20" />
-                                <StackLayout Orientation="Horizontal" IsVisible="{Binding HasRange}">
-                                    <Label Text="{Binding Start, StringFormat='{}{0:HH\\:mm}'}" FontSize="10" />
-                                    <Label Text=" ~ " FontSize="10" />
-                                    <Label Text="{Binding End, StringFormat='{}{0:HH\\:mm}'}" FontSize="10" />
+                            <StackLayout Orientation="Horizontal">
+                                <BoxView WidthRequest="10" Color="{Binding Color}"/>
+                                <StackLayout Margin="15,0,0,0">
+                                    <Label Text="{Binding Title}" FontSize="20" />
+                                    <StackLayout Orientation="Horizontal" IsVisible="{Binding HasRange}">
+                                        <Label Text="{Binding Start, StringFormat='{}{0:HH\\:mm}'}" FontSize="10" />
+                                        <Label Text=" ~ " FontSize="10" />
+                                        <Label Text="{Binding End, StringFormat='{}{0:HH\\:mm}'}" FontSize="10" />
+                                    </StackLayout>
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>
