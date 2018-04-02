@@ -15,10 +15,10 @@
                 </StackLayout>
             </ScrollView>
             
-            <ListView x:Name="documentList" ItemTapped="ItemSelected" RowHeight="70" IsPullToRefreshEnabled="true" Refreshing="ListPulled">
+            <ListView x:Name="documentList" ItemTapped="ItemSelected" HasUnevenRows="true" IsPullToRefreshEnabled="true" Refreshing="ListPulled">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell Height="200">
+                        <ViewCell>
                             <StackLayout Orientation="Horizontal">
                                 <Image Source="{Binding ThumbnailURL}" Margin="10,10" WidthRequest="40" HeightRequest="40" />
                                 <StackLayout>
