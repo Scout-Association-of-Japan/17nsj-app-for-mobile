@@ -82,12 +82,11 @@
                     <cont:ImageButton Source="top_document.png" Tapped="DocumentClicked" HeightRequest="50" Margin="0,10,0,0" Aspect="AspectFit" AutomationId="TopView.Document" />
                     <Label Text="各種資料" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
                 </StackLayout>
-                <!--
-                <StackLayout Grid.Row="3" Grid.Column="2">
-                    <cont:CollapseButton Image="top_visitor.png" Clicked="DayVisitorClicked" />
+
+                <StackLayout Grid.Row="3" Grid.Column="0">
+                    <cont:ImageButton Source="top_visitor.png" Tapped="DayVisitorClicked" HeightRequest="50" Margin="0,10,0,0" Aspect="AspectFit" AutomationId="TopView.Visitor" />
                     <Label Text="DAY VISITOR" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
                 </StackLayout>
-                -->
 
                 <!--
                 <StackLayout Grid.Row="4" Grid.Column="0">
@@ -95,11 +94,11 @@
                     <Label Text="SPONSOR" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
                 </StackLayout>
                 -->
-                <StackLayout Grid.Row="3" Grid.Column="0">
+                <StackLayout Grid.Row="3" Grid.Column="1">
                     <cont:ImageButton Source="top_outline.png" Tapped="OutlineClicked" HeightRequest="50" Margin="0,10,0,0" Aspect="AspectFit" AutomationId="TopView.Outline" />
                     <Label Text="概要" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
                 </StackLayout>
-                <StackLayout Grid.Row="3" Grid.Column="1">
+                <StackLayout Grid.Row="3" Grid.Column="2">
                     <cont:ImageButton Source="top_setting.png" Tapped="SettingClicked" HeightRequest="50" Margin="0,10,0,0" Aspect="AspectFit" AutomationId="TopView.Setting" />
                     <Label Text="その他" HorizontalTextAlignment="Center" FontSize="12" TextColor="Gray" Margin="0,-3,0,0" />
                 </StackLayout>
