@@ -69,7 +69,7 @@
     <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer: Takuma Ishii (VRPSJ9R2T5)</CodesignKey>
+    <CodesignKey>iPhone Distribution: Scout Association of Japan (M7P3DK8YMA)</CodesignKey>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
     <MtouchDebug>true</MtouchDebug>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
@@ -81,7 +81,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
-<CodesignProvision>Visual Studio: 17NSJ Development</CodesignProvision>
+<CodesignProvision>17NSJ Ad Hoc</CodesignProvision>
 <BuildIpa>true</BuildIpa>
 <IpaIncludeArtwork>true</IpaIncludeArtwork>
   </PropertyGroup>
