@@ -317,6 +317,9 @@
     <AndroidResource Include="Resources\drawable-xhdpi\ci_menu_with_logo.png" />
     <AndroidResource Include="Resources\drawable\special_sg.png" />
     <AndroidResource Include="Resources\drawable\special_100.jpg" />
+    <AndroidResource Include="Resources\drawable\visitor_register.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\visitor_register.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\visitor_register.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\loading.gif" />

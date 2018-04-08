@@ -14,5 +14,10 @@ namespace _17NSJ.Views
 
             InitializeComponent();
         }
+
+        void RegisterTapped(object sender, System.EventArgs e)
+        {
+            Device.OpenUri(new Uri("https://17nsj-dayvisitor.peatix.com/"));
+        }
     }
 }

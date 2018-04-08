@@ -266,6 +266,7 @@
       <DependentUpon>CreditPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\ScheduleModel.cs" />
+    <Compile Include="Controls\LinkLabel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">

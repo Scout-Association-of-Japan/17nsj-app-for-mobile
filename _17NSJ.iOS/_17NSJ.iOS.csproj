@@ -339,6 +339,9 @@
     <BundleResource Include="Resources\special_bp.png" />
     <BundleResource Include="Resources\special_sg.png" />
     <BundleResource Include="Resources\special_100.jpg" />
+    <BundleResource Include="Resources\visitor_register.png" />
+    <BundleResource Include="Resources\visitor_register%402x.png" />
+    <BundleResource Include="Resources\visitor_register%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />
