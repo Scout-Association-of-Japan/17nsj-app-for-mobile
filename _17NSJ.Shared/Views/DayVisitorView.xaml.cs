@@ -19,5 +19,11 @@ namespace _17NSJ.Views
         {
             Device.OpenUri(new Uri("https://17nsj-dayvisitor.peatix.com/"));
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            Application.Current.MainPage = new TopView();
+            return true;
+        }
     }
 }
