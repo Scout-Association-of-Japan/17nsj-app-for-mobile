@@ -145,6 +145,16 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="MapData\JamFacilityArea.json" />
+    <EmbeddedResource Include="MapData\JamFacilityPin.json" />
+    <EmbeddedResource Include="MapData\LifeFacilityArea.json" />
+    <EmbeddedResource Include="MapData\LifeFacilityPin.json" />
+    <EmbeddedResource Include="MapData\ProgramArea.json" />
+    <EmbeddedResource Include="MapData\ProgramPin.json" />
+    <EmbeddedResource Include="MapData\SubCampArea.json" />
+    <EmbeddedResource Include="MapData\SubCampPin.json" />
+    <EmbeddedResource Include="MapData\BaseArea.json" />
+    <EmbeddedResource Include="MapData\BasePin.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -267,6 +277,9 @@
     </Compile>
     <Compile Include="Models\ScheduleModel.cs" />
     <Compile Include="Controls\LinkLabel.cs" />
+    <Compile Include="Models\MapPinModel.cs" />
+    <Compile Include="Models\MapPolygonModel.cs" />
+    <Compile Include="Util\MapFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
@@ -302,6 +315,15 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.5.0.121934\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Forms.GoogleMaps">
+      <HintPath>..\packages\Xamarin.Forms.GoogleMaps.2.3.0\lib\portable-net45+wp8+wpa81+win8+MonoAndroid70+MonoTouch10+Xamarin.iOS10+UAP10\Xamarin.Forms.GoogleMaps.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Geolocator.4.2.0\lib\netstandard1.0\Plugin.Geolocator.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator">
+      <HintPath>..\packages\Xam.Plugin.Geolocator.4.2.0\lib\netstandard1.0\Plugin.Geolocator.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -316,6 +338,8 @@
     <Folder Include="Services\" />
     <Folder Include="Effects\" />
     <Folder Include="Exceptions\" />
+    <Folder Include="MapData\" />
+    <Folder Include="Util\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />

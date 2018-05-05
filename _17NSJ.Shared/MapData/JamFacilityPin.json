@@ -1,0 +1,12 @@
+﻿[
+  {
+    "IconName": "map_media_center.png",
+    "Label": "メディアセンター",
+    "Position": [ 137.3214278, 37.4440181 ]
+  },
+  {
+    "IconName": "map_plaza.png",
+    "Label": "ジャンボリープラザ",
+    "Position": [ 137.3262570, 37.4459130 ]
+  },
+]

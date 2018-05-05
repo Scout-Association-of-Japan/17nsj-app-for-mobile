@@ -20,6 +20,8 @@ namespace _17NSJ.Views
             list.Add("AiForms.Layouts");
             list.Add("Com.Airbnb.Xamarin.Forms.Lottie");
             list.Add("XamForms.Controls.Calendar");
+            list.Add("Xamarin.Forms.GoogleMaps");
+            list.Add("Xam.Plugin.Geolocator");
             this.licenseList.ItemsSource = list;
         }
     }

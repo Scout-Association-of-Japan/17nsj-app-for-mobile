@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Build.Download.0.4.2\build\Xamarin.Build.Download.props" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.2\build\Xamarin.Build.Download.props')" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -31,6 +32,7 @@
 <RunCodeAnalysis>false</RunCodeAnalysis><EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
 <AndroidLinkMode>None</AndroidLinkMode>
 <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+<AndroidSupportedAbis>armeabi-v7a;x86</AndroidSupportedAbis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -148,6 +150,39 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.5.0.121934\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Basement">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Basement.42.1021.1\lib\MonoAndroid70\Xamarin.GooglePlayServices.Basement.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Tasks">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Tasks.42.1021.1\lib\MonoAndroid70\Xamarin.GooglePlayServices.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Base">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Base.42.1021.1\lib\MonoAndroid70\Xamarin.GooglePlayServices.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Maps">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Maps.42.1021.1\lib\MonoAndroid70\Xamarin.GooglePlayServices.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.GoogleMaps.Android">
+      <HintPath>..\packages\Xamarin.Forms.GoogleMaps.2.3.0\lib\MonoAndroid70\Xamarin.Forms.GoogleMaps.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.GoogleMaps">
+      <HintPath>..\packages\Xamarin.Forms.GoogleMaps.2.3.0\lib\MonoAndroid70\Xamarin.Forms.GoogleMaps.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.CurrentActivity">
+      <HintPath>..\packages\Plugin.CurrentActivity.1.0.1\lib\MonoAndroid10\Plugin.CurrentActivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Permissions.Abstractions">
+      <HintPath>..\packages\Plugin.Permissions.2.2.1\lib\MonoAndroid10\Plugin.Permissions.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Permissions">
+      <HintPath>..\packages\Plugin.Permissions.2.2.1\lib\MonoAndroid10\Plugin.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Geolocator.4.2.0\lib\MonoAndroid10\Plugin.Geolocator.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator">
+      <HintPath>..\packages\Xam.Plugin.Geolocator.4.2.0\lib\MonoAndroid10\Plugin.Geolocator.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\_17NSJ.Shared\_17NSJ.csproj">
@@ -164,6 +199,7 @@
     <Compile Include="Platforms\AssemblyService.cs" />
     <Compile Include="Effects\LineBreakLabelEffect.cs" />
     <Compile Include="SplashActivity.cs" />
+    <Compile Include="MainApplication.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -320,10 +356,39 @@
     <AndroidResource Include="Resources\drawable\visitor_register.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\visitor_register.png" />
     <AndroidResource Include="Resources\drawable-hdpi\visitor_register.png" />
+    <AndroidResource Include="Resources\drawable\map_easter.png" />
+    <AndroidResource Include="Resources\drawable\map_layer.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\map_layer.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\map_easter.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\map_layer.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\map_pointer.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\map_pointer.png" />
+    <AndroidResource Include="Resources\drawable\map_pointer.png" />
+    <AndroidResource Include="Resources\drawable\special_mt.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\map_easter.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\loading.gif" />
     <AndroidAsset Include="Assets\splash.json" />
+    <AndroidAsset Include="Assets\map_24wsj.png" />
+    <AndroidAsset Include="Assets\map_arena.png" />
+    <AndroidAsset Include="Assets\map_bus.png" />
+    <AndroidAsset Include="Assets\map_earth.png" />
+    <AndroidAsset Include="Assets\map_excursion.png" />
+    <AndroidAsset Include="Assets\map_faith_belefs.png" />
+    <AndroidAsset Include="Assets\map_jupirer.png" />
+    <AndroidAsset Include="Assets\map_media_center.png" />
+    <AndroidAsset Include="Assets\map_mercury.png" />
+    <AndroidAsset Include="Assets\map_pin.png" />
+    <AndroidAsset Include="Assets\map_plaza.png" />
+    <AndroidAsset Include="Assets\map_saturn.png" />
+    <AndroidAsset Include="Assets\map_sc.png" />
+    <AndroidAsset Include="Assets\map_scout_center.png" />
+    <AndroidAsset Include="Assets\map_shower.png" />
+    <AndroidAsset Include="Assets\map_venus.png" />
+    <AndroidAsset Include="Assets\map_visitor.png" />
+    <AndroidAsset Include="Assets\map_water.png" />
+    <AndroidAsset Include="Assets\map_wc.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Renderer\" />
@@ -347,4 +412,9 @@
   <Import Project="..\packages\Xamarin.Android.Support.v7.Palette.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v7.Palette.targets" Condition="Exists('..\packages\Xamarin.Android.Support.v7.Palette.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v7.Palette.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.v7.MediaRouter.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v7.MediaRouter.targets" Condition="Exists('..\packages\Xamarin.Android.Support.v7.MediaRouter.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v7.MediaRouter.targets')" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets')" />
+  <Import Project="..\packages\Xamarin.Build.Download.0.4.2\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.2\build\Xamarin.Build.Download.targets')" />
+  <Import Project="..\packages\Xamarin.GooglePlayServices.Basement.42.1021.1\build\MonoAndroid70\Xamarin.GooglePlayServices.Basement.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Basement.42.1021.1\build\MonoAndroid70\Xamarin.GooglePlayServices.Basement.targets')" />
+  <Import Project="..\packages\Xamarin.GooglePlayServices.Tasks.42.1021.1\build\MonoAndroid70\Xamarin.GooglePlayServices.Tasks.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Tasks.42.1021.1\build\MonoAndroid70\Xamarin.GooglePlayServices.Tasks.targets')" />
+  <Import Project="..\packages\Xamarin.GooglePlayServices.Base.42.1021.1\build\MonoAndroid70\Xamarin.GooglePlayServices.Base.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Base.42.1021.1\build\MonoAndroid70\Xamarin.GooglePlayServices.Base.targets')" />
+  <Import Project="..\packages\Xamarin.GooglePlayServices.Maps.42.1021.1\build\MonoAndroid70\Xamarin.GooglePlayServices.Maps.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Maps.42.1021.1\build\MonoAndroid70\Xamarin.GooglePlayServices.Maps.targets')" />
 </Project>

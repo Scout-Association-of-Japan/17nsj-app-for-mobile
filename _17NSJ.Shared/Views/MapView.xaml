@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"         
     xmlns:cont="clr-namespace:_17NSJ.Controls"
     x:Class="_17NSJ.Views.MapView">
-    <Grid>
-    	<WebView x:Name="mapView" Navigated="mapLoaded" />
-        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" AutomationId="MapView.Indicator" />
-    </Grid>
+    <AbsoluteLayout>
+    	<maps:Map x:Name="map"
+              InitialCameraUpdate="-23.68, -46.87, 13, 30, 60"
+              VerticalOptions="FillAndExpand"
+              AbsoluteLayout.LayoutBounds="1, 1, 1, 1"
+              AbsoluteLayout.LayoutFlags="All"
+              MyLocationEnabled="true" />
+        
+        <StackLayout AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize" Margin="0,0,5,5">
+         <cont:ImageButton Source="map_easter" HeightRequest="60" Tapped="EasterClicked" Aspect="AspectFit" IsVisible="false" x:Name="easterBtn" />       
+         <cont:ImageButton Source="map_layer" HeightRequest="60" Tapped="LayerVisibleClicked" Aspect="AspectFit" />       
+         <cont:ImageButton Source="map_pointer" HeightRequest="60" Tapped="MyLocationClicked" Aspect="AspectFit" />       
+        </StackLayout>
+
+        <ContentView x:Name="categoryLayer" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" IsVisible="False" BackgroundColor="#C0808080" Padding="10, 0">
+            <StackLayout Orientation="Vertical" BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="Start" Margin="0,40,0,0" >
+                <Label FontSize="18" HeightRequest="30" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="#0071bc" TextColor="White" HorizontalOptions="Fill" Text="表示レイヤー" />
+
+                <StackLayout Orientation="Horizontal" Margin="10,0,0,5"><Switch x:Name="programLayerSwt" IsToggled="true" /><Label Text="プログラム" VerticalOptions="Center" Margin="0,0,20,0"/></StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="10,0,0,5"><Switch x:Name="subcampLayerSwt" IsToggled="true" /><Label Text="サブキャンプ" VerticalOptions="Center" Margin="0,0,20,0"/></StackLayout>
+                <!--<StackLayout Orientation="Horizontal" Margin="10,0,0,5"><Switch x:Name="LifeFacilityLayerSwt" IsToggled="true" /><Label Text="生活施設" VerticalOptions="Center" Margin="0,0,20,0"/></StackLayout>-->
+                <StackLayout Orientation="Horizontal" Margin="10,0,0,5"><Switch x:Name="JamFacilityLayerSwt" IsToggled="true" /><Label Text="大会施設・サービス" VerticalOptions="Center" Margin="0,0,20,0"/></StackLayout>
+                <Button Text="OK" Clicked="LayerChangeClicked" HorizontalOptions="Center"/>
+            </StackLayout>
+        </ContentView>
+        
+        <cont:CustomIndicator VerticalOptions="FillAndExpand" AbsoluteLayout.LayoutBounds="1, 1, 1, 1"
+              AbsoluteLayout.LayoutFlags="All" x:Name="indicator" AutomationId="MapView.Indicator" />
+    </AbsoluteLayout>
 </ContentPage>

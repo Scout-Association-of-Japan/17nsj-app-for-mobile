@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using _17NSJ.Constants;
 using Foundation;
 using Lottie.Forms.iOS.Renderers;
 using UIKit;
@@ -36,6 +36,7 @@ namespace _17NSJ.iOS
                 global::Xamarin.Forms.Forms.Init();
                 AnimationViewRenderer.Init();
                 XamForms.Controls.iOS.Calendar.Init();
+                Xamarin.FormsGoogleMaps.Init(SecretConstants.iOSGoogleMapAPIKey);
                 LoadApplication(new App());
                 return base.FinishedLaunching(app, options);
             }

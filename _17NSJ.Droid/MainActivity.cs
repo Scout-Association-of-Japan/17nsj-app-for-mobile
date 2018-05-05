@@ -26,6 +26,7 @@ namespace _17NSJ.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             XamForms.Controls.Droid.Calendar.Init();
+            Xamarin.FormsGoogleMaps.Init(this, bundle);
             Push.SetSenderId(SecretConstants.SenderId);
             LoadApplication(new App());
         }

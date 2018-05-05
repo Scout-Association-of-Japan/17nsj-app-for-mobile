@@ -1,0 +1,47 @@
+﻿[
+  {
+    "IconName": "map_arena.png",
+    "Label": "アリーナ",
+    "Position": [ 137.32474197597935, 37.44751566439166 ]
+  },
+  {
+    "IconName": "map_jupirer.png",
+    "Label": "ジュピターエリア",
+    "Position": [ 137.32464306952193, 37.44450914128026 ]
+  },
+  {
+    "IconName": "map_venus.png",
+    "Label": "ヴィーナスエリア",
+    "Position": [ 137.32933, 37.44173 ]
+  },
+  {
+    "IconName": "map_mercury.png",
+    "Label": "マーキュリーエリア",
+    "Position": [ 137.32757271231844, 37.438753971281944 ]
+  },
+  {
+    "IconName": "map_earth.png",
+    "Label": "アースエリア",
+    "Position": [ 137.3246551394625, 37.443121552971494 ]
+  },
+  {
+    "IconName": "map_earth.png",
+    "Label": "アースエリア",
+    "Position": [ 137.3232798367901, 37.443207799960934 ]
+  },
+  {
+    "IconName": "map_earth.png",
+    "Label": "アースエリア",
+    "Position": [ 137.32328386010363, 37.442387917154516 ]
+  },
+  {
+    "IconName": "map_saturn.png",
+    "Label": "サターンエリア",
+    "Position": [ 137.32096374930575, 37.443350746141174 ]
+  },
+  {
+    "IconName": "map_saturn.png",
+    "Label": "サターンエリア",
+    "Position": [ 137.31905401648714, 37.44307629988247 ]
+  },
+]
