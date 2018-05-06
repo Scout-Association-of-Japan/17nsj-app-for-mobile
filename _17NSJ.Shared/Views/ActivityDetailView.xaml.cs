@@ -15,6 +15,8 @@ namespace _17NSJ.Views
             Analytics.TrackEvent("ActivityDetail", new Dictionary<string, string> { { "ID", $"{act.Category}-{act.Id}" } });
 
             InitializeComponent();
+            this.colorBar.BackgroundColor = Color.FromHex(act.Color);
+            this.serialId.Text = act.Category + "-" + act.Id;
             this.image.Source = act.MediaURL;
             this.title.Text = act.Title;
             this.waitingInfo.IsVisible = act.CanWaitable;
