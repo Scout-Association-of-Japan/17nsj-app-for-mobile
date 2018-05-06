@@ -155,6 +155,44 @@
     <EmbeddedResource Include="MapData\SubCampPin.json" />
     <EmbeddedResource Include="MapData\BaseArea.json" />
     <EmbeddedResource Include="MapData\BasePin.json" />
+    <EmbeddedResource Include="Views\LicenseDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenses\Com.Airbnb.iOS.Lottie.txt" />
+    <EmbeddedResource Include="Licenses\Com.Airbnb.Xamarin.Forms.Lottie.txt" />
+    <EmbeddedResource Include="Licenses\Microsoft.AppCenter.txt" />
+    <EmbeddedResource Include="Licenses\Plugin.Permissions.txt" />
+    <EmbeddedResource Include="Licenses\Xam.Plugin.Geolocator.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Build.Download.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Forms.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Forms.GoogleMaps.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Google.iOS.Maps.txt" />
+    <EmbeddedResource Include="Licenses\XamForms.Controls.Calendar.txt" />
+    <EmbeddedResource Include="Licenses\AiForms.Layouts.txt" />
+    <EmbeddedResource Include="Licenses\Newtonsoft.Json.txt" />
+    <EmbeddedResource Include="Licenses\Plugin.CurrentActivity.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Android.Support.Animated.Vector.Drawable.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Android.Support.Annotations.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Android.Support.Compat.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Android.Support.Core.UI.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Android.Support.Core.Utils.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Android.Support.Design.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Android.Support.Fragment.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Android.Support.Media.Compat.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Android.Support.Transition.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Android.Support.v4.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Android.Support.v7.AppCompat.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Android.Support.v7.CardView.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Android.Support.v7.MediaRouter.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Android.Support.v7.Palette.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Android.Support.v7.RecyclerView.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.Android.Support.Vector.Drawable.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.GooglePlayServices.Base.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.GooglePlayServices.Basement.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.GooglePlayServices.Maps.txt" />
+    <EmbeddedResource Include="Licenses\Xamarin.GooglePlayServices.Tasks.txt" />
+    <EmbeddedResource Include="Licenses\Com.Airbnb.Android.Lottie.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -280,6 +318,12 @@
     <Compile Include="Models\MapPinModel.cs" />
     <Compile Include="Models\MapPolygonModel.cs" />
     <Compile Include="Util\MapFactory.cs" />
+    <Compile Include="Models\LicenseModel.cs" />
+    <Compile Include="Constants\iOSLicenseList.cs" />
+    <Compile Include="Views\LicenseDetailView.xaml.cs">
+      <DependentUpon>LicenseDetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Constants\DroidLicenseList.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
@@ -340,6 +384,7 @@
     <Folder Include="Exceptions\" />
     <Folder Include="MapData\" />
     <Folder Include="Util\" />
+    <Folder Include="Licenses\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />
