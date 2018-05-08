@@ -103,7 +103,12 @@ namespace _17NSJ.Views
 
             try
             {
-                var position = await locator.GetPositionAsync(timeout : new TimeSpan(0,0,10));
+                var position = await locator.GetLastKnownLocationAsync();
+
+                if (position == null)
+                {
+                    position = await locator.GetPositionAsync(new TimeSpan(0, 0, 0, 10));
+                }
 
                 if (position is null) throw new Exception();
 

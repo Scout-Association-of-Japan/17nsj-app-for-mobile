@@ -1,5 +1,5 @@
 using System;
-
+using _17NSJ.Constants;
 using Android.App;
 using Android.OS;
 using Android.Runtime;
@@ -9,6 +9,7 @@ namespace _17NSJ.Droid
 {
 	//You can specify additional application information in this attribute
     [Application]
+    [MetaData("com.google.android.maps.v2.API_KEY", Value = SecretConstants.DroidGoogleMapAPIKey)]
     public class MainApplication : Application, Application.IActivityLifecycleCallbacks
     {
         public MainApplication(IntPtr handle, JniHandleOwnership transer)
