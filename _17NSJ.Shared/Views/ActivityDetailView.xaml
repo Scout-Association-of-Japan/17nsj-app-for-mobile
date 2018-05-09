@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps" 
     x:Class="_17NSJ.Views.ActivityDetailView">
 	<ScrollView>
         <StackLayout>
@@ -27,8 +28,10 @@
             <Label x:Name="category" FontSize="15" Margin="10,20,10,0" />
             <Label x:Name="term" FontSize="15" Margin="10,0" />            
             <Label x:Name="location" FontSize="15" Margin="10,0" />            
-            <WebView x:Name="map" HeightRequest="300"/>
-            <Label Text="この情報は最新でない可能性がります。&#xA;大会本部から変更連絡があった場合はそちらを優先してください。" FontSize="8" HorizontalOptions="EndAndExpand" />                       
+            <Grid HeightRequest="300" x:Name="mapGrid">
+                <maps:Map x:Name="map" VerticalOptions="FillAndExpand" MyLocationEnabled="true" MapClicked="MapClicked" />
+            </Grid>
+            <Label Text="この情報は最新でない可能性がります。&#xA;大会本部から変更連絡があった場合はそちらを優先してください。" FontSize="8" HorizontalOptions="EndAndExpand" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

@@ -125,6 +125,20 @@ namespace _17NSJ.Models
         public DateTime WaitingInfoUpdatedAt { get; set; }
 
         /// <summary>
+        /// 緯度を取得または設定します。
+        /// </summary>
+        /// <value>緯度</value>
+        [JsonProperty("latitude", NullValueHandling = NullValueHandling.Ignore)]
+        public double? Latitude { get; set; }
+
+        /// <summary>
+        /// 経度を取得または設定します。
+        /// </summary>
+        /// <value>経度</value>
+        [JsonProperty("longitude", NullValueHandling = NullValueHandling.Ignore)]
+        public double? Longitude { get; set; }
+
+        /// <summary>
         /// Gets or sets the color of the waiting info background.
         /// </summary>
         /// <value>The color of the waiting info background.</value>

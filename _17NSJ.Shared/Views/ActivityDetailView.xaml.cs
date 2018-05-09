@@ -4,17 +4,21 @@ using _17NSJ.Constants;
 using _17NSJ.Models;
 using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
+using Xamarin.Forms.GoogleMaps;
 
 namespace _17NSJ.Views
 {
     public partial class ActivityDetailView : ContentPage
     {
+        private ActivityModel Act;
+
         public ActivityDetailView(ActivityModel act)
         {
             // トラッキングコード
             Analytics.TrackEvent("ActivityDetail", new Dictionary<string, string> { { "ID", $"{act.Category}-{act.Id}" } });
 
             InitializeComponent();
+            Act = act;
             this.colorBar.BackgroundColor = Color.FromHex(act.Color);
             this.serialId.Text = act.Category + "-" + act.Id;
             this.image.Source = act.MediaURL;
@@ -41,14 +45,24 @@ namespace _17NSJ.Views
             this.term.Text = "日時：" + act.Term;
             this.location.Text = "場所：" + act.Location;
 
-            if (!string.IsNullOrEmpty(act.MapURL))
+            if (act.Latitude == null || act.Longitude == null)
             {
-                this.map.Source = act.MapURL;
+                this.mapGrid.IsVisible = false;
             }
             else
             {
-                this.map.Source = SecretConstants.MapUrl;
+                Pin pin = new Pin();
+                pin.Icon = BitmapDescriptorFactory.FromBundle("map_pin.png");
+                pin.Label = "目的地";
+                pin.Position = new Xamarin.Forms.GoogleMaps.Position((double)act.Latitude, (double)act.Longitude);
+                this.map.Pins.Add(pin); 
+                this.map.InitialCameraUpdate = CameraUpdateFactory.NewPositionZoom(new Xamarin.Forms.GoogleMaps.Position((double)act.Latitude, (double)act.Longitude), 17);
             }
+        }
+
+        private void MapClicked(object sender, Xamarin.Forms.GoogleMaps.MapClickedEventArgs e)
+        {
+            Navigation.PushAsync(new MapView((double)Act.Latitude, (double)Act.Longitude));
         }
     }
 }
