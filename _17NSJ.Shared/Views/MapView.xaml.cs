@@ -37,6 +37,7 @@ namespace _17NSJ.Views
             this.latitude = latitude;
             this.longitude = longitude;
             DrawDistinationPin();
+            this.map.InitialCameraUpdate = CameraUpdateFactory.NewPositionZoom(new Xamarin.Forms.GoogleMaps.Position(latitude, longitude), 17);
             indicator.IsVisible = false;
         }
 
@@ -44,6 +45,7 @@ namespace _17NSJ.Views
         {
             InitializeView();
 
+            this.map.InitialCameraUpdate = CameraUpdateFactory.NewPositionZoom(new Xamarin.Forms.GoogleMaps.Position(37.4450000, 137.3256000), 15);
             indicator.IsVisible = false;
         }
 
@@ -142,7 +144,6 @@ namespace _17NSJ.Views
 
             InitializeComponent();
             this.map.MyLocationEnabled = true;
-            this.map.InitialCameraUpdate = CameraUpdateFactory.NewPositionZoom(new Xamarin.Forms.GoogleMaps.Position(37.4450000, 137.3256000), 15);
             this.map.UiSettings.ZoomControlsEnabled = false;
 
             InitLoadMapData();
@@ -240,6 +241,7 @@ namespace _17NSJ.Views
             Pin pin = new Pin();
             pin.Icon = BitmapDescriptorFactory.FromBundle("map_pin.png");
             pin.Label = "目的地";
+            pin.ZIndex = int.MaxValue;
             pin.Position = new Xamarin.Forms.GoogleMaps.Position((double)this.latitude, (double)this.longitude);
             this.map.Pins.Add(pin);
         }
