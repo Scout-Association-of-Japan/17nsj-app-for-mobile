@@ -14,5 +14,16 @@ namespace _17NSJ.Views
 
             InitializeComponent();
         }
+
+        void JamGoodsClicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new JamGoodsView());
+        }
+
+        protected override bool OnBackButtonPressed()
+        {
+            Application.Current.MainPage = new TopView();
+            return true;
+        }
     }
 }

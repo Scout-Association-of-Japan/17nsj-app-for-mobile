@@ -12,7 +12,7 @@ namespace _17NSJ.Droid.Platforms
         //アプリ名称を取得する
         public string GetPackageName()
         {
-            var context = Forms.Context;
+            var context = Android.App.Application.Context;
             var name = context.PackageManager.GetPackageInfo(context.PackageName, 0).PackageName;
             return name;
         }
@@ -20,7 +20,7 @@ namespace _17NSJ.Droid.Platforms
         //アプリバージョン文字列を取得する
         public string GetVersionName()
         {
-            var context = Forms.Context;
+            var context = Android.App.Application.Context;
             var name = context.PackageManager.GetPackageInfo(context.PackageName, 0).VersionName;
             return name;
         }
@@ -28,7 +28,7 @@ namespace _17NSJ.Droid.Platforms
         //アプリバージョンコードを取得する
         public string GetBuildName()
         {
-            var context = Forms.Context;
+            var context = Android.App.Application.Context;
             var code = context.PackageManager.GetPackageInfo(context.PackageName, 0).VersionCode;
             return code.ToString();
         }

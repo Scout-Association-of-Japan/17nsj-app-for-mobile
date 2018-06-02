@@ -431,6 +431,24 @@
     <BundleResource Include="Resources\map_pin%40x2.png" />
     <BundleResource Include="Resources\map_pin%40x3.png" />
     <BundleResource Include="Resources\special_mt.png" />
+    <BundleResource Include="Resources\shop_instock.png" />
+    <BundleResource Include="Resources\shop_instock%402x.png" />
+    <BundleResource Include="Resources\shop_instock%403x.png" />
+    <BundleResource Include="Resources\shop_jamgoods.png" />
+    <BundleResource Include="Resources\shop_jamgoods%402x.png" />
+    <BundleResource Include="Resources\shop_logo.png" />
+    <BundleResource Include="Resources\shop_logo%402x.png" />
+    <BundleResource Include="Resources\shop_logo%403x.png" />
+    <BundleResource Include="Resources\shop_outofstock.png" />
+    <BundleResource Include="Resources\shop_outofstock%402x.png" />
+    <BundleResource Include="Resources\shop_outofstock%403x.png" />
+    <BundleResource Include="Resources\shop_unknown.png" />
+    <BundleResource Include="Resources\shop_unknown%402x.png" />
+    <BundleResource Include="Resources\shop_unknown%403x.png" />
+    <BundleResource Include="Resources\shop_fewinstock.png" />
+    <BundleResource Include="Resources\shop_fewinstock%402x.png" />
+    <BundleResource Include="Resources\shop_fewinstock%403x.png" />
+    <BundleResource Include="Resources\shop_jamgoods%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />

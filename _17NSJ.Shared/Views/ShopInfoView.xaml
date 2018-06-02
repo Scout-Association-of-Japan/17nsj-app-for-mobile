@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="_17NSJ.Views.ShopInfoView">
-	<Label Text="shopinfo" />
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cont="clr-namespace:_17NSJ.Controls"
+             x:Class="_17NSJ.Views.ShopInfoView">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="OFFICAL SHOP" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
+            <Image Source="shop_logo.png" />
+            <cont:ImageButton Source="shop_jamgoods.png" Tapped="JamGoodsClicked" Margin="0,10,0,0" Aspect="AspectFit" AutomationId="ShopView.JamGoods" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

@@ -366,6 +366,24 @@
     <AndroidResource Include="Resources\drawable\map_pointer.png" />
     <AndroidResource Include="Resources\drawable\special_mt.png" />
     <AndroidResource Include="Resources\drawable-hdpi\map_easter.png" />
+    <AndroidResource Include="Resources\drawable\shop_instock.png" />
+    <AndroidResource Include="Resources\drawable\shop_jamgoods.png" />
+    <AndroidResource Include="Resources\drawable\shop_logo.png" />
+    <AndroidResource Include="Resources\drawable\shop_outofstock.png" />
+    <AndroidResource Include="Resources\drawable\shop_unknown.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shop_instock.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shop_logo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shop_outofstock.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shop_unknown.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shop_instock.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shop_logo.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shop_outofstock.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shop_unknown.png" />
+    <AndroidResource Include="Resources\drawable\shop_fewinstock.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shop_fewinstock.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shop_fewinstock.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shop_jamgoods.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shop_jamgoods.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\loading.gif" />

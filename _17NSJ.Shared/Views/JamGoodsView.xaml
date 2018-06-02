@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cont="clr-namespace:_17NSJ.Controls"
+             xmlns:af="clr-namespace:AiForms.Layouts;assembly=AiForms.Layouts"
+             xmlns:cv="clr-namespace:_17NSJ.Converters;assembly=_17NSJ"
+             x:Class="_17NSJ.Views.JamGoodsView">
+    <ContentPage.Resources>
+      <ResourceDictionary>
+        <cv:InverseBooleanConverter x:Key="InverseBooleanConverter" />
+      </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid>
+        <StackLayout>
+            <ScrollView x:Name="error" IsVisible="false">
+                <StackLayout>
+                    <Image Source="error.png" HorizontalOptions="CenterAndExpand" />
+                    <Label Text="この機能は現在ご利用になれません。" HorizontalOptions="CenterAndExpand" />
+                    <Label Text="Webプロキシ環境など特殊環境下では正常に通信できない場合があります。" FontSize="9" HorizontalOptions="Center" />
+                    <Button Image="reload.png" Pressed="ReloadTapped"  />
+                </StackLayout>
+            </ScrollView>
+            <Label HorizontalTextAlignment="Center" FontSize="Small" Text="最終更新：2018/06/05 18:00" x:Name="finalUpdatedAt" />
+            <ScrollView>
+                <af:RepeatableWrapLayout x:Name="jamGoodsList" UniformColumns="2" AutomationId="JamGoodsView.ListView">
+                    <af:RepeatableWrapLayout.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <Image Source="{Binding Image}" Margin="10,10,10,0" />
+                                <Label Text="{Binding Name}" HorizontalTextAlignment="Center" Margin="0,-5,0,0"/>
+                                <StackLayout Orientation="Horizontal" Margin="0,-10,0,10" HorizontalOptions="Center">
+                                    <Label Text="¥" TextColor="Red" />
+                                    <Label Text="{Binding Price}" TextColor="Red" />
+                                    <Label Text="Sold out" IsVisible="{Binding Stock, Converter={StaticResource InverseBooleanConverter}}" TextColor="Red" />
+                                </StackLayout>
+                            </StackLayout>
+                        </DataTemplate>
+                    </af:RepeatableWrapLayout.ItemTemplate>
+                </af:RepeatableWrapLayout>
+            </ScrollView>
+        </StackLayout>
+        <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" IsVisible="false" AutomationId="NewsInfoView.Indicator" />       
+    </Grid>
+</ContentPage>
