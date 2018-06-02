@@ -44,7 +44,7 @@
                                 <BoxView WidthRequest="10" Color="{Binding Color}"/>
                                 <Image Source="{Binding ThumbnailURL}" WidthRequest="50" Margin="10,10" />
                                 <StackLayout>
-                                    <Label Text="{Binding Title}" VerticalTextAlignment="Center" FontSize="20" TextColor="Gray" Margin="0,5,0,0" />
+                                    <Label Text="{Binding Title}" VerticalTextAlignment="Center" FontSize="15" TextColor="Gray" Margin="0,5,0,0" />
                                     <Grid IsVisible="{Binding CanWaitable}" BackgroundColor="{Binding WaitingInfoBackgroundColor}" Padding="10,2">
                                         <StackLayout>
                                             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">

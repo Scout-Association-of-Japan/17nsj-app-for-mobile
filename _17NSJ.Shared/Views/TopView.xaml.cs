@@ -71,7 +71,7 @@ namespace _17NSJ.Views
         //1段目
         void NewsInfoClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new MasterDetailView(typeof(ShopInfoView));
+            Application.Current.MainPage = new MasterDetailView(typeof(NewsInfoView));
         }
 
         void ScheduleClicked(object sender, EventArgs e)
