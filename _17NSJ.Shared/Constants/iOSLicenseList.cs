@@ -10,6 +10,7 @@ namespace _17NSJ.Constants
         {
             ObservableCollection<LicenseModel> list = new ObservableCollection<LicenseModel>();
             list.Add(new LicenseModel() { LibraryName = "AiForms.Layouts", LicenseFileName = "_17NSJ.Licenses.AiForms.Layouts.txt" });
+            list.Add(new LicenseModel() { LibraryName = "CarouselView.FormsPlugin", LicenseFileName = "_17NSJ.Licenses.CarouselView.FormsPlugin.txt" });
             list.Add(new LicenseModel() { LibraryName = "Com.Airbnb.Android.Lottie", LicenseFileName = "_17NSJ.Licenses.Com.Airbnb.Android.Lottie.txt" });
             list.Add(new LicenseModel() { LibraryName = "Com.Airbnb.Xamarin.Forms.Lottie", LicenseFileName = "_17NSJ.Licenses.Com.Airbnb.Xamarin.Forms.Lottie.txt" });
             list.Add(new LicenseModel() { LibraryName = "Microsoft.AppCenter", LicenseFileName = "_17NSJ.Licenses.Microsoft.AppCenter.txt" });

@@ -28,7 +28,7 @@ namespace _17NSJ.Views
 
         }
 
-         async void CheckUpdateAsync()
+        private async void CheckUpdateAsync()
         {
             MobileAppConfigModel config;
             try
@@ -69,82 +69,82 @@ namespace _17NSJ.Views
         }
 
         //1段目
-        void NewsInfoClicked(object sender, EventArgs e)
+        private void NewsInfoClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MasterDetailView(typeof(NewsInfoView));
         }
 
-        void ScheduleClicked(object sender, EventArgs e)
+        private void ScheduleClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MasterDetailView(typeof(ScheduleView));
         }
 
-        void MapClicked(object sender, EventArgs e)
+        private void MapClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MasterDetailView(typeof(MapView));
         }
 
         //2段目
-        void ActivityClicked(object sender, EventArgs e)
+        private void ActivityClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MasterDetailView(typeof(ActivityView));
         }
 
-        void WeatherClicked(object sender, EventArgs e)
+        private void WeatherClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MasterDetailView(typeof(WeatherView));
         }
 
-        void SocialClicked(object sender, EventArgs e)
+        private void SocialClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MasterDetailView(typeof(SocialView));
         }
 
         //3段目
-        void MovieClicked(object sender, EventArgs e)
+        private void MovieClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MasterDetailView(typeof(MovieView));
         }
 
-        void NewspaperClicked(object sender, EventArgs e)
+        private void NewspaperClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MasterDetailView(typeof(NewspaperView));
         }
 
-        void FriendShipClicked(object sender, EventArgs e)
+        private void FriendShipClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MasterDetailView(typeof(FriendShipView));
         }
 
 
         //4段目
-        void ShopClicked(object sender, EventArgs e)
+        private void ShopClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MasterDetailView(typeof(ShopInfoView));
         }
 
-        void DocumentClicked(object sender, EventArgs e)
+        private void DocumentClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MasterDetailView(typeof(DocumentView));
         }
 
-        void DayVisitorClicked(object sender, EventArgs e)
+        private void DayVisitorClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MasterDetailView(typeof(DayVisitorView));
         }
 
         //5段目
-        void SponsorClicked(object sender, EventArgs e)
+        private void SponsorClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MasterDetailView(typeof(SponsorView));
         }
 
-        void OutlineClicked(object sender, EventArgs e)
+        private void OutlineClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MasterDetailView(typeof(OutlineView));
         }
 
-        void SettingClicked(object sender, EventArgs e)
+        private void SettingClicked(object sender, EventArgs e)
         {
             Application.Current.MainPage = new MasterDetailView(typeof(SettingView));
         }

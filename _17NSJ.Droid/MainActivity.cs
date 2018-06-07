@@ -9,6 +9,7 @@ using Android.Widget;
 using Android.OS;
 using Microsoft.AppCenter.Push;
 using _17NSJ.Constants;
+using CarouselView.FormsPlugin.Android;
 
 namespace _17NSJ.Droid
 {
@@ -26,6 +27,7 @@ namespace _17NSJ.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             XamForms.Controls.Droid.Calendar.Init();
+            CarouselViewRenderer.Init();
             Xamarin.FormsGoogleMaps.Init(this, bundle);
             Push.SetSenderId(SecretConstants.SenderId);
             LoadApplication(new App());
