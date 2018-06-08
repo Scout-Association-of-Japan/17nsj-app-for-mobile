@@ -76,6 +76,7 @@ namespace _17NSJ.Views
 
         private void ItemSelected(object sender, ItemTappedEventArgs e)
         {
+            this.newsInfoList.SelectedItem = null;
             var news = e.Item as NewsInfoModel;
 
             if (news != null)
