@@ -27,12 +27,11 @@ namespace _17NSJ.Views
             this.movieList.IsVisible = true;
             this.indicator.IsVisible = true;
 
-            var service = new AppDataService();
             ObservableCollection<MovieModel> moviesList;
 
             try
             {
-                moviesList = await service.GetMoviesAsync();
+                moviesList = await AppDataService.GetMoviesAsync();
             }
             catch(OutOfServiceException)
             {

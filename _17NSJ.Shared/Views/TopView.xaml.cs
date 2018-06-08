@@ -33,7 +33,7 @@ namespace _17NSJ.Views
             MobileAppConfigModel config;
             try
             {
-                config = await new AppDataService().GetAppConfigAsync();
+                config = await AppDataService.GetAppConfigAsync();
             }
             catch(OutOfServiceException)
             {

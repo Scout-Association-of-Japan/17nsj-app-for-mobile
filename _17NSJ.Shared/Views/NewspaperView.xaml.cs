@@ -25,8 +25,7 @@ namespace _17NSJ.Views
         {
             this.indicator.IsVisible = true;
 
-            var service = new AppDataService();
-            var newspaperlist = await service.GetNewspapersAsync();
+            var newspaperlist = await AppDataService.GetNewspapersAsync();
 
             this.newspaperList.ItemsSource = newspaperlist.OrderByDescending(e => e.Id).ToList();
 

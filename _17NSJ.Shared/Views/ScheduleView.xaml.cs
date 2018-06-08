@@ -37,11 +37,9 @@ namespace _17NSJ.Views
             this.list.IsVisible = true;
             this.indicator.IsVisible = true;
 
-            var service = new AppDataService();
-
             try
             {
-                ScheList = await service.GetSchedulesAsync();
+                ScheList = await AppDataService.GetSchedulesAsync();
             }
             catch (OutOfServiceException)
             {

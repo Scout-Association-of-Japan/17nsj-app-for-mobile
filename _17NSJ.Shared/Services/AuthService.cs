@@ -9,25 +9,25 @@ using Newtonsoft.Json;
 
 namespace _17NSJ.Services
 {
-    public class AuthService
+    public static class AuthService
     {
-        public async Task<string> GetToken()
+        private static HttpClient client;
+
+        static AuthService()
+        {
+            var handler = new HttpClientHandler() { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate };
+            client = new HttpClient(handler);
+            client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+        }
+
+        public static async Task<string> GetToken()
         {
             try
             {
-                var handler = new HttpClientHandler() { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate };
-                HttpResponseMessage response;
+                var authContent = new StringContent($"grant_type=password&username={SecretConstants.UserId}&password={SecretConstants.Password}");
 
-                using (var client = new HttpClient(handler))
-                {
-
-                    client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-
-                    var authContent = new StringContent($"grant_type=password&username={SecretConstants.UserId}&password={SecretConstants.Password}");
-
-                    authContent.Headers.ContentType = new MediaTypeHeaderValue("application/x-www-form-urlencoded");
-                    response = await client.PostAsync(SecretConstants.AuthUrl, authContent);
-                }
+                authContent.Headers.ContentType = new MediaTypeHeaderValue("application/x-www-form-urlencoded");
+                HttpResponseMessage response = await client.PostAsync(SecretConstants.AuthUrl, authContent);
 
                 if ((response.StatusCode == HttpStatusCode.BadRequest) ||
                     (response.StatusCode == HttpStatusCode.Unauthorized))

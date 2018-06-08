@@ -27,12 +27,11 @@ namespace _17NSJ.Views
             this.documentList.IsVisible = true;
             this.indicator.IsVisible = true;
 
-            var service = new AppDataService();
             ObservableCollection<DocumentModel> docsList;
 
             try
             {
-                docsList = await service.GetDocumentsAsync();
+                docsList = await AppDataService.GetDocumentsAsync();
             }
             catch (OutOfServiceException)
             {

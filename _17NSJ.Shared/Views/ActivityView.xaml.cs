@@ -30,13 +30,12 @@ namespace _17NSJ.Views
             this.activityList.IsVisible = true;
             this.indicator.IsVisible = true;
 
-            var service = new AppDataService();
             ObservableCollection<ActivityCategoryModel> categories;
 
             try
             {
-                categories = await service.GetActivityCategoriesAsync();
-                originalActivityList = await service.GetActivitiesAsync();
+                categories = await AppDataService.GetActivityCategoriesAsync();
+                originalActivityList = await AppDataService.GetActivitiesAsync();
             }
             catch (OutOfServiceException)
             {

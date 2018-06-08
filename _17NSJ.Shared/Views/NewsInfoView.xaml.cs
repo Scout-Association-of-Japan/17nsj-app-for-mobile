@@ -31,13 +31,12 @@ namespace _17NSJ.Views
             this.newsInfoList.IsVisible = true;
             this.indicator.IsVisible = true;
 
-            var service = new AppDataService();
             ObservableCollection<NewsInfoCategoryModel> categories;
 
             try
             {
-                categories = await service.GetNewsCategoriesAsync();
-                originalNewsInfoList = await service.GetNewsAsync();
+                categories = await AppDataService.GetNewsCategoriesAsync();
+                originalNewsInfoList = await AppDataService.GetNewsAsync();
             }
             catch(OutOfServiceException)
             {
