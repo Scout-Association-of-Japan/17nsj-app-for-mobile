@@ -85,13 +85,13 @@ namespace _17NSJ.Views
             }
         }
 
-        void SearchTextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
+        private void SearchTextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
         {
             var control = sender as SearchBar;
             this.newsInfoList.ItemsSource  = FilterList(control.Text);
         }
 
-        void ReloadTapped(object sender, System.EventArgs e)
+        private void ReloadTapped(object sender, System.EventArgs e)
         {
            GetNewsAsync();
         }
