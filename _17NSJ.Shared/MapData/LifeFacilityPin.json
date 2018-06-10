@@ -1,2 +1,147 @@
 ﻿[
+  {
+    "IconName": "map_water.png",
+    "Label": "水汲み場",
+    "Position": [ 137.3256844, 37.4513711 ]
+  },
+  {
+    "IconName": "map_water.png",
+    "Label": "水汲み場",
+    "Position": [ 137.3257381, 37.4495356 ]
+  },
+  {
+    "IconName": "map_water.png",
+    "Label": "水汲み場",
+    "Position": [ 137.3240805, 37.4472592 ]
+  },
+  {
+    "IconName": "map_water.png",
+    "Label": "水汲み場",
+    "Position": [ 137.3245901, 37.4471123 ]
+  },
+  {
+    "IconName": "map_water.png",
+    "Label": "水汲み場",
+    "Position": [ 137.3302684, 37.4453086 ]
+  },
+  {
+    "IconName": "map_water.png",
+    "Label": "水汲み場",
+    "Position": [ 137.3303246, 37.4449168 ]
+  },
+  {
+    "IconName": "map_shower.png",
+    "Label": "シャワー",
+    "Position": [ 137.3257193, 37.4494216 ]
+  },
+  {
+    "IconName": "map_shower.png",
+    "Label": "シャワー",
+    "Position": [ 137.3258359, 37.45165 ]
+  },
+  {
+    "IconName": "map_shower.png",
+    "Label": "シャワー",
+    "Position": [ 137.3242146, 37.4472571 ]
+  },
+  {
+    "IconName": "map_shower.png",
+    "Label": "シャワー",
+    "Position": [ 137.324456, 37.4471783 ]
+  },
+  {
+    "IconName": "map_shower.png",
+    "Label": "シャワー",
+    "Position": [ 137.3302791, 37.4452022 ]
+  },
+  {
+    "IconName": "map_shower.png",
+    "Label": "シャワー",
+    "Position": [ 137.3303112, 37.4450212 ]
+  },
+  {
+    "IconName": "map_shower.png",
+    "Label": "シャワー(協力団体・成人)",
+    "Position": [ 137.3286107, 37.4434772 ]
+  },
+  {
+    "IconName": "map_wc.png",
+    "Label": "トイレ",
+    "Position": [ 137.3258561, 37.4495164 ]
+  },
+  {
+    "IconName": "map_wc.png",
+    "Label": "トイレ",
+    "Position": [ 137.3259245, 37.4516969 ]
+  },
+  {
+    "IconName": "map_wc.png",
+    "Label": "トイレ",
+    "Position": [ 137.3247644, 37.4470825 ]
+  },
+  {
+    "IconName": "map_wc.png",
+    "Label": "トイレ",
+    "Position": [ 137.3263684, 37.4460018 ]
+  },
+  {
+    "IconName": "map_wc.png",
+    "Label": "トイレ",
+    "Position": [ 137.3302576, 37.4454258 ]
+  },
+  {
+    "IconName": "map_wc.png",
+    "Label": "トイレ",
+    "Position": [ 137.3303462, 37.4448082 ]
+  },
+  {
+    "IconName": "map_wc.png",
+    "Label": "トイレ",
+    "Position": [ 137.3289219, 37.4473614 ]
+  },
+  {
+    "IconName": "map_wc.png",
+    "Label": "トイレ",
+    "Position": [ 137.3215753, 37.4444164 ]
+  },
+  {
+    "IconName": "map_wc.png",
+    "Label": "トイレ",
+    "Position": [ 137.3199472, 37.4436497 ]
+  },
+  {
+    "IconName": "map_wc.png",
+    "Label": "トイレ",
+    "Position": [ 137.323882, 37.4439053 ]
+  },
+  {
+    "IconName": "map_wc.png",
+    "Label": "トイレ(協力団体・成人)",
+    "Position": [ 137.3291177, 37.4438095 ]
+  },
+  {
+    "IconName": "map_wc.png",
+    "Label": "トイレ",
+    "Position": [ 137.3272294, 37.4411603 ]
+  },
+  {
+    "IconName": "map_wc.png",
+    "Label": "トイレ",
+    "Position": [ 137.3298847, 37.4412242 ]
+  },
+  {
+    "IconName": "map_wc.png",
+    "Label": "トイレ",
+    "Position": [ 137.328093, 37.4393266 ]
+  },
+  {
+    "IconName": "map_wc.png",
+    "Label": "トイレ",
+    "Position": [ 137.3256308, 37.4484411 ]
+  },
+  {
+    "IconName": "map_wc.png",
+    "Label": "トイレ",
+    "Position": [ 137.3239732, 37.4473274 ]
+  },
 ]

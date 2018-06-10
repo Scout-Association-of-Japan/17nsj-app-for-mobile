@@ -24,7 +24,7 @@
 
                 <StackLayout Orientation="Horizontal" Margin="10,0,0,5"><Switch x:Name="programLayerSwt" IsToggled="true" /><Label Text="プログラム" VerticalOptions="Center" Margin="0,0,20,0"/></StackLayout>
                 <StackLayout Orientation="Horizontal" Margin="10,0,0,5"><Switch x:Name="subcampLayerSwt" IsToggled="true" /><Label Text="サブキャンプ" VerticalOptions="Center" Margin="0,0,20,0"/></StackLayout>
-                <!--<StackLayout Orientation="Horizontal" Margin="10,0,0,5"><Switch x:Name="LifeFacilityLayerSwt" IsToggled="true" /><Label Text="生活施設" VerticalOptions="Center" Margin="0,0,20,0"/></StackLayout>-->
+                <StackLayout Orientation="Horizontal" Margin="10,0,0,5"><Switch x:Name="LifeFacilityLayerSwt" IsToggled="true" /><Label Text="生活施設" VerticalOptions="Center" Margin="0,0,20,0"/></StackLayout>
                 <StackLayout Orientation="Horizontal" Margin="10,0,0,5"><Switch x:Name="JamFacilityLayerSwt" IsToggled="true" /><Label Text="大会施設・サービス" VerticalOptions="Center" Margin="0,0,20,0"/></StackLayout>
                 <Button Text="OK" Clicked="LayerChangeClicked" HorizontalOptions="Center"/>
             </StackLayout>

@@ -7,6 +7,46 @@
   {
     "IconName": "map_plaza.png",
     "Label": "ジャンボリープラザ",
-    "Position": [ 137.3262570, 37.4459130 ]
+    "Position": [ 137.3261967, 37.4460092 ]
+  },
+  {
+    "IconName": "map_bus.png",
+    "Label": "シャトルバス発着場",
+    "Position": [ 137.3064154, 37.4406321 ]
+  },
+  {
+    "IconName": "map_bus.png",
+    "Label": "シャトルバス発着場",
+    "Position": [ 137.3263148, 37.4411475 ]
+  },
+  {
+    "IconName": "map_visitor.png",
+    "Label": "見学者受付",
+    "Position": [ 137.3263147, 37.4413072 ]
+  },
+  {
+    "IconName": "map_hq.png",
+    "Label": "大会本部",
+    "Position": [ 137.3277336, 37.4475595 ]
+  },
+  {
+    "IconName": "map_dining.png",
+    "Label": "本部食堂",
+    "Position": [ 137.328018, 37.4470867 ]
+  },
+  {
+    "IconName": "map_medical.png",
+    "Label": "中央救護所",
+    "Position": [ 137.3207814, 37.4440501 ]
+  },
+  {
+    "IconName": "map_visitor.png",
+    "Label": "見学者テント",
+    "Position": [ 137.3271382, 37.4417587 ]
+  },
+  {
+    "IconName": "map_medical.png",
+    "Label": "アリーナ救護所",
+    "Position": [ 137.3250997, 37.4485262 ]
   },
 ]

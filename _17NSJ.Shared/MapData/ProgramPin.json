@@ -2,46 +2,61 @@
   {
     "IconName": "map_arena.png",
     "Label": "アリーナ",
-    "Position": [ 137.32474197597935, 37.44751566439166 ]
+    "Position": [ 137.324794, 37.447896 ]
   },
   {
     "IconName": "map_jupirer.png",
     "Label": "ジュピターエリア",
-    "Position": [ 137.32464306952193, 37.44450914128026 ]
+    "Position": [ 137.3246169, 37.4446676 ]
   },
   {
     "IconName": "map_venus.png",
     "Label": "ヴィーナスエリア",
-    "Position": [ 137.32933, 37.44173 ]
+    "Position": [ 137.3293376, 37.4417374 ]
   },
   {
     "IconName": "map_mercury.png",
     "Label": "マーキュリーエリア",
-    "Position": [ 137.32757271231844, 37.438753971281944 ]
+    "Position": [ 137.3269504, 37.4391222 ]
   },
   {
     "IconName": "map_earth.png",
     "Label": "アースエリア",
-    "Position": [ 137.3246551394625, 37.443121552971494 ]
+    "Position": [ 137.3232543, 37.4433047 ]
   },
   {
     "IconName": "map_earth.png",
     "Label": "アースエリア",
-    "Position": [ 137.3232798367901, 37.443207799960934 ]
+    "Position": [ 137.3246384, 37.4432195 ]
   },
   {
     "IconName": "map_earth.png",
     "Label": "アースエリア",
-    "Position": [ 137.32328386010363, 37.442387917154516 ]
+    "Position": [ 137.3232758, 37.442487 ]
   },
   {
     "IconName": "map_saturn.png",
     "Label": "サターンエリア",
-    "Position": [ 137.32096374930575, 37.443350746141174 ]
+    "Position": [ 137.3190486, 37.443177 ]
   },
   {
     "IconName": "map_saturn.png",
     "Label": "サターンエリア",
-    "Position": [ 137.31905401648714, 37.44307629988247 ]
+    "Position": [ 137.3209691, 37.4434495 ]
+  },
+  {
+    "IconName": "map_scout_center.png",
+    "Label": "ジャンボリースカウトセンター",
+    "Position": [ 137.3281333, 37.4415713 ]
+  },
+  {
+    "IconName": "map_faith_belefs.png",
+    "Label": "信仰奨励エリア",
+    "Position": [ 137.3284015, 37.4420036 ]
+  },
+  {
+    "IconName": "map_excursion.png",
+    "Label": "エクスカーションプログラムバス発着場",
+    "Position": [ 137.3302871, 37.4416352 ]
   },
 ]

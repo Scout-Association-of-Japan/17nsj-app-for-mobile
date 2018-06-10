@@ -455,6 +455,33 @@
     <BundleResource Include="Resources\shop_fewinstock%402x.png" />
     <BundleResource Include="Resources\shop_fewinstock%403x.png" />
     <BundleResource Include="Resources\shop_jamgoods%403x.png" />
+    <BundleResource Include="Resources\map_adventure.png" />
+    <BundleResource Include="Resources\map_adventure%402x.png" />
+    <BundleResource Include="Resources\map_adventure%403x.png" />
+    <BundleResource Include="Resources\map_bravery.png" />
+    <BundleResource Include="Resources\map_bravery%402x.png" />
+    <BundleResource Include="Resources\map_bravery%403x.png" />
+    <BundleResource Include="Resources\map_challenge.png" />
+    <BundleResource Include="Resources\map_challenge%402x.png" />
+    <BundleResource Include="Resources\map_challenge%403x.png" />
+    <BundleResource Include="Resources\map_discovery.png" />
+    <BundleResource Include="Resources\map_discovery%402x.png" />
+    <BundleResource Include="Resources\map_discovery%403x.png" />
+    <BundleResource Include="Resources\map_endeavor.png" />
+    <BundleResource Include="Resources\map_endeavor%402x.png" />
+    <BundleResource Include="Resources\map_endeavor%403x.png" />
+    <BundleResource Include="Resources\map_future.png" />
+    <BundleResource Include="Resources\map_future%402x.png" />
+    <BundleResource Include="Resources\map_future%403x.png" />
+    <BundleResource Include="Resources\map_dining.png" />
+    <BundleResource Include="Resources\map_dining%402x.png" />
+    <BundleResource Include="Resources\map_dining%403x.png" />
+    <BundleResource Include="Resources\map_hq.png" />
+    <BundleResource Include="Resources\map_hq%402x.png" />
+    <BundleResource Include="Resources\map_hq%403x.png" />
+    <BundleResource Include="Resources\map_medical.png" />
+    <BundleResource Include="Resources\map_medical%402x.png" />
+    <BundleResource Include="Resources\map_medical%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />

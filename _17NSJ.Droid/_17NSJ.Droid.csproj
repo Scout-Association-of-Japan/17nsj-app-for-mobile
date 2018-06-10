@@ -419,6 +419,15 @@
     <AndroidAsset Include="Assets\map_visitor.png" />
     <AndroidAsset Include="Assets\map_water.png" />
     <AndroidAsset Include="Assets\map_wc.png" />
+    <AndroidAsset Include="Assets\map_adventure.png" />
+    <AndroidAsset Include="Assets\map_bravery.png" />
+    <AndroidAsset Include="Assets\map_challenge.png" />
+    <AndroidAsset Include="Assets\map_dining.png" />
+    <AndroidAsset Include="Assets\map_discovery.png" />
+    <AndroidAsset Include="Assets\map_endeavor.png" />
+    <AndroidAsset Include="Assets\map_future.png" />
+    <AndroidAsset Include="Assets\map_hq.png" />
+    <AndroidAsset Include="Assets\map_medical.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Renderer\" />

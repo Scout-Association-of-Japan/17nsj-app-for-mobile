@@ -1,17 +1,32 @@
 ﻿[
   {
-    "IconName": "map_sc.png",
-    "Label": "サブキャンプエリア",
-    "Position": [ 137.32495185883477, 37.45061213033956 ]
+    "IconName": "map_adventure.png",
+    "Label": "アドベンチャーサブキャンプ本部",
+    "Position": [ 137.3242736, 37.4510645 ]
   },
   {
-    "IconName": "map_sc.png",
-    "Label": "サブキャンプエリア",
-    "Position": [ 137.33090646614268, 37.44516296420416 ]
+    "IconName": "map_bravery.png",
+    "Label": "ブレバリーサブキャンプ本部",
+    "Position": [ 137.3250112, 37.4469867 ]
   },
   {
-    "IconName": "map_sc.png",
-    "Label": "サブキャンプエリア",
-    "Position": [ 137.32346021534636, 37.44591192342974 ]
+    "IconName": "map_challenge.png",
+    "Label": "チャレンジサブキャンプ本部",
+    "Position": [ 137.3237908, 37.4473657 ]
+  },
+  {
+    "IconName": "map_discovery.png",
+    "Label": "ディスカバリーサブキャンプ本部",
+    "Position": [ 137.3305768, 37.4462009 ]
+  },
+  {
+    "IconName": "map_endeavor.png",
+    "Label": "エンデバーサブキャンプ本部",
+    "Position": [ 137.3301315, 37.4452234 ]
+  },
+  {
+    "IconName": "map_future.png",
+    "Label": "フューチャーサブキャンプ本部",
+    "Position": [ 137.330161, 37.4449978 ]
   },
 ]

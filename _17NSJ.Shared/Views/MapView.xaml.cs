@@ -73,15 +73,14 @@ namespace _17NSJ.Views
             {
                 DrawPolygons(SubCampAreaList);
                 DrawPins(SubCampPinList);
-            }           
+            }
 
-            /*
+
             if (LifeFacilityLayerSwt.IsToggled)
             {
                 DrawPolygons(LifeFacilityAreaList);
                 DrawPins(LifeFacilityPinList);
             }
-            */
 
             if (JamFacilityLayerSwt.IsToggled)
             {
