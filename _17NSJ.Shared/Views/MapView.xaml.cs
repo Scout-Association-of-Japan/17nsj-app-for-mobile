@@ -131,6 +131,19 @@ namespace _17NSJ.Views
             }
         }
 
+        void MapClicked(object sender, MapClickedEventArgs e)
+        {
+            this.areaNameBox.IsVisible = false;
+        }
+
+        private void AreaCliked(object sender, System.EventArgs e)
+        {
+            this.areaNameBox.IsVisible = true;
+            Polygon area = sender as Polygon;
+            if (area != null) this.areaName.Text = area.Tag.ToString();
+        }
+
+
         void EasterClicked(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new SecretView("special_mt.png"));
@@ -192,7 +205,7 @@ namespace _17NSJ.Views
 
             foreach (var polygon in polygons)
             {
-                list.Add(MapFactory.CreatePolygon(polygon));
+                list.Add(MapFactory.CreatePolygon(polygon, this.AreaCliked));
             }
 
             return list;

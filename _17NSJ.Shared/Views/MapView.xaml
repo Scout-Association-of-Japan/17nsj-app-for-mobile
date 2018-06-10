@@ -6,6 +6,7 @@
     x:Class="_17NSJ.Views.MapView">
     <AbsoluteLayout>
     	<maps:Map x:Name="map"
+              MapClicked="MapClicked"
               InitialCameraUpdate="-23.68, -46.87, 13, 30, 60"
               VerticalOptions="FillAndExpand"
               AbsoluteLayout.LayoutBounds="1, 1, 1, 1"
@@ -27,6 +28,10 @@
                 <Button Text="OK" Clicked="LayerChangeClicked" HorizontalOptions="Center"/>
             </StackLayout>
         </ContentView>
+
+        <Grid BackgroundColor="#ccffffff" x:Name="areaNameBox" IsVisible="false" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5, 0, 1, 0.07">
+            <Label x:Name="areaName" VerticalOptions="Center" HorizontalOptions="Center" />
+        </Grid>
         
         <cont:CustomIndicator VerticalOptions="FillAndExpand" AbsoluteLayout.LayoutBounds="1, 1, 1, 1"
               AbsoluteLayout.LayoutFlags="All" x:Name="indicator" AutomationId="MapView.Indicator" />

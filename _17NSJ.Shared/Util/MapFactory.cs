@@ -26,13 +26,15 @@ namespace _17NSJ.Util
             return pin;
         }
 
-        public static Polygon CreatePolygon(MapPolygonModel polygonObj)
+        public static Polygon CreatePolygon(MapPolygonModel polygonObj, EventHandler handler)
         {
             Polygon polygon = new Polygon();
             polygon.Tag = polygonObj.Tag;
             polygon.StrokeWidth = polygonObj.StrokeWidth;
             polygon.StrokeColor = Color.FromHex(polygonObj.StrokeColor);
             polygon.FillColor = Color.FromHex(polygonObj.FillColor);
+            polygon.IsClickable = true;
+            polygon.Clicked += handler;
 
             foreach (var point in polygonObj.Points)
             {
