@@ -427,7 +427,8 @@
     <AndroidAsset Include="Assets\map_endeavor.png" />
     <AndroidAsset Include="Assets\map_future.png" />
     <AndroidAsset Include="Assets\map_hq.png" />
-    <AndroidAsset Include="Assets\map_medical.png" />
+    <AndroidAsset Include="Assets\map_central_medical.png" />
+    <AndroidAsset Include="Assets\map_arena_medical.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Renderer\" />

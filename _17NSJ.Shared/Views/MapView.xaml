@@ -20,9 +20,7 @@
 
         <ContentView x:Name="categoryLayer" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" IsVisible="False" BackgroundColor="#C0808080" Padding="10, 0">
             <StackLayout Orientation="Vertical" BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="Start" Margin="0,40,0,0" >
-                <Label FontSize="18" HeightRequest="30" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="#0071bc" TextColor="White" HorizontalOptions="Fill" Text="表示レイヤー" />
-
-                <StackLayout Orientation="Horizontal" Margin="10,0,0,5"><Switch x:Name="programLayerSwt" IsToggled="true" /><Label Text="プログラム" VerticalOptions="Center" Margin="0,0,20,0"/></StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="10,10,0,5"><Switch x:Name="programLayerSwt" IsToggled="true" /><Label Text="プログラム" VerticalOptions="Center" Margin="0,10,20,0"/></StackLayout>
                 <StackLayout Orientation="Horizontal" Margin="10,0,0,5"><Switch x:Name="subcampLayerSwt" IsToggled="true" /><Label Text="サブキャンプ" VerticalOptions="Center" Margin="0,0,20,0"/></StackLayout>
                 <StackLayout Orientation="Horizontal" Margin="10,0,0,5"><Switch x:Name="LifeFacilityLayerSwt" IsToggled="true" /><Label Text="生活施設" VerticalOptions="Center" Margin="0,0,20,0"/></StackLayout>
                 <StackLayout Orientation="Horizontal" Margin="10,0,0,5"><Switch x:Name="JamFacilityLayerSwt" IsToggled="true" /><Label Text="大会施設・サービス" VerticalOptions="Center" Margin="0,0,20,0"/></StackLayout>
