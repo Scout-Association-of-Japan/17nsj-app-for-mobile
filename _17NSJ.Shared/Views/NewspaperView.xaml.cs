@@ -31,6 +31,7 @@ namespace _17NSJ.Views
             try
             {
                 var newspaperlist = await AppDataService.GetNewspapersAsync();
+                ZeroCountLabel.IsVisible = newspaperlist.Count == 0 ? true : false;
                 this.newspaperList.ItemsSource = newspaperlist.OrderByDescending(e => e.Id).ToList();
             }
             catch(OutOfServiceException)

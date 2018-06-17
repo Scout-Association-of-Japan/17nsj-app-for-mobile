@@ -13,8 +13,8 @@
                     <Button Image="reload.png" Pressed="ReloadTapped"  />
                 </StackLayout>
             </ScrollView>
-            
-            <ListView x:Name="newspaperList" ItemTapped="ItemSelected" HasUnevenRows="true" IsPullToRefreshEnabled="true" Refreshing="ListPulled">
+            <Label x:Name="ZeroCountLabel" IsVisible="false" FontSize="Medium" Margin="0,20,0,0" HorizontalTextAlignment="Center" Text="まだ配信されていません。" />
+            <ListView x:Name="newspaperList" ItemTapped="ItemSelected" SeparatorVisibility="None" HasUnevenRows="true" IsPullToRefreshEnabled="true" Refreshing="ListPulled">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
