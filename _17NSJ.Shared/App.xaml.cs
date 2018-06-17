@@ -63,6 +63,8 @@ namespace _17NSJ
         //使うときは(Application.Current as App).Token
         public string Token { get; set; }
 
+        public int CurrentMenuPosition { get; set; }
+
         protected override void OnStart()
         {
             // Handle when your app start

@@ -24,7 +24,6 @@
             Grid.Row="1"
             VerticalOptions="FillAndExpand"
             HorizontalOptions="FillAndExpand"
-            Position="0"
             ShowIndicators="True">
             <cv:CarouselViewControl.ItemsSource>
                 <x:Array Type="{x:Type View}">

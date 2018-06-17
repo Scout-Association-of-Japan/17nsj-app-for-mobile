@@ -71,7 +71,13 @@ namespace _17NSJ.Views
 
         protected override bool OnBackButtonPressed()
         {
-            Application.Current.MainPage = new TopView();
+            var p = this.Parent.Parent as MasterDetailView;
+
+            if (p != null)
+            {
+                p.Detail = new TopView();
+            }
+
             return true;
         }
     }
