@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="_17NSJ.Views.SponsorView">
-	<Label Text="sponsor" />
+    <StackLayout>
+        <Label HorizontalTextAlignment="Center" FontSize="Medium" Margin="0,20,0,0" Text="近日公開" />
+    	<Label HorizontalTextAlignment="Center" FontSize="Small" Text="Coming soon..." />
+    </StackLayout>
 </ContentPage>
