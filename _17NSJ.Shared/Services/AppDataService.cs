@@ -86,6 +86,20 @@ namespace _17NSJ.Services
             return JsonConvert.DeserializeObject<ObservableCollection<ScheduleModel>>(responseText);
         }
 
+        public static async Task<ObservableCollection<JamGoodsCategoryModel>> GetJamGoodsCategoriesAsync()
+        {
+            HttpResponseMessage response = await GetAsyncBase(new Uri($"{SecretConstants.ApiUrl}jamgoods_categories"));
+            var responseText = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<ObservableCollection<JamGoodsCategoryModel>>(responseText);
+        }
+
+        public static async Task<ObservableCollection<JamGoodsModel>> GetJamGoodsAsync()
+        {
+            HttpResponseMessage response = await GetAsyncBase(new Uri($"{SecretConstants.ApiUrl}jamgoods"));
+            var responseText = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<ObservableCollection<JamGoodsModel>>(responseText);
+        }
+
         private static async Task<HttpResponseMessage> GetAsyncBase(Uri uri)
         {
             // トークンが空のときは取得

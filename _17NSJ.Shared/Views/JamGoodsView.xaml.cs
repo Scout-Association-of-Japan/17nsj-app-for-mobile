@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using _17NSJ.Models;
+using _17NSJ.Services;
 using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
 
@@ -19,35 +21,48 @@ namespace _17NSJ.Views
             InitializeComponent();
 
             ActionHandler += this.ItemSelected;
-            this.jamGoodsList.ItemTapCommand = new Command(ActionHandler);
 
             GetGoodsAsync();
         }
 
-        private void GetGoodsAsync()
+        private async void GetGoodsAsync()
         {
             this.error.IsVisible = false;
             this.indicator.IsVisible = true;
 
-            ObservableCollection<JamGoodsModel> list = new ObservableCollection<JamGoodsModel>();
+            var list = new List<GoodsByCategory>();
+            var categories = await AppDataService.GetJamGoodsCategoriesAsync();
+            var originalGoodsList = await AppDataService.GetJamGoodsAsync();
 
-            for (int i = 0; i < 10;i++)
+            this.finalUpdatedAt.Text = "最終更新：" + (originalGoodsList.Select(X =>X.StockUpdatedAt).Max()).ToLocalTime().ToString("yyyy/MM/dd HH:mm");
+
+            foreach(var item in originalGoodsList)
             {
-                var model = new JamGoodsModel();
-                model.ID = i.ToString();
-                model.Name = "品名" + i.ToString();
-                model.Price = 100 * i;
-                model.Size = "H 50mm * W 50mm" + i.ToString();
-                model.Description = "説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明説明" + i.ToString();
-                model.Image = "https://placehold.jp/320x320.png";
-                model.DisplayNumber = i;
-                model.Stock = null;
-                model.StockUpdatedAt = DateTime.Now;
-
-                list.Add(model);
+                switch(item.Stock)
+                {
+                    case 0:
+                    case 1:
+                        item.PriceText = "¥" + item.Price;
+                        item.PriceTextColor = "#95989A";
+                        break;
+                    case 2:
+                        item.PriceText = "¥" + item.Price + " △";
+                        item.PriceTextColor = "Orange";
+                        break;
+                    case 3:
+                        item.PriceText = "¥" + item.Price + " X";
+                        item.PriceTextColor = "Red";
+                        break;
+                    default:
+                        break;
+                }
             }
-            list[2].Stock = true;
-            list[3].Stock = false;
+
+            foreach(var item in categories)
+            {
+                var goods = originalGoodsList.Where(x => x.Category == item.Category).OrderBy(X => X.DisplayOrder).ToList();
+                list.Add(new GoodsByCategory(){ CategoryName = item.CategoryName, Goods = goods, Tapped=new Command(ActionHandler)});                                         
+            }
 
 
             this.jamGoodsList.ItemsSource = list;
@@ -65,7 +80,7 @@ namespace _17NSJ.Views
             }
         }
 
-        void ReloadTapped(object sender, System.EventArgs e)
+        private void ReloadTapped(object sender, System.EventArgs e)
         {
             GetGoodsAsync();
         }

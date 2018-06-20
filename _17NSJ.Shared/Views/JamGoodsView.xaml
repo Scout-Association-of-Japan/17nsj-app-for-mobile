@@ -20,14 +20,37 @@
                     <Button Image="reload.png" Pressed="ReloadTapped"  />
                 </StackLayout>
             </ScrollView>
-            <Label HorizontalTextAlignment="Center" FontSize="Small" Text="最終更新：2018/06/05 18:00" x:Name="finalUpdatedAt" />
+            <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Small" Margin="0,5,0,0" x:Name="finalUpdatedAt" />
             <ScrollView>
+                <af:RepeatableStack Orientation="Vertical" x:Name="jamGoodsList">
+                    <af:RepeatableStack.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <Label Text="{Binding CategoryName}" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40"/>
+                                <af:RepeatableWrapLayout UniformColumns="2" ItemTapCommand="{Binding Tapped}" ItemsSource="{Binding Goods}" AutomationId="JamGoodsView.ListView">
+                                    <af:RepeatableWrapLayout.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackLayout>
+                                                <Image Source="{Binding ThumbnailURL}" Margin="10,10,10,0" />
+                                                <Label Text="{Binding GoodsName}" FontSize="Micro" HorizontalTextAlignment="Center" TextColor="#95989A" Margin="0,-5,0,0"/>
+                                                <StackLayout Orientation="Horizontal" Margin="0,-10,0,10" HorizontalOptions="Center">
+                                                    <Label Text="{Binding PriceText}" TextColor="{Binding PriceTextColor}" />
+                                                </StackLayout>
+                                            </StackLayout>
+                                        </DataTemplate>
+                                    </af:RepeatableWrapLayout.ItemTemplate>
+                                </af:RepeatableWrapLayout>
+                            </StackLayout>
+                        </DataTemplate>
+                    </af:RepeatableStack.ItemTemplate>
+                </af:RepeatableStack>
+                <!--
                 <af:RepeatableWrapLayout x:Name="jamGoodsList" UniformColumns="2" AutomationId="JamGoodsView.ListView">
                     <af:RepeatableWrapLayout.ItemTemplate>
                         <DataTemplate>
                             <StackLayout>
-                                <Image Source="{Binding Image}" Margin="10,10,10,0" />
-                                <Label Text="{Binding Name}" HorizontalTextAlignment="Center" Margin="0,-5,0,0"/>
+                                <Image Source="{Binding ThumbnailURL}" Margin="10,10,10,0" />
+                                <Label Text="{Binding GoodsName}" FontSize="Micro" HorizontalTextAlignment="Center" Margin="0,-5,0,0"/>
                                 <StackLayout Orientation="Horizontal" Margin="0,-10,0,10" HorizontalOptions="Center">
                                     <Label Text="¥" TextColor="Red" />
                                     <Label Text="{Binding Price}" TextColor="Red" />
@@ -37,6 +60,7 @@
                         </DataTemplate>
                     </af:RepeatableWrapLayout.ItemTemplate>
                 </af:RepeatableWrapLayout>
+                -->
             </ScrollView>
         </StackLayout>
         <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" IsVisible="false" AutomationId="NewsInfoView.Indicator" />       
