@@ -30,6 +30,11 @@ namespace _17NSJ.Views
         private double? latitude = null;
         private double? longitude = null;
 
+        private const string programLayerProp = "programLayer";
+        private const string subCampLayerProp = "subCampLayer";
+        private const string lifeFacilityLayerProp = "lifeFacilityLayer";
+        private const string jamFacilityLayerProp = "jamFacilityLayer";
+
         public MapView(double latitude, double longitude)
         {
             InitializeView();
@@ -93,6 +98,13 @@ namespace _17NSJ.Views
             {
                 DrawDistinationPin();
             }
+
+            //レイヤー状態を保持
+            Application.Current.Properties[programLayerProp] = programLayerSwt.IsToggled;
+            Application.Current.Properties[subCampLayerProp] = subcampLayerSwt.IsToggled;
+            Application.Current.Properties[lifeFacilityLayerProp] = LifeFacilityLayerSwt.IsToggled;
+            Application.Current.Properties[jamFacilityLayerProp] = JamFacilityLayerSwt.IsToggled;
+            Application.Current.SavePropertiesAsync();
 
             this.categoryLayer.IsVisible = false;
         }
@@ -176,18 +188,63 @@ namespace _17NSJ.Views
             LifeFacilityPinList = GetPinList("_17NSJ.MapData.LifeFacilityPin.json");
             JamFacilityPinList = GetPinList("_17NSJ.MapData.JamFacilityPin.json");
 
+            //初期表示用レイヤ選択
+            bool? programLayer = null;
+            bool? subCampLayer = null;
+            bool? lifeFacilityLayer = null;
+            bool? jamFacilityLayer = null;
+
+            if (Application.Current.Properties.ContainsKey(programLayerProp))
+            {
+                programLayer = Application.Current.Properties[programLayerProp] as bool?;
+            }
+
+            if (Application.Current.Properties.ContainsKey(subCampLayerProp))
+            {
+                subCampLayer = Application.Current.Properties[subCampLayerProp] as bool?;
+            }
+
+            if (Application.Current.Properties.ContainsKey(lifeFacilityLayerProp))
+            {
+                lifeFacilityLayer = Application.Current.Properties[lifeFacilityLayerProp] as bool?;
+            }
+
+            if (Application.Current.Properties.ContainsKey(jamFacilityLayerProp))
+            {
+                jamFacilityLayer = Application.Current.Properties[jamFacilityLayerProp] as bool?;
+            }
+
             //表示
             DrawPolygons(BaseAreaList);
-            DrawPolygons(ProgramAreaList);
-            DrawPolygons(SubCampAreaList);
-            DrawPolygons(LifeFacilityAreaList);
-            DrawPolygons(JamFacilityAreaList);
-
             DrawPins(BasePinList);
-            DrawPins(ProgramPinList);
-            DrawPins(SubCampPinList);
-            DrawPins(LifeFacilityPinList);
-            DrawPins(JamFacilityPinList);
+
+            if ((programLayer is null) || ((bool)programLayer) == true)
+            {
+                DrawPolygons(ProgramAreaList);
+                DrawPins(ProgramPinList);
+                programLayerSwt.IsToggled = true;
+            }
+
+            if ((subCampLayer is null) || ((bool)subCampLayer) == true)
+            {
+                DrawPolygons(SubCampAreaList);
+                DrawPins(SubCampPinList);
+                subcampLayerSwt.IsToggled = true;
+            }
+
+            if ((lifeFacilityLayer is null) || ((bool)lifeFacilityLayer) == true)
+            {
+                DrawPolygons(LifeFacilityAreaList);
+                DrawPins(LifeFacilityPinList);
+                LifeFacilityLayerSwt.IsToggled = true;
+            }
+
+            if ((jamFacilityLayer is null) || ((bool)jamFacilityLayer) == true)
+            {
+                DrawPolygons(JamFacilityAreaList);
+                DrawPins(JamFacilityPinList);
+                JamFacilityLayerSwt.IsToggled = true;
+            }
         }
 
         private List<Polygon> GetPolygonList(string fileName)
