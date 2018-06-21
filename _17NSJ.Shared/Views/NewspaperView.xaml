@@ -21,9 +21,9 @@
                             <StackLayout>
                                 <StackLayout BackgroundColor="#CBCBCB">
                                     <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="CenterAndExpand" Margin="0,5,0,-5" />
-                                    <Label Text="{Binding CreatedAt, StringFormat='{0:yyyy/MM/dd HH:mm}'}" FontSize="10" HorizontalOptions="EndAndExpand" />
+                                    <Label Text="{Binding CreatedAtLocalTime, StringFormat='{0:yyyy/MM/dd HH:mm}'}" Margin="0,0,10,5" FontSize="10" HorizontalOptions="EndAndExpand" />
                                 </StackLayout>
-                                <Image Source="{Binding ThumbnailURL}" HeightRequest="300" Margin="50,10,50,50" />
+                                <Image Source="{Binding ThumbnailURL}" HeightRequest="300" Margin="50,5,50,40" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

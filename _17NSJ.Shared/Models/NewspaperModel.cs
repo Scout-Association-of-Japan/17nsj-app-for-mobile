@@ -39,6 +39,14 @@ namespace _17NSJ.Models
         /// <value>登録日時</value>
         [JsonProperty("CreatedAt", NullValueHandling = NullValueHandling.Ignore)]
         public DateTime CreatedAt { get; set; }
+
+        public DateTime CreatedAtLocalTime
+        {
+            get
+            {
+                return this.CreatedAt.ToLocalTime();
+            }
+        }
     }
 }
 
