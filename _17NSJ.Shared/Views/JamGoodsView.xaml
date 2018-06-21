@@ -31,7 +31,7 @@
                                     <af:RepeatableWrapLayout.ItemTemplate>
                                         <DataTemplate>
                                             <StackLayout>
-                                                <Image Source="{Binding ThumbnailURL}" Margin="10,10,10,0" />
+                                                <Image Source="{Binding ThumbnailURL}" HeightRequest="200" />
                                                 <Label Text="{Binding GoodsName}" FontSize="Micro" HorizontalTextAlignment="Center" TextColor="#95989A" Margin="0,-5,0,0"/>
                                                 <StackLayout Orientation="Horizontal" Margin="0,-10,0,10" HorizontalOptions="Center">
                                                     <Label Text="{Binding PriceText}" TextColor="{Binding PriceTextColor}" />
@@ -44,23 +44,6 @@
                         </DataTemplate>
                     </af:RepeatableStack.ItemTemplate>
                 </af:RepeatableStack>
-                <!--
-                <af:RepeatableWrapLayout x:Name="jamGoodsList" UniformColumns="2" AutomationId="JamGoodsView.ListView">
-                    <af:RepeatableWrapLayout.ItemTemplate>
-                        <DataTemplate>
-                            <StackLayout>
-                                <Image Source="{Binding ThumbnailURL}" Margin="10,10,10,0" />
-                                <Label Text="{Binding GoodsName}" FontSize="Micro" HorizontalTextAlignment="Center" Margin="0,-5,0,0"/>
-                                <StackLayout Orientation="Horizontal" Margin="0,-10,0,10" HorizontalOptions="Center">
-                                    <Label Text="¥" TextColor="Red" />
-                                    <Label Text="{Binding Price}" TextColor="Red" />
-                                    <Label Text="Sold out" IsVisible="{Binding Stock, Converter={StaticResource InverseBooleanConverter}}" TextColor="Red" />
-                                </StackLayout>
-                            </StackLayout>
-                        </DataTemplate>
-                    </af:RepeatableWrapLayout.ItemTemplate>
-                </af:RepeatableWrapLayout>
-                -->
             </ScrollView>
         </StackLayout>
         <cont:CustomIndicator VerticalOptions="FillAndExpand"  x:Name="indicator" IsVisible="false" AutomationId="NewsInfoView.Indicator" />       
