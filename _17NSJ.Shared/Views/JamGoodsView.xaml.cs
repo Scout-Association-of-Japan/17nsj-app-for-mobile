@@ -31,7 +31,7 @@ namespace _17NSJ.Views
             this.indicator.IsVisible = true;
 
             var list = new List<GoodsByCategory>();
-            var categories = await AppDataService.GetJamGoodsCategoriesAsync();
+            var categories = (await AppDataService.GetJamGoodsCategoriesAsync()).OrderBy(X => X.DisplayOrder);
             var originalGoodsList = await AppDataService.GetJamGoodsAsync();
 
             this.finalUpdatedAt.Text = "最終更新：" + (originalGoodsList.Select(X =>X.StockUpdatedAt).Max()).ToLocalTime().ToString("yyyy/MM/dd HH:mm");
