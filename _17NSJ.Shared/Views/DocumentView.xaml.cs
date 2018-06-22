@@ -56,6 +56,7 @@ namespace _17NSJ.Views
 
         private void ItemSelected(object sender, ItemTappedEventArgs e)
         {
+            this.documentList.SelectedItem = null;
             var doc = e.Item as DocumentModel;
 
             if (doc != null)

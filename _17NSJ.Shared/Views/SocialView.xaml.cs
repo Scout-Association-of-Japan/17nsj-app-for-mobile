@@ -22,6 +22,7 @@ namespace _17NSJ.Views
 
         void ItemSelected(object sender, ItemTappedEventArgs e)
         {
+            this.socialList.SelectedItem = null;
             var item = e.Item as SocialModel;
 
             if(item != null)

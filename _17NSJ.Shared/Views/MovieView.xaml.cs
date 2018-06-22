@@ -56,6 +56,7 @@ namespace _17NSJ.Views
 
         private void ItemSelected(object sender, ItemTappedEventArgs e)
         {
+            this.movieList.SelectedItem = null;
             var movie = e.Item as MovieModel;
 
             if (movie != null)
