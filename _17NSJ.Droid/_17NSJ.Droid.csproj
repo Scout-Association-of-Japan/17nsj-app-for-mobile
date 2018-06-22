@@ -396,6 +396,9 @@
     <AndroidResource Include="Resources\drawable-xhdpi\shop_fewinstock.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\shop_jamgoods.png" />
     <AndroidResource Include="Resources\drawable-hdpi\shop_jamgoods.png" />
+    <AndroidResource Include="Resources\drawable\shop_plaza.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shop_plaza.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shop_plaza.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\loading.gif" />

@@ -485,6 +485,9 @@
     <BundleResource Include="Resources\map_arena_medical.png" />
     <BundleResource Include="Resources\map_arena_medical%402x.png" />
     <BundleResource Include="Resources\map_arena_medical%403x.png" />
+    <BundleResource Include="Resources\shop_plaza.png" />
+    <BundleResource Include="Resources\shop_plaza%40x2.png" />
+    <BundleResource Include="Resources\shop_plaza%40x3.png" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />

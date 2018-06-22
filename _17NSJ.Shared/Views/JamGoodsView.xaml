@@ -27,7 +27,7 @@
                         <DataTemplate>
                             <StackLayout>
                                 <Label Text="{Binding CategoryName}" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40"/>
-                                <af:RepeatableWrapLayout UniformColumns="2" ItemTapCommand="{Binding Tapped}" ItemsSource="{Binding Goods}" AutomationId="JamGoodsView.ListView">
+                                <af:RepeatableWrapLayout UniformColumns="2" ItemTapCommand="{Binding Tapped}" ItemsSource="{Binding Goods}" AutomationId="JamGoodsView.ListView" Margin="10,0,10,0">
                                     <af:RepeatableWrapLayout.ItemTemplate>
                                         <DataTemplate>
                                             <StackLayout>
