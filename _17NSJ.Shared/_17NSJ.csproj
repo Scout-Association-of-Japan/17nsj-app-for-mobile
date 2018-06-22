@@ -214,8 +214,6 @@
     <Compile Include="Views\SocialView.xaml.cs">
       <DependentUpon>SocialView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\ViewModelBase.cs" />
-    <Compile Include="Models\NotificationObject.cs" />
     <Compile Include="Models\SocialModel.cs" />
     <Compile Include="Views\DocumentView.xaml.cs">
       <DependentUpon>DocumentView.xaml</DependentUpon>
@@ -396,7 +394,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
-    <Folder Include="ViewModels\" />
     <Folder Include="Models\" />
     <Folder Include="Constants\" />
     <Folder Include="Controls\" />

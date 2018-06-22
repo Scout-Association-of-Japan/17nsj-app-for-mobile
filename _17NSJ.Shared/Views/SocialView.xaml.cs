@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using _17NSJ.Constants;
 using _17NSJ.Models;
-using _17NSJ.ViewModels;
 using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
 
