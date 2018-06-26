@@ -111,6 +111,11 @@ namespace _17NSJ.Views
 
         private async void MyLocationClicked(object sender, System.EventArgs e)
         {
+            if (CrossGeolocator.Current.IsListening)
+            {
+                await CrossGeolocator.Current.StartListeningAsync(TimeSpan.FromSeconds(5), 10, true);
+            }
+
             IGeolocator locator = CrossGeolocator.Current;
             locator.DesiredAccuracy = 50;
 

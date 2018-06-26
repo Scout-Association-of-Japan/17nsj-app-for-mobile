@@ -40,10 +40,12 @@
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2.0</string>
+	<string>2.0.0</string>
 	<key>CFBundleVersion</key>
-	<string>6.0</string>
+	<string>8.0</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>位置情報はマップの現在地表示のために使用されます。</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>カレンダー権限が使用されます。</string>
 </dict>
 </plist>
