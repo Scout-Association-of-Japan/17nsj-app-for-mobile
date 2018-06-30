@@ -8,7 +8,7 @@
             <Image Source="shop_plaza.png" WidthRequest="250" Margin="0,10,0,0" />
             <Label Text="ジャンボリープラザでは、ジャンボリーグッズや軽食、お土産の販売、郵便や写真撮影サービス等を扱います。みなさまのご来場をお待ちしています。" TextColor="#95989A" Margin="10,0,10,10" Font="15" />
 
-            <Label Text="OFFICAL SHOP" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
+            <Label Text="OFFICIAL SHOP" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
             <Image Source="shop_logo.png" WidthRequest="250" Margin="0,10,0,10"/>
             <cont:ImageButton Source="shop_jamgoods.png" WidthRequest="250" Tapped="JamGoodsClicked" Margin="0,10,0,10" Aspect="AspectFit" AutomationId="ShopView.JamGoods" />
             <Label Text="その他" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />

@@ -11,7 +11,7 @@ namespace _17NSJ.Views
         public JamGoodsDetailView(JamGoodsModel goods)
         {
             // トラッキングコード
-            Analytics.TrackEvent("JamGoods", new Dictionary<string, string> { { "ID", $"{goods.Id}" } });
+			Analytics.TrackEvent("JamGoods", new Dictionary<string, string> { { "ID", $"{goods.Category}-{goods.Id}" } });
 
             InitializeComponent();
             this.image.Source = goods.DetailImageURL;
