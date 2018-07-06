@@ -489,6 +489,30 @@
     <BundleResource Include="Resources\shop_plaza.png" />
     <BundleResource Include="Resources\shop_plaza%40x2.png" />
     <BundleResource Include="Resources\shop_plaza%40x3.png" />
+    <BundleResource Include="Resources\sponsor_canon.png" />
+    <BundleResource Include="Resources\sponsor_canon%402x.png" />
+    <BundleResource Include="Resources\sponsor_canon%403x.png" />
+    <BundleResource Include="Resources\sponsor_cisco.png" />
+    <BundleResource Include="Resources\sponsor_cisco%402x.png" />
+    <BundleResource Include="Resources\sponsor_cisco%403x.png" />
+    <BundleResource Include="Resources\sponsor_gogocurry.png" />
+    <BundleResource Include="Resources\sponsor_gogocurry%402x.png" />
+    <BundleResource Include="Resources\sponsor_gogocurry%403x.png" />
+    <BundleResource Include="Resources\sponsor_hokuriku_cocacola.png" />
+    <BundleResource Include="Resources\sponsor_hokuriku_cocacola%402x.png" />
+    <BundleResource Include="Resources\sponsor_hokuriku_cocacola%403x.png" />
+    <BundleResource Include="Resources\sponsor_iap.png" />
+    <BundleResource Include="Resources\sponsor_iap%402x.png" />
+    <BundleResource Include="Resources\sponsor_iap%403x.png" />
+    <BundleResource Include="Resources\sponsor_icom.png" />
+    <BundleResource Include="Resources\sponsor_icom%402x.png" />
+    <BundleResource Include="Resources\sponsor_icom%403x.png" />
+    <BundleResource Include="Resources\sponsor_sony.png" />
+    <BundleResource Include="Resources\sponsor_sony%402x.png" />
+    <BundleResource Include="Resources\sponsor_sony%403x.png" />
+    <BundleResource Include="Resources\sponsor_yakult.png" />
+    <BundleResource Include="Resources\sponsor_yakult%402x.png" />
+    <BundleResource Include="Resources\sponsor_yakult%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />

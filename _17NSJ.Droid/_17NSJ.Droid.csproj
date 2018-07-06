@@ -399,6 +399,30 @@
     <AndroidResource Include="Resources\drawable\shop_plaza.png" />
     <AndroidResource Include="Resources\drawable-hdpi\shop_plaza.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\shop_plaza.png" />
+    <AndroidResource Include="Resources\drawable\sponsor_canon.png" />
+    <AndroidResource Include="Resources\drawable\sponsor_cisco.png" />
+    <AndroidResource Include="Resources\drawable\sponsor_gogocurry.png" />
+    <AndroidResource Include="Resources\drawable\sponsor_hokuriku_cocacola.png" />
+    <AndroidResource Include="Resources\drawable\sponsor_iap.png" />
+    <AndroidResource Include="Resources\drawable\sponsor_icom.png" />
+    <AndroidResource Include="Resources\drawable\sponsor_sony.png" />
+    <AndroidResource Include="Resources\drawable\sponsor_yakult.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\sponsor_canon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\sponsor_cisco.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\sponsor_gogocurry.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\sponsor_hokuriku_cocacola.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\sponsor_iap.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\sponsor_icom.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\sponsor_sony.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\sponsor_yakult.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\sponsor_canon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\sponsor_cisco.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\sponsor_gogocurry.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\sponsor_hokuriku_cocacola.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\sponsor_iap.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\sponsor_icom.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\sponsor_sony.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\sponsor_yakult.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\loading.gif" />

@@ -6788,29 +6788,29 @@ namespace _17NSJ.Droid
 			// aapt resource value: 0x7f020056
 			public const int avd_hide_password = 2130837590;
 			
-			// aapt resource value: 0x7f020169
-			public const int avd_hide_password_1 = 2130837865;
+			// aapt resource value: 0x7f020171
+			public const int avd_hide_password_1 = 2130837873;
 			
-			// aapt resource value: 0x7f02016a
-			public const int avd_hide_password_2 = 2130837866;
+			// aapt resource value: 0x7f020172
+			public const int avd_hide_password_2 = 2130837874;
 			
-			// aapt resource value: 0x7f02016b
-			public const int avd_hide_password_3 = 2130837867;
+			// aapt resource value: 0x7f020173
+			public const int avd_hide_password_3 = 2130837875;
 			
 			// aapt resource value: 0x7f020057
 			public const int avd_show_password = 2130837591;
 			
-			// aapt resource value: 0x7f02016c
-			public const int avd_show_password_1 = 2130837868;
+			// aapt resource value: 0x7f020174
+			public const int avd_show_password_1 = 2130837876;
 			
-			// aapt resource value: 0x7f02016d
-			public const int avd_show_password_2 = 2130837869;
+			// aapt resource value: 0x7f020175
+			public const int avd_show_password_2 = 2130837877;
 			
-			// aapt resource value: 0x7f02016e
-			public const int avd_show_password_3 = 2130837870;
+			// aapt resource value: 0x7f020176
+			public const int avd_show_password_3 = 2130837878;
 			
-			// aapt resource value: 0x7f020168
-			public const int bg_color = 2130837864;
+			// aapt resource value: 0x7f020170
+			public const int bg_color = 2130837872;
 			
 			// aapt resource value: 0x7f020058
 			public const int ci_menu_with_logo = 2130837592;
@@ -7496,11 +7496,11 @@ namespace _17NSJ.Droid
 			// aapt resource value: 0x7f02013b
 			public const int notification_icon_background = 2130837819;
 			
-			// aapt resource value: 0x7f020166
-			public const int notification_template_icon_bg = 2130837862;
+			// aapt resource value: 0x7f02016e
+			public const int notification_template_icon_bg = 2130837870;
 			
-			// aapt resource value: 0x7f020167
-			public const int notification_template_icon_low_bg = 2130837863;
+			// aapt resource value: 0x7f02016f
+			public const int notification_template_icon_low_bg = 2130837871;
 			
 			// aapt resource value: 0x7f02013c
 			public const int notification_tile_bg = 2130837820;
@@ -7578,55 +7578,79 @@ namespace _17NSJ.Droid
 			public const int special_sg = 2130837844;
 			
 			// aapt resource value: 0x7f020155
-			public const int top_activity = 2130837845;
+			public const int sponsor_canon = 2130837845;
 			
 			// aapt resource value: 0x7f020156
-			public const int top_document = 2130837846;
+			public const int sponsor_cisco = 2130837846;
 			
 			// aapt resource value: 0x7f020157
-			public const int top_friendship = 2130837847;
+			public const int sponsor_gogocurry = 2130837847;
 			
 			// aapt resource value: 0x7f020158
-			public const int top_map = 2130837848;
+			public const int sponsor_hokuriku_cocacola = 2130837848;
 			
 			// aapt resource value: 0x7f020159
-			public const int top_movie = 2130837849;
+			public const int sponsor_iap = 2130837849;
 			
 			// aapt resource value: 0x7f02015a
-			public const int top_newsinfo = 2130837850;
+			public const int sponsor_icom = 2130837850;
 			
 			// aapt resource value: 0x7f02015b
-			public const int top_newspaper = 2130837851;
+			public const int sponsor_sony = 2130837851;
 			
 			// aapt resource value: 0x7f02015c
-			public const int top_outline = 2130837852;
+			public const int sponsor_yakult = 2130837852;
 			
 			// aapt resource value: 0x7f02015d
-			public const int top_schedule = 2130837853;
+			public const int top_activity = 2130837853;
 			
 			// aapt resource value: 0x7f02015e
-			public const int top_setting = 2130837854;
+			public const int top_document = 2130837854;
 			
 			// aapt resource value: 0x7f02015f
-			public const int top_shop = 2130837855;
+			public const int top_friendship = 2130837855;
 			
 			// aapt resource value: 0x7f020160
-			public const int top_social = 2130837856;
+			public const int top_map = 2130837856;
 			
 			// aapt resource value: 0x7f020161
-			public const int top_sponsor = 2130837857;
+			public const int top_movie = 2130837857;
 			
 			// aapt resource value: 0x7f020162
-			public const int top_visitor = 2130837858;
+			public const int top_newsinfo = 2130837858;
 			
 			// aapt resource value: 0x7f020163
-			public const int top_weather = 2130837859;
+			public const int top_newspaper = 2130837859;
 			
 			// aapt resource value: 0x7f020164
-			public const int Up = 2130837860;
+			public const int top_outline = 2130837860;
 			
 			// aapt resource value: 0x7f020165
-			public const int visitor_register = 2130837861;
+			public const int top_schedule = 2130837861;
+			
+			// aapt resource value: 0x7f020166
+			public const int top_setting = 2130837862;
+			
+			// aapt resource value: 0x7f020167
+			public const int top_shop = 2130837863;
+			
+			// aapt resource value: 0x7f020168
+			public const int top_social = 2130837864;
+			
+			// aapt resource value: 0x7f020169
+			public const int top_sponsor = 2130837865;
+			
+			// aapt resource value: 0x7f02016a
+			public const int top_visitor = 2130837866;
+			
+			// aapt resource value: 0x7f02016b
+			public const int top_weather = 2130837867;
+			
+			// aapt resource value: 0x7f02016c
+			public const int Up = 2130837868;
+			
+			// aapt resource value: 0x7f02016d
+			public const int visitor_register = 2130837869;
 			
 			static Drawable()
 			{
