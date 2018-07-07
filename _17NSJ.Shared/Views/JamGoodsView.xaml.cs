@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using _17NSJ.Exceptions;
 using _17NSJ.Models;
 using _17NSJ.Services;
 using Microsoft.AppCenter.Analytics;
@@ -28,11 +29,26 @@ namespace _17NSJ.Views
         private async void GetGoodsAsync()
         {
             this.error.IsVisible = false;
+            this.jamGoodsList.IsVisible = true;
             this.indicator.IsVisible = true;
 
             var list = new List<GoodsByCategory>();
-            var categories = (await AppDataService.GetJamGoodsCategoriesAsync()).OrderBy(X => X.DisplayOrder);
-            var originalGoodsList = await AppDataService.GetJamGoodsAsync();
+            ObservableCollection<JamGoodsCategoryModel> categories;
+            ObservableCollection<JamGoodsModel> originalGoodsList;
+
+            try
+            {
+                categories = await AppDataService.GetJamGoodsCategoriesAsync();
+                originalGoodsList = await AppDataService.GetJamGoodsAsync();
+            }
+            catch (OutOfServiceException)
+            {
+                this.error.IsVisible = true;
+                this.jamGoodsList.IsVisible = false;
+                this.jamGoodsList.ItemsSource = null;
+                this.indicator.IsVisible = false;
+                return;
+            }
 
             this.finalUpdatedAt.Text = "最終更新：" + (originalGoodsList.Select(X =>X.StockUpdatedAt).Max()).ToLocalTime().ToString("yyyy/MM/dd HH:mm");
 
@@ -58,7 +74,7 @@ namespace _17NSJ.Views
                 }
             }
 
-            foreach(var item in categories)
+            foreach(var item in categories.OrderBy(X => X.DisplayOrder))
             {
                 var goods = originalGoodsList.Where(x => x.Category == item.Category).OrderBy(X => X.DisplayOrder).ToList();
                 list.Add(new GoodsByCategory(){ CategoryName = item.CategoryName, Goods = goods, Tapped=new Command(ActionHandler)});                                         

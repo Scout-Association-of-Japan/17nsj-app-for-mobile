@@ -22,7 +22,7 @@
             </ScrollView>
             <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Small" Margin="0,5,0,0" x:Name="finalUpdatedAt" />
             <ScrollView>
-                <af:RepeatableStack Orientation="Vertical" x:Name="jamGoodsList">
+                <af:RepeatableStack Orientation="Vertical" x:Name="jamGoodsList" BackgroundColor="White">
                     <af:RepeatableStack.ItemTemplate>
                         <DataTemplate>
                             <StackLayout>
