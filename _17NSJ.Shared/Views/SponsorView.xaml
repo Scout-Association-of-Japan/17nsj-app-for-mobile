@@ -9,6 +9,9 @@
             <Image Source="sponsor_gogocurry.png" Margin="20,0,20,0" />
             <Label Text="株式会社ゴーゴーカレーグループ" HorizontalTextAlignment="Center" Font="17" />
             <BoxView HeightRequest="1" Color="Gray"/>
+            <Image Source="sponsor_cisco.png" Margin="20,0,20,0" />
+            <Label Text="シスコシステムズ合同会社" HorizontalTextAlignment="Center" Font="17" />
+            <BoxView HeightRequest="1" Color="Gray"/>
             <Image Source="sponsor_yakult.png" Margin="20,0,20,0" />
             <Label Text="株式会社ヤクルト本社" HorizontalTextAlignment="Center" Font="17" />
             
@@ -18,9 +21,6 @@
             <BoxView HeightRequest="1" Color="Gray"/>
             <Image Source="sponsor_iap.png" Margin="60,0,60,0" />
             <Label Text="国際航空写真株式会社" HorizontalTextAlignment="Center" Font="17" />
-            <BoxView HeightRequest="1" Color="Gray"/>
-            <Image Source="sponsor_cisco.png" Margin="60,0,60,0" />
-            <Label Text="シスコシステムズ合同会社" HorizontalTextAlignment="Center" Font="17" />
             <BoxView HeightRequest="1" Color="Gray"/>
             <Image Source="sponsor_sony.png" Margin="60,0,60,0" />
             <Label Text="ソニー株式会社" HorizontalTextAlignment="Center" Font="17" />
