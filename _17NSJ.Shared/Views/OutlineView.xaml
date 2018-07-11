@@ -41,6 +41,14 @@
             
             <Label Text="主催" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
             <Image Source="outline_saj.png" />
+
+            <Label Text="後援" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />  
+            <Label Text="文部科学省" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />  
+            <Label Text="防衛省" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />    
+            <Label Text="石川県" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />    
+            <Label Text="石川県教育委員会" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />   
+            <Label Text="珠洲市" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />
+            <Label Text="珠洲市教育委員会" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" Margin="0,0,0,50" />
            
         </StackLayout>
     </ScrollView>
