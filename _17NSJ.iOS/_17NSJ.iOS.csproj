@@ -513,6 +513,24 @@
     <BundleResource Include="Resources\sponsor_yakult.png" />
     <BundleResource Include="Resources\sponsor_yakult%402x.png" />
     <BundleResource Include="Resources\sponsor_yakult%403x.png" />
+    <BundleResource Include="Resources\shop_gogocurry.png" />
+    <BundleResource Include="Resources\shop_gogocurry%402x.png" />
+    <BundleResource Include="Resources\shop_gogocurry%403x.png" />
+    <BundleResource Include="Resources\shop_hokuriku_cocacola.png" />
+    <BundleResource Include="Resources\shop_hokuriku_cocacola%402x.png" />
+    <BundleResource Include="Resources\shop_hokuriku_cocacola%403x.png" />
+    <BundleResource Include="Resources\shop_iap.png" />
+    <BundleResource Include="Resources\shop_iap%402x.png" />
+    <BundleResource Include="Resources\shop_iap%403x.png" />
+    <BundleResource Include="Resources\shop_postoffice.png" />
+    <BundleResource Include="Resources\shop_postoffice%402x.png" />
+    <BundleResource Include="Resources\shop_postoffice%403x.png" />
+    <BundleResource Include="Resources\shop_yakult.png" />
+    <BundleResource Include="Resources\shop_yakult%402x.png" />
+    <BundleResource Include="Resources\shop_yakult%403x.png" />
+    <BundleResource Include="Resources\shop_daiichi.png" />
+    <BundleResource Include="Resources\shop_daiichi%402x.png" />
+    <BundleResource Include="Resources\shop_daiichi%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />

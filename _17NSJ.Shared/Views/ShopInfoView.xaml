@@ -11,8 +11,83 @@
             <Label Text="OFFICIAL SHOP" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
             <Image Source="shop_logo.png" WidthRequest="250" Margin="0,10,0,10"/>
             <cont:ImageButton Source="shop_jamgoods.png" WidthRequest="250" Tapped="JamGoodsClicked" Margin="0,10,0,10" Aspect="AspectFit" AutomationId="ShopView.JamGoods" />
-            <Label Text="その他" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
-            <Label Text="現在、軽食やお土産、各種サービスなどの売店なども準備中です。" TextColor="#95989A" Margin="10,10,10,50" Font="15" />
+
+            <Label Text="飲食" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
+
+            <Label Text="ゴーゴーカレー" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Image Source="shop_gogocurry.png" Margin="20,0,20,0" />
+            <Label Text="ゴーゴーカレーの人気の秘密は、５５の工程を５時間かけてじっくり煮込んだ特製オリジナル・ルー！それを５５時間寝かし、旨みを熟成させる！それがクセになる味の理由のひとつです。" Margin="10,0,10,20" Font="15" />
+            <BoxView HeightRequest="1" Color="Gray" />
+
+            <Label Text="ヤクルト" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Image Source="shop_yakult.png" Margin="20,0,20,0" />
+            <Label Text="せっかくのジャンボリー！&#xD;&#xA;体調が悪くてずっとテントで過ごすなんていうことがないように、私たちヤクルトは、参加者の皆さんの健康と楽しいジャンボリーライフをサポートします。" Margin="10,0,10,20" Font="15" />
+            <BoxView HeightRequest="1" Color="Gray"/>
+
+            <Label Text="北陸コカ・コーラ" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Image Source="shop_hokuriku_cocacola.png" Margin="20,0,20,0" />
+            <Label Text="暑い夏のあなたの「飲みたい！」のそばには、いつもコカ・コーラ社製品があります。北陸コカ・コーラは、炭酸飲料やスポーツ飲料、水など、幅広いラインナップをご用意して日本スカウトジャンボリーを応援します！" Margin="10,0,10,20" Font="15" />
+            <BoxView HeightRequest="1" Color="Gray"/>
+
+            <Label Text="珠洲市青年団" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Label Text="私たち珠洲市青年団は、日々、珠洲を盛り上げる活動をしています。4日と５日限定で、珠洲市名産の揚浜塩を使用した海鮮焼きそばとジュースを販売します。皆さん、ご賞味あれ！" Margin="10,0,10,20" Font="15" />
+            <BoxView HeightRequest="1" Color="Gray"/>
+
+            <Label Text="KASO空間" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Label Text="地元奥能登の名産として知られる「いしる」を使用した手羽先や、海鮮焼きにチャーシュー・・・&#xD;&#xA;皆さんのお腹と心を満たします。" Margin="10,0,10,20" Font="15" />
+            <BoxView HeightRequest="1" Color="Gray"/>
+
+            <Label Text="木田商事" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Label Text="小腹が減ったら当店へ。&#xD;&#xA;かき氷に唐揚げ、ポテト。おいしい軽食でさらに楽しい思い出を作ってください。" Margin="10,0,10,20" Font="15" />
+
+            <Label Text="土産品・サービス" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
+
+            <Label Text="国際航空写真株式会社" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Image Source="shop_iap.png" Margin="20,0,20,0"  />
+            <Label Text="一度きりのジャンボリーでの思い出をみんなで残しませんか。&#xD;&#xA;各キャンプサイトで集合記念写真をお撮りします。撮影は無料です。閲覧および購入は以下のリンクから。イベントID、ログインID、パスワードはいずれも17nsjです。" Margin="10,0,10,0" Font="15" />
+            <cont:LinkLabel Uri="http://www.livephoto.jp" Text="http://www.livephoto.jp" Font="15" Margin="10,0,10,20" />
+            <BoxView HeightRequest="1" Color="Gray"/>
+
+            <Label Text="日本郵便株式会社　臨時出張所" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Image Source="shop_postoffice.png" Margin="20,0,20,0"  />
+            <Label Text="能登立国１３００年フレーム切手やご当地フォルムカードを販売します。また、本大会限定の小型記念日付印による記念押印を行います。&#xD;&#xA;お土産品のゆうパック発送も受け付けますので、ぜひお立ち寄りください。" Margin="10,0,10,20" Font="15" />
+            <BoxView HeightRequest="1" Color="Gray"/>
+
+            <Label Text="株式会社だいいち" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Image Source="shop_daiichi.png" Margin="20,0,20,0"  />
+            <Label Text="大会記念のお土産にいかがですか？&#xD;&#xA;奥能登産の塩を使用した塩キャラメルナッツクッキーは、サクサクの食感にナッツとキャラメルの香ばしさ。風味豊かなバターとチョコの２種類の味がお楽しみいただけるクッキーも。" Margin="10,0,10,20" Font="15" />
+            <BoxView HeightRequest="1" Color="Gray"/>
+
+            <Label Text="アトリエ＊Mori＊" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Label Text="日常をちょっと豊かに楽しくするものを。&#xD;&#xA;珠洲の美しい自然をイメージしたキャンドルや、アウトドアに似合うアクセサリー、アパレルグッズを販売します。ぜひ遊びにきてください。" Margin="10,0,10,20" Font="15" />
+            <BoxView HeightRequest="1" Color="Gray"/>
+
+            <Label Text="大野　隆志" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Label Text="無農薬、無化学肥料で育てた新鮮野菜をご用意する予定です。そのとき採れる野菜などを販売しますので、お楽しみに。" Margin="10,0,10,0" Font="15" />
+            <BoxView HeightRequest="1" Color="Gray"/>
+
+            <Label Text="有限会社新海塩産業" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Label Text="能登の特産といえば「塩」。塩といっても、さまざまな種類があります。当店では、竹炭塩や桜塩など、数種の塩をご用意して、皆さまのお越しをお待ちしております。" Margin="10,0,10,20" Font="15" />
+            <BoxView HeightRequest="1" Color="Gray"/>
+
+            <Label Text="新谷商店" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Label Text="「いわしのぬか漬け」、食べたことはありますか？&#xD;&#xA;発酵食で有名な北陸。発酵食は重要なタンパク源として重宝されてきました。地元ならではの味をぜひご賞味ください。" Margin="10,0,10,20" Font="15" />
+            <BoxView HeightRequest="1" Color="Gray"/>
+
+            <Label Text="株式会社タバタ商事" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Label Text="大会の記念、珠洲に来た記念に。&#xD;&#xA;ご家族やご友人、スカウト仲間の皆さんへのお土産を探しに、ぜひお立ち寄りください。" Margin="10,0,10,20" Font="15" />
+            <BoxView HeightRequest="1" Color="Gray"/>
+
+            <Label Text="チーム・スカウト・スピリッツ" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Label Text="静岡県連盟需品担当「チーム・スカウト・スピリッツ」です。Ｔシャツや手ぬぐい、チーフリングなど、17NSJの記念品の数々を販売します。" Margin="10,0,10,20" Font="15" />
+            <BoxView HeightRequest="1" Color="Gray"/>
+
+            <Label Text="NPO法人能登すずなり" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Label Text="軽食や珠洲の特産品など、幅広くご用意しています。能登土産を多数ご用意して皆さまのお越しをお待ちしますので、ぜひ遊びにいらしてください。" Margin="10,0,10,20" Font="15" />
+            <BoxView HeightRequest="1" Color="Gray"/>
+            
+            <Label Text="珠洲焼振興会" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Label Text="鉄分を多く含んだ珠洲の土を高温で焼き上げる珠洲焼は、独特な灰黒色の艶が特徴です。コーヒーカップや皿などの陶器をお土産にいかがでしょうか。" Margin="10,0,10,40" Font="15" />    
         </StackLayout>
     </ScrollView>
 </ContentPage>
