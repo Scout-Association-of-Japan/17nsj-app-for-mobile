@@ -423,6 +423,24 @@
     <AndroidResource Include="Resources\drawable-xhdpi\sponsor_icom.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\sponsor_sony.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\sponsor_yakult.png" />
+    <AndroidResource Include="Resources\drawable\shop_daiichi.png" />
+    <AndroidResource Include="Resources\drawable\shop_gogocurry.png" />
+    <AndroidResource Include="Resources\drawable\shop_hokuriku_cocacola.png" />
+    <AndroidResource Include="Resources\drawable\shop_iap.png" />
+    <AndroidResource Include="Resources\drawable\shop_postoffice.png" />
+    <AndroidResource Include="Resources\drawable\shop_yakult.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shop_daiichi.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shop_gogocurry.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shop_hokuriku_cocacola.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shop_iap.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shop_postoffice.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shop_yakult.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shop_daiichi.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shop_gogocurry.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shop_hokuriku_cocacola.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shop_iap.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shop_postoffice.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shop_yakult.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\loading.gif" />
