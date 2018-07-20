@@ -35,7 +35,12 @@
 
             <Label Text="木田商事" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
             <Label Text="小腹が減ったら当店へ。&#xD;&#xA;かき氷に唐揚げ、ポテト。おいしい軽食でさらに楽しい思い出を作ってください。" Margin="10,0,10,20" Font="15" />
-
+            <BoxView HeightRequest="1" Color="Gray"/>
+            
+            <Label Text="典座" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />
+            <Image Source="shop_tenzo.png" Margin="20,0,20,0" />
+            <Label Text="参加隊１０日帰路用予約弁当承ります。&#xD;&#xA;能登カニ弁当と能登牛焼肉弁当の２種類。いずれもお茶付き１０８０円。能登を堪能していただけるお弁当です。&#xD;&#xA;ご希望の参加隊は、県連盟派遣団をとおして７月３１日までに事務局売店部にお問い合わせください。" Margin="10,0,10,20" Font="15" />
+            
             <Label Text="土産品・サービス" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
 
             <Label Text="国際航空写真株式会社" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="0,20,0,0" />

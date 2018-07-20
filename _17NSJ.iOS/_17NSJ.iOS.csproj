@@ -531,6 +531,9 @@
     <BundleResource Include="Resources\shop_daiichi%403x.png" />
     <BundleResource Include="Resources\shop_gogocurry%402x.png" />
     <BundleResource Include="Resources\shop_gogocurry%403x.png" />
+    <BundleResource Include="Resources\shop_tenzo.png" />
+    <BundleResource Include="Resources\shop_tenzo%402x.png" />
+    <BundleResource Include="Resources\shop_tenzo%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />

@@ -441,6 +441,9 @@
     <AndroidResource Include="Resources\drawable-xhdpi\shop_iap.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\shop_postoffice.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\shop_yakult.png" />
+    <AndroidResource Include="Resources\drawable\shop_tenzo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shop_tenzo.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shop_tenzo.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\loading.gif" />
