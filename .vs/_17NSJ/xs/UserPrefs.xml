@@ -1,17 +1,11 @@
 ﻿<Properties StartupConfiguration="{E38D0FC9-0B24-46A5-B80F-B7D4387CE128}|Default">
   <MonoDevelop.Ide.ItemProperties.__17NSJ.Droid PreferredExecutionTarget="Android.03157df38d296b27" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="_17NSJ.Shared/Views/NewsInfoDetailView.xaml.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="_17NSJ.Shared/Views/MapView.xaml" Line="43" Column="1" />
-      <File FileName="_17NSJ.Shared/Views/SocialView.xaml" Line="21" Column="1" />
-      <File FileName="_17NSJ.Shared/Views/MapView.xaml.cs" Line="333" Column="10" />
-      <File FileName="_17NSJ.Shared/Views/SponsorView.xaml" Line="8" Column="1" />
-      <File FileName="_17NSJ.Shared/Views/ShopInfoView.xaml" Line="19" Column="1" />
-      <File FileName="_17NSJ.Shared/Views/NewsInfoDetailView.xaml.cs" Line="1" Column="1" />
-      <File FileName="_17NSJ.Shared/Views/JamGoodsDetailView.xaml.cs" Line="1" Column="1" />
+      <File FileName="_17NSJ.Shared/Views/ShopInfoView.xaml" Line="95" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/junpei/Documents/GitHub/17nsj/17nsj-mobile-app/_17NSJ.Shared/Views/SocialView.xaml" relfile="_17NSJ.Shared/Views/SocialView.xaml" line="16" column="1" />
@@ -25,6 +19,6 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.__17NSJ.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8091F6B8-C489-4942-BA1A-8D34FF3E2A63" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.__17NSJ.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.7e38ce4f115965631f22d1cf3fa6494c85052fdb" automaticSigning="False" />
   <MonoDevelop.Ide.ItemProperties.__17NSJ.UITests PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
