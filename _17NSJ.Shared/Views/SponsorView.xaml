@@ -24,6 +24,7 @@
             <Label Text="オリオン電機株式会社" HorizontalTextAlignment="Center" Margin="0,0,0,10" VerticalTextAlignment="Center" Font="17" />
             <Label Text="ブラックマジックデザイン株式会社" HorizontalTextAlignment="Center" Margin="0,0,0,10" VerticalTextAlignment="Center" Font="17" />
             <Label Text="平和精機工業株式会社" HorizontalTextAlignment="Center" Margin="0,0,0,10" VerticalTextAlignment="Center" Font="17" />
+            <Label Text="北陸先端科学技術大学院大学（JAIST）" HorizontalTextAlignment="Center" Margin="0,0,0,10" VerticalTextAlignment="Center" Font="17" />
 
             <Label Text="プログラム協力" BackgroundColor="#7cfc00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />
             <Label Text="プログラムエリア(順不同)" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="17" />
