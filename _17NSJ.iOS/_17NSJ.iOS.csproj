@@ -534,6 +534,9 @@
     <BundleResource Include="Resources\shop_tenzo.png" />
     <BundleResource Include="Resources\shop_tenzo%402x.png" />
     <BundleResource Include="Resources\shop_tenzo%403x.png" />
+    <BundleResource Include="Resources\map_wifi.png" />
+    <BundleResource Include="Resources\map_wifi%402x.png" />
+    <BundleResource Include="Resources\map_wifi%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />

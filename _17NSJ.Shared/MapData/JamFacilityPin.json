@@ -1,5 +1,15 @@
 ﻿[
   {
+    "IconName": "map_wifi.png",
+    "Label": "Wi-Fi スポット",
+    "Position": [ 137.3260757, 37.4459426 ]
+  },
+  {
+    "IconName": "map_wifi.png",
+    "Label": "Wi-Fi スポット",
+    "Position": [ 137.3276317, 37.441583 ]
+  },
+  {
     "IconName": "map_media_center.png",
     "Label": "メディアセンター",
     "Position": [ 137.3214278, 37.4440181 ]
