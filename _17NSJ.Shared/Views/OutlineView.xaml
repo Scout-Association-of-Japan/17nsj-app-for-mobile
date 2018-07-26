@@ -50,7 +50,7 @@
             <Label Text="珠洲市" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />
             <Label Text="珠洲市教育委員会" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" />
 
-            <Label Text="後援" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />  
+            <Label Text="支援" BackgroundColor="#CBCBCB" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Font="20" HeightRequest="40" />  
             <Label Text="陸上自衛隊第10師団" TextColor="#95989A" HorizontalTextAlignment="Center" Font="15" Margin="0,0,0,50" />            
         </StackLayout>
     </ScrollView>
