@@ -306,6 +306,7 @@ namespace _17NSJ.Views
         {
             foreach (Pin item in list)
             {
+                if (item.Label == "ジャンボリープラザ") item.ZIndex = 100;
                 this.map.Pins.Add(item);
             }
         }
