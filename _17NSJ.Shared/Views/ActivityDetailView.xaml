@@ -31,7 +31,7 @@
             <Grid HeightRequest="300" x:Name="mapGrid">
                 <maps:Map x:Name="map" VerticalOptions="FillAndExpand" MyLocationEnabled="true" MapClicked="MapClicked" />
             </Grid>
-            <Label Text="この情報は最新でない可能性がります。&#xA;大会本部から変更連絡があった場合はそちらを優先してください。" FontSize="8" HorizontalOptions="EndAndExpand" />
+            <Label Text="この情報は最新でない可能性があります。&#xA;大会本部から変更連絡があった場合はそちらを優先してください。" FontSize="8" HorizontalOptions="EndAndExpand" />
         </StackLayout>
     </ScrollView>
 </ContentPage>
